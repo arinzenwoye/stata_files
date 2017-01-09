@@ -1,0 +1,69 @@
+	(1)
+VARIABLES	margins
+	
+2.sex	0.149
+	(0.110)
+1.major1	0.831**
+	(0.413)
+2.major1	0.0854
+	(0.336)
+3.major1	1.304***
+	(0.283)
+4.major1	-0.277
+	(0.301)
+5.major1	1.151***
+	(0.320)
+6.major1	0.677**
+	(0.275)
+7.major1	0.0894
+	(0.329)
+8.major1	0.304
+	(0.472)
+9.major1	0.379
+	(0.371)
+11.major1	0.436
+	(0.416)
+12.major1	-0.370
+	(0.496)
+13.major1	0.0408
+	(0.350)
+14.major1	0.377
+	(0.439)
+15.major1	-0.138
+	(0.337)
+16.major1	0.669**
+	(0.304)
+17.major1	-0.674
+	(0.526)
+age1	0.0338**
+	(0.0145)
+cgpa	0.455***
+	(0.118)
+first_gen	0.149
+	(0.111)
+1.race	-0.00102
+	(0.119)
+2.race	-0.278
+	(0.199)
+3.race	-0.148
+	(0.166)
+6.race	0.0728
+	(0.251)
+internshipco_op	0.361**
+	(0.143)
+total_internships	0.198***
+	(0.0519)
+foreign	-0.720*
+	(0.377)
+jobsearch_skills_agg	0.0709***
+	(0.0153)
+intensity	-0.261***
+	(0.0289)
+Constant cut1	2.672***
+	(0.622)
+Constant cut2	3.256***
+	(0.622)
+	
+Observations	1,779
+Robust standard errors in parentheses	
+*** p<0.01, ** p<0.05, * p<0.1	

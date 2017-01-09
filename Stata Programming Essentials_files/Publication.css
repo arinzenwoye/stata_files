@@ -1,0 +1,392 @@
+@import url(Reset.css);
+
+body 
+{
+    background-image: url('../assets/SSCC_Tile.jpg');
+    background-repeat: repeat;
+}
+/*modified 11/2/11 rhorrisb*/
+kbd {
+	white-space:nowrap;
+	color:#000;
+	background:#eee;
+	border-style:solid;
+	border-color:#ccc #aaa #888 #bbb;
+	padding:1px 4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-moz-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+	-webkit-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+	box-shadow:0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+	background-color:#FAFAFA;
+	border-color:#CCCCCC #CCCCCC #FFFFFF;
+	border-style:solid solid none;
+	border-width:1px 1px medium;
+	color:#444444;
+	font-family:'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	white-space:nowrap;
+	display:inline-block;
+	margin-bottom:1px;
+}
+.Clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+#OuterWrapper
+{
+    margin-left: auto;
+	margin-right: auto;
+    width: 800px;
+    background-color: White;
+}
+#Header
+{
+    position: relative;
+}
+#HeaderImage
+{
+    width: 800px;
+    height: 130px;
+}
+#HeaderNav
+{
+    position: absolute;
+    top: 113px;
+    left: 10px;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: 300;
+    color: #D38056;
+}
+#HeaderNav a
+{
+    color: #1F4063;
+    text-decoration: none;
+}
+#HeaderSearch
+{
+	position: absolute;
+    top: 100px;
+    right: 10px;
+    margin: 0 auto 0 auto;
+    background-image: url('../assets/main_search.jpg');
+    background-repeat: no-repeat;
+    width: 134px;
+    height: 24px;
+    padding: 3px 0 0 5px;
+}
+
+.SearchBox
+{
+	background-color: transparent; 
+    border: 0;
+    font-family: Verdana;
+    font-size: 11px;
+    height: 15px;
+    width: 120px;
+}
+#MainWrapper
+{
+    float: left;
+}
+#RightWrapper
+{
+    display: inline;
+    float: left;
+}
+#RightHeader
+{
+    background-color: #D38056;
+    height: 18px;
+    width: 792px;
+}
+#RightHeaderContent, #RightHeaderContent a
+{
+    color: White;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 0 0 5px;
+}
+
+#RightHeaderContent a:hover
+{
+	color: #004276;
+}
+
+#RightInnerWrapper
+{
+    float:left;
+    margin: 4px;
+    min-height:442px;
+    height:auto !important;
+    height:442px;/*Needs to match the min height pixels above*/
+}
+#RightContent
+{
+    width: 792px;
+    min-height:424px;
+    height:auto !important;
+    height:424px;/*Needs to match the min height pixels above*/
+}
+
+#Footer
+{
+    width: 800px;
+    height: 103px;
+    background-color: White;
+}
+#UWLogo
+{
+    float: left;
+    height: 103px;
+    width: 122px;
+    margin: 0 0 0 4px;
+}
+#UWPic
+{
+    width: 103px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#BlueCurve
+{
+    float: right;
+    margin: 0 4px 0 0;
+    height: 103px;
+    min-height: 103px;
+    width: 664px;
+    background-image: url('../assets/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+}
+#FooterCopy
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+#FooterNav
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+#FooterNav a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#FooterCopy a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#PrintLogo
+{
+	display:none;
+}
+
+/*text*/
+p { 
+	margin: 10px 50px 15px 100px;
+	font-size: 14px;
+	/*text-align: justify;*/
+	color: #000000;
+	line-height: 21px;
+	}
+
+pre { 
+	margin: 10px 50px 15px 100px;
+	font-size: 15px;
+	/*text-align: justify;*/
+	color: #000000;
+	line-height: 21px;
+	font-family: "Courier New", Courier, monospace;
+	overflow:auto;
+	}
+
+h1 { 
+	font-family: Georgia, Times, serif;
+	font-weight:bold;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: .6px; 
+	margin: 20px 100px 20px 100px; 
+	color: #CF6833;
+	}
+	
+h2 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size: 17px;
+	letter-spacing: .6px; 
+	margin: 30px 50px 10px 30px; 
+	color: #29537F;
+	}
+	
+h3 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size: 16px;
+	letter-spacing: .4px; 
+	margin: 20px 50px 10px 100px; 
+	color: #CF6833;
+	}
+	
+h4 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:600;
+	font-size: 14px;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0px; 
+	margin: 10px 50px 10px 100px; 
+	color: #29537F;
+	}
+	
+h5 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0px; 
+	margin: 10px 50px 10px 100px; 
+	color: #29537F;
+	}
+	
+li {
+	margin: 2px 50px 5px 100px;
+	font-size: 14px;
+	line-height: 21px;	
+	/*text-align: justify;*/
+	color: #000000;
+	/*line-height: 20px;*/
+	}
+	
+ol ol
+{
+	list-style:upper-alpha;
+}
+
+li li
+{
+	margin-left: 10px;
+}
+
+a
+{
+	color: #004276;
+	text-decoration: none;
+	font-weight:500;
+}
+
+#RightContent a
+{
+	/*font-weight: 600;*/
+	color: #0042BB;
+}
+
+#RightContent a:hover
+{
+    color: #D38056;
+}
+
+#RightContent a:visited
+{
+	color: #7777CC;
+}
+#RightContent a:visited:hover
+{
+    color: #D38056;
+}
+
+a:hover
+{
+    color: #D38056;
+}
+
+a:visited
+{
+	color: #7777AA;
+}
+a:visited:hover
+{
+    color: #D38056;
+}
+
+table, th, td
+{
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+table
+{
+	/*text-align:center;*/
+	/*border-collapse:separate;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table.noBorder, table.noBorder td, table.noBorder th, td.noBorder
+{
+	border:none;
+}
+
+table.noCenter
+{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+td
+{
+	padding:5px;
+}
+
+th
+{
+	text-align:center;
+	font-weight:bold;
+	padding:5px;
+}
+
+table.vmid, td.vmid, th.vmid
+{
+	vertical-align:middle;
+}
+
+
+li p
+{
+	margin: 10px 0px 15px 0px;
+}
+
+td p
+{
+	margin: 10px 0 10px 0;
+}
+
+.RSSicon
+{
+	vertical-align:middle;
+	padding-right:2px;
+}.intro {
+	font-size: 80%;
+}

@@ -1,0 +1,383 @@
+------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/arinzenwoye/Desktop/stata files/tobit.txt
+  log type:  text
+ opened on:   8 Apr 2016, 10:07:53
+
+. reg hrsemp lemploy i.union i.grant i.year, vce(robust)
+
+Linear regression                               Number of obs     =        390
+                                                F(5, 384)         =      14.60
+                                                Prob > F          =     0.0000
+                                                R-squared         =     0.2691
+                                                Root MSE          =     22.123
+
+------------------------------------------------------------------------------
+             |               Robust
+      hrsemp |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+     lemploy |  -4.012882   1.164519    -3.45   0.001    -6.302513   -1.723251
+     1.union |  -7.646597   1.846001    -4.14   0.000    -11.27613   -4.017061
+     1.grant |   32.82606   4.752706     6.91   0.000     23.48147    42.17064
+             |
+        year |
+       1988  |  -.5663512   2.450834    -0.23   0.817    -5.385086    4.252384
+       1989  |   4.717037       2.65     1.78   0.076    -.4932897    9.927363
+             |
+       _cons |    24.3786   4.697632     5.19   0.000      15.1423     33.6149
+------------------------------------------------------------------------------
+
+. tobit hrsemp lemploy i.union i.grant i.year, ll 
+
+Tobit regression                                Number of obs     =        390
+                                                LR chi2(5)        =     110.88
+                                                Prob > chi2       =     0.0000
+Log likelihood =  -1325.496                     Pseudo R2         =     0.0401
+
+------------------------------------------------------------------------------
+      hrsemp |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+     lemploy |  -2.957584    1.55292    -1.90   0.058     -6.01085    .0956814
+     1.union |  -11.77747   4.179006    -2.82   0.005      -19.994   -3.560943
+     1.grant |   40.30997   4.378637     9.21   0.000     31.70093      48.919
+             |
+        year |
+       1988  |   3.221392   4.138237     0.78   0.437    -4.914981    11.35777
+       1989  |   11.53014   4.005268     2.88   0.004     3.655202    19.40508
+             |
+       _cons |   8.763023   6.039392     1.45   0.148    -3.111296    20.63734
+-------------+----------------------------------------------------------------
+      /sigma |   28.98227   1.331986                       26.3634    31.60115
+------------------------------------------------------------------------------
+           132  left-censored observations at hrsemp <= 0
+           258     uncensored observations
+             0 right-censored observations
+
+. *below is the effect of a change in grants on:
+. margins, dydx(grant) predict(ystar(0,.)) // y (observed hours of training) including zeros or censored y 
+
+Average marginal effects                        Number of obs     =        390
+Model VCE    : OIM
+
+Expression   : E(hrsemp*|hrsemp>0), predict(ystar(0,.))
+dy/dx w.r.t. : 1.grant
+
+------------------------------------------------------------------------------
+             |            Delta-method
+             |      dy/dx   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+     1.grant |   29.95877   3.765396     7.96   0.000     22.57873    37.33881
+------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.
+
+. margins, dydx(grant) //for latent index ystar  (desired hours of training)
+
+Average marginal effects                        Number of obs     =        390
+Model VCE    : OIM
+
+Expression   : Linear prediction, predict()
+dy/dx w.r.t. : 1.grant
+
+------------------------------------------------------------------------------
+             |            Delta-method
+             |      dy/dx   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+     1.grant |   40.30997   4.378637     9.21   0.000       31.728    48.89194
+------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.
+
+. margins, dydx(grant) predict(e(0,.)) //for left truncated mean y (actual hours of training)
+
+Average marginal effects                        Number of obs     =        390
+Model VCE    : OIM
+
+Expression   : E(hrsemp|hrsemp>0), predict(e(0,.))
+dy/dx w.r.t. : 1.grant
+
+------------------------------------------------------------------------------
+             |            Delta-method
+             |      dy/dx   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+     1.grant |   22.37887   3.057296     7.32   0.000     16.38668    28.37106
+------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.
+
+. *OLS although inconsistent is closer to ystar (latent index)
+. tobcm //reject the null hypothesis of normality in disturbances and conclude that tobit is inconsistent stick to the l
+> inear regression model. 
+
+Conditional moment test against the null of normal errors
+
+    CM      Prob > chi2
+   82.312     0.00000
+
+. //linear regression model under normality the MLE
+. //remains consistent even if the errors are nonnormal, but the censored MLE becomes
+. //inconsistent if the errors are nonnormal 
+. gen s = (hrsemp !=0) if !missing(hrsemp)
+(81 missing values generated)
+
+. heckman hrsemp lemploy i.union i.grant i.year, select(s = lemploy i.union i.year) twostep mills(mymills)
+
+Heckman selection model -- two-step estimates   Number of obs     =        390
+(regression model with sample selection)        Censored obs      =        132
+                                                Uncensored obs    =        258
+
+                                                Wald chi2(5)      =      77.46
+                                                Prob > chi2       =     0.0000
+
+------------------------------------------------------------------------------
+             |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+hrsemp       |
+     lemploy |  -4.849645   8.224432    -0.59   0.555    -20.96924    11.26995
+     1.union |  -13.15569   11.70532    -1.12   0.261     -36.0977    9.786324
+     1.grant |   26.89113   3.971445     6.77   0.000     19.10724    34.67502
+             |
+        year |
+       1988  |   6.153182   27.23083     0.23   0.821    -47.21827    59.52463
+       1989  |   15.92105   37.97381     0.42   0.675    -58.50625    90.34835
+             |
+       _cons |   12.09543   96.12227     0.13   0.900    -176.3008    200.4916
+-------------+----------------------------------------------------------------
+s            |
+     lemploy |   .1883488   .0679058     2.77   0.006     .0552559    .3214417
+     1.union |  -.2548192   .1761203    -1.45   0.148    -.6000086    .0903702
+             |
+        year |
+       1988  |   .5462753   .1618776     3.37   0.001     .2290012    .8635495
+       1989  |   .8258298   .1661987     4.97   0.000     .5000862    1.151573
+             |
+       _cons |  -.6333476   .2547581    -2.49   0.013    -1.132664    -.134031
+-------------+----------------------------------------------------------------
+mills        |
+      lambda |   31.28397   85.72911     0.36   0.715     -136.742    199.3099
+-------------+----------------------------------------------------------------
+         rho |    0.94770
+       sigma |  33.010438
+------------------------------------------------------------------------------
+
+. ttest mymills == 0 //reject null hypothesis, correlation exists
+
+One-sample t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+ mymills |     390    .5573241     .011126    .2197216    .5354494    .5791988
+------------------------------------------------------------------------------
+    mean = mean(mymills)                                          t =  50.0919
+Ho: mean = 0                                     degrees of freedom =      389
+
+    Ha: mean < 0                 Ha: mean != 0                 Ha: mean > 0
+ Pr(T < t) = 1.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 0.0000
+
+. heckman hrsemp lemploy i.union grant i.year, select(s = lemploy union i.year)
+
+Iteration 0:   log likelihood = -1412.8292  
+Iteration 1:   log likelihood = -1383.2754  
+Iteration 2:   log likelihood = -1369.4377  
+Iteration 3:   log likelihood = -1363.1839  
+Iteration 4:   log likelihood = -1362.0035  
+Iteration 5:   log likelihood = -1359.3019  
+Iteration 6:   log likelihood =  -1358.998  (not concave)
+Iteration 7:   log likelihood = -1357.5903  
+Iteration 8:   log likelihood = -1357.3746  (backed up)
+Iteration 9:   log likelihood = -1357.2624  
+Iteration 10:  log likelihood = -1357.0221  
+Iteration 11:  log likelihood = -1356.8544  (not concave)
+Iteration 12:  log likelihood = -1356.6183  
+Iteration 13:  log likelihood = -1356.5267  
+Iteration 14:  log likelihood = -1356.4602  
+Iteration 15:  log likelihood = -1356.3858  
+Iteration 16:  log likelihood = -1356.3634  
+Iteration 17:  log likelihood = -1356.3378  
+Iteration 18:  log likelihood = -1356.3336  
+Iteration 19:  log likelihood = -1356.3273  (not concave)
+Iteration 20:  log likelihood = -1356.3229  
+Iteration 21:  log likelihood = -1356.3194  
+Iteration 22:  log likelihood = -1356.3178  
+Iteration 23:  log likelihood = -1356.3163  
+Iteration 24:  log likelihood = -1356.3152  
+Iteration 25:  log likelihood = -1356.3149  
+Iteration 26:  log likelihood = -1356.3144  
+Iteration 27:  log likelihood =  -1356.314  (not concave)
+Iteration 28:  log likelihood = -1356.3139  
+Iteration 29:  log likelihood = -1356.3137  
+Iteration 30:  log likelihood = -1356.3136  
+Iteration 31:  log likelihood = -1356.3136  
+Iteration 32:  log likelihood = -1356.3135  
+Iteration 33:  log likelihood = -1356.3133  (not concave)
+Iteration 34:  log likelihood = -1356.3133  (not concave)
+Iteration 35:  log likelihood = -1356.3133  
+Iteration 36:  log likelihood = -1356.3133  (not concave)
+Iteration 37:  log likelihood = -1356.3133  
+Iteration 38:  log likelihood = -1356.3133  
+Iteration 39:  log likelihood = -1356.3133  (not concave)
+Iteration 40:  log likelihood = -1356.3133  
+Iteration 41:  log likelihood = -1356.3133  (not concave)
+Iteration 42:  log likelihood = -1356.3132  
+Iteration 43:  log likelihood = -1356.3132  
+Iteration 44:  log likelihood = -1356.3132  (not concave)
+Iteration 45:  log likelihood = -1356.3132  
+Iteration 46:  log likelihood = -1356.3132  (not concave)
+Iteration 47:  log likelihood = -1356.3132  (not concave)
+Iteration 48:  log likelihood = -1356.3132  (not concave)
+Iteration 49:  log likelihood = -1356.3132  (not concave)
+Iteration 50:  log likelihood = -1356.3132  (not concave)
+Iteration 51:  log likelihood = -1356.3132  (not concave)
+Iteration 52:  log likelihood = -1356.3132  (not concave)
+Iteration 53:  log likelihood = -1356.3132  (not concave)
+Iteration 54:  log likelihood = -1356.3132  (not concave)
+Iteration 55:  log likelihood = -1356.3132  (not concave)
+Iteration 56:  log likelihood = -1356.3132  (not concave)
+Iteration 57:  log likelihood = -1356.3132  (not concave)
+Iteration 58:  log likelihood = -1356.3132  (not concave)
+Iteration 59:  log likelihood = -1356.3132  (not concave)
+Iteration 60:  log likelihood = -1356.3132  (not concave)
+Iteration 61:  log likelihood = -1356.3132  (not concave)
+Iteration 62:  log likelihood = -1356.3132  (not concave)
+Iteration 63:  log likelihood = -1356.3132  (not concave)
+Iteration 64:  log likelihood = -1356.3132  (not concave)
+--Break--
+r(1);
+
+end of do-file
+
+--Break--
+r(1);
+
+. tab lemploy
+
+log(employ) |      Freq.     Percent        Cum.
+------------+-----------------------------------
+   1.386294 |          1        0.23        0.23
+   1.609438 |          8        1.82        2.05
+   1.791759 |         13        2.95        5.00
+    1.94591 |          5        1.14        6.14
+   2.079442 |          8        1.82        7.95
+   2.197225 |          7        1.59        9.55
+   2.302585 |          9        2.05       11.59
+   2.397895 |          5        1.14       12.73
+   2.484907 |         13        2.95       15.68
+   2.564949 |         10        2.27       17.95
+   2.639057 |         13        2.95       20.91
+    2.70805 |         19        4.32       25.23
+   2.772589 |         11        2.50       27.73
+   2.833213 |          7        1.59       29.32
+   2.890372 |         12        2.73       32.05
+   2.944439 |          6        1.36       33.41
+   2.995732 |         18        4.09       37.50
+   3.044523 |          6        1.36       38.86
+   3.091043 |          4        0.91       39.77
+   3.135494 |          6        1.36       41.14
+   3.178054 |          8        1.82       42.95
+   3.218876 |         12        2.73       45.68
+   3.258096 |          3        0.68       46.36
+   3.295837 |          6        1.36       47.73
+   3.332205 |          5        1.14       48.86
+   3.367296 |          1        0.23       49.09
+   3.401197 |         17        3.86       52.95
+   3.433987 |          2        0.45       53.41
+   3.465736 |          3        0.68       54.09
+--Break--
+r(1);
+
+. use newdat4, clear 
+
+. tab ucs cgpa
+
+           |                                           GPA
+       ucs | 2.0 - 2.2  2.25 - 2.  2.5 - 2.7  2.75 - 2.  3.0 - 3.2  3.25 - 3.  3.5 - 3.7  3.75 - 3. |     Total
+-----------+----------------------------------------------------------------------------------------+----------
+         0 |         5         14         31         97        150        158        203        206 |       899 
+         1 |        13         44         95        279        468        562        634        539 |     2,673 
+-----------+----------------------------------------------------------------------------------------+----------
+     Total |        18         58        126        376        618        720        837        745 |     3,572 
+
+
+           |    GPA
+       ucs |         4 |     Total
+-----------+-----------+----------
+         0 |        35 |       899 
+         1 |        39 |     2,673 
+-----------+-----------+----------
+     Total |        74 |     3,572 
+
+
+. tab ucs cgpa, missing 
+
+           |                                           GPA
+       ucs | 2.0 - 2.2  2.25 - 2.  2.5 - 2.7  2.75 - 2.  3.0 - 3.2  3.25 - 3.  3.5 - 3.7  3.75 - 3. |     Total
+-----------+----------------------------------------------------------------------------------------+----------
+         0 |         5         14         31         97        150        158        203        206 |       966 
+         1 |        13         44         95        279        468        562        634        539 |     2,837 
+         . |         1          1          1         11         11         14         22         10 |       262 
+-----------+----------------------------------------------------------------------------------------+----------
+     Total |        19         59        127        387        629        734        859        755 |     4,065 
+
+
+           |          GPA
+       ucs |         4          . |     Total
+-----------+----------------------+----------
+         0 |        35         67 |       966 
+         1 |        39        164 |     2,837 
+         . |         1        190 |       262 
+-----------+----------------------+----------
+     Total |        75        421 |     4,065 
+
+
+. tab cgpa
+
+        GPA |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ 2.0 - 2.24 |         19        0.52        0.52
+2.25 - 2.49 |         59        1.62        2.14
+ 2.5 - 2.74 |        127        3.49        5.63
+2.75 - 2.99 |        387       10.62       16.25
+ 3.0 - 3.24 |        629       17.26       33.51
+3.25 - 3.49 |        734       20.14       53.65
+ 3.5 - 3.74 |        859       23.57       77.22
+3.75 - 3.99 |        755       20.72       97.94
+          4 |         75        2.06      100.00
+------------+-----------------------------------
+      Total |      3,644      100.00
+
+. tab offer
+
+      offer |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |      1,752       51.82       51.82
+          1 |      1,629       48.18      100.00
+------------+-----------------------------------
+      Total |      3,381      100.00
+
+. graph bar (mean) offer
+
+. histogram cgpa
+(bin=35, start=1, width=.22857143)
+
+. histogram cgpa, frequency
+(bin=35, start=1, width=.22857143)
+
+. graph save Graph "/Users/arinzenwoye/Desktop/stata files/graphtest1.gph"
+(file /Users/arinzenwoye/Desktop/stata files/graphtest1.gph saved)
+tab cgpa
+
+        GPA |      Freq.     Percent        Cum.
+------------+-----------------------------------
+ 2.0 - 2.24 |         19        0.52        0.52
+2.25 - 2.49 |         59        1.62        2.14
+ 2.5 - 2.74 |        127        3.49        5.63
+2.75 - 2.99 |        387       10.62       16.25
+ 3.0 - 3.24 |        629       17.26       33.51
+3.25 - 3.49 |        734       20.14       53.65
+ 3.5 - 3.74 |        859       23.57       77.22
+3.75 - 3.99 |        755       20.72       97.94
+          4 |         75        2.06      100.00
+------------+-----------------------------------
+      Total |      3,644      100.00
+
+. histogram offer, frequency
+(bin=35, start=0, width=.02857143)
+
+. exit, clear

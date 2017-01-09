@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0050)https://www.ssc.wisc.edu/sscc/pubs/stata_prog1.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__ssc_wisc_edu"><!-- InstanceBegin template="/Templates/DocTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Stata Programming Essentials</title>
+<!-- InstanceEndEditable -->
+ <link rel="shortcut icon" href="https://www.ssc.wisc.edu/sscc/assets/FavIcon/favicon.ico">
+<link href="./Stata Programming Essentials_files/Publication.css" rel="stylesheet" media="screen" type="text/css">
+<link href="./Stata Programming Essentials_files/Print.css" rel="stylesheet" type="text/css" media="print">
+<link rel="alternate" type="application/rss+xml" title="SSCC Info" href="http://www.ssc.wisc.edu/sscc/wp/?feed=rss2&amp;cat=-12">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+    <script type="text/javascript" async="" src="./Stata Programming Essentials_files/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26623692-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body data-gr-c-s-loaded="true">
+<div id="OuterWrapper"><!-- #BeginLibraryItem "/Library/Header.lbi" --><meta http-equiv="Content-Type" table="text/html; charset=utf-8"><div id="Header">
+        <div id="HeaderImage"> <a href="https://www.ssc.wisc.edu/sscc/pubs/stata_prog1.htm#table"><img src="./Stata Programming Essentials_files/main_header.jpg" width="800" height="130" alt="SSCC - Social Science Computing Cooperative" border="0" usemap="#Map" title="SSCC - Social Science Computing Cooperative"></a>
+          <map name="Map">
+            <area shape="rect" coords="5,24,298,120" href="https://www.ssc.wisc.edu/sscc/" alt="SSCC Home Page">
+          </map>
+          
+</div>
+        <div id="HeaderNav">
+ • <a id="lnkHome" href="https://www.ssc.wisc.edu/sscc/" title="HOME">HOME</a> • <a href="https://www.ssc.wisc.edu/sscc/winstat.htm" title="Learn How to Log In to Winstat">WINSTAT</a> • <a href="https://webmail.ssc.wisc.edu/" title="Read your SSCC email on the web">WEBMAIL</a> •  <a href="http://www.ssc.wisc.edu/sscc/helpdesk.htm" title="Contact the SSCC Help Desk">HELP DESK</a> • <a href="http://www.ssc.wisc.edu/sscc/statconsult.htm" title="SSCC Statistical Consulting">STAT CONSULTING</a> •
+<span style="visibility:hidden">&lt;%@ include file="/authenticate/logoutlink.jsp" %&gt;</span></div>
+        <div id="HeaderSearch"><form action="https://www.ssc.wisc.edu/sscc/results.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="009976823638626595604:fyieafx208s">
+    <input type="hidden" name="cof" value="FORID:11">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="text" id="SearchInput" class="SearchBox" title="Search" name="q" value="Search" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search&#39;;}" onfocus="if (this.value == &#39;Search&#39;) {this.value = &#39;&#39;;}" size="31">
+ 
+  </div>
+</form></div>
+
+    </div><!-- #EndLibraryItem --><div id="MainWrapper">
+<div id="RightWrapper">
+            <div id="RightInnerWrapper">
+                <div id="RightHeader">
+                  <div id="RightHeaderContent"><a href="https://www.ssc.wisc.edu/sscc/pubs/home.htm">SSCC Knowledge Base</a></div>
+                </div>
+                <div class="Clear"></div>
+                <div id="RightContent"><h1><a name="content" id="content"></a><!-- InstanceBeginEditable name="Title" -->
+                  Stata Programming Essentials<!-- InstanceEndEditable --></h1>
+                <!-- InstanceBeginEditable name="Text" -->
+                <p>Ever needed to do the same thing to ten different variables and wished that you didn't have to write it out ten times? If so, then this article is for you. If not, someday you will—so you might as well keep reading anyway.</p>
+                <p>Stata has all the tools required to write very sophisticated programs, but knowing just a few of them allows you to make everyday do files shorter and more efficient. This article will focus on those programming tools that, in our experience, anyone who uses Stata heavily will eventually want to learn. To benefit from this article you'll need a solid understanding of basic Stata syntax, such as you can get from our <a href="https://www.ssc.wisc.edu/sscc/pubs/sfr-intro.htm">Stata for Researchers</a> series. The primary intended audience is Stata users with no other programming experience. If you've done a lot of Stata programming already and are looking to expand your "bag of tricks" check out <a href="https://www.ssc.wisc.edu/sscc/pubs/stata_prog2.htm">Stata Programming Tools</a>.                </p>
+                <p>This article is best read at the computer with Stata running. Typing the commands in the examples yourself will help you notice and retain all the details, and prepare you to write your own code.</p>
+                <h2><a name="Macros" id="Macros"></a>Macros</h2>
+                <p>A Stata macro is a box you  put  text in. You then use what's in the box in subsequent commands. (The real trick is getting a single command to run multiple times with a different bit of text in the box each time--we'll get there).</p>
+                <p>The macros we'll use are "local" macros. If you're familiar with global and local variables from other languages, Stata's local macros are local in the same way. If not, just trust us that local macros are the right ones to use.</p>
+                <p>The command to define a local macro is:</p>
+                <p class="InputCode">local <span class="Parameter">name</span> <span class="Parameter">value</span></p>
+                <p>For example:</p>
+                <p class="InputCode">local x 1</p>
+                <p>This creates a local macro called <span class="InputCode">x</span> and puts the character '<span class="InputCode">1</span>' in it (not the value 1 as in "one unit to the right of zero on the number line"). To use a macro, you put its name in a command, surrounded by a particular set of quotation marks:</p>
+                <p class="InputCode">display `x'</p>
+                <p>The quote before the <span class="InputCode">x</span> is the left single quote. It is found in the upper left corner of the keyboard, under the tilde (<span class="InputCode">~</span>). The quote after the <span class="InputCode">x</span> is the right single quote. It is found under the double quotation mark (<span class="InputCode">"</span>) on the right side of the keyboard.</p>
+                <p>Macros are handled by a  macro processor that examines commands before passing them to Stata proper. When it sees a macro (denoted by that particular set of quotation marks) it replaces the  macro with its table. Thus what Stata proper saw was:</p>
+                <p class="InputCode">display 1</p>
+                <p>Now try a slightly more complicated macro:</p>
+                <p class="InputCode">local x 2+2<br>
+                  display `x'
+                </p>
+                <p>The result is <span class="MenuOutput">4</span>, but that's because the display command acts like a calculator. The command Stata saw was:</p>
+                <p class="InputCode">display 2+2</p>
+                <p>so it evaluated <span class="InputCode">2+2</span> and gave you the answer. If you want <span class="InputCode">display</span> to put something on the screen without evaluating it,  put it in quotes. Then <span class="InputCode">display</span> will treat it like a string.</p>
+                <p class="InputCode">display "`x'"</p>
+                <p>gives the result <span class="MenuOutput">2+2</span>. But consider what happened before you put it in quotes: your macro contained a working bit of Stata code which Stata happily executed when you used it. In fact Stata proper didn't know or care that <span class="InputCode">2+2</span> came from a macro. This feature allows you to use macros absolutely anywhere, even in macro definitions.</p>
+                <h3><a name="StoringResultsinMacros" id="StoringResultsinMacros"></a>Storing Results in Macros</h3>
+                <p>If you want to put the result of a calculation in a macro, put an equals sign after the macro name:</p>
+                <p class="InputCode">local x=2+2<br>
+                display "`x'"                </p>
+                <p>If the <span class="InputCode">local</span> command contains an equals sign, Stata will evaluate what follows before putting it in the macro. Now <span class="InputCode">x</span> really does contain <span class="InputCode">4</span> and not <span class="InputCode">2+2</span> no matter how you display it.</p>
+                <h3><a name="MacroExpressions" id="MacroExpressions"></a>Macro Expressions</h3>
+                <p>Stata's macro processor can evaluate Stata expressions; i.e. any formula you could put after the equals sign in a <span class="InputCode">generate</span> or <span class="InputCode">replace</span> command (but not <span class="InputCode">egen</span>). The syntax is:</p>
+                <p class="InputCode">`=<span class="Parameter">expression</span>'</p>
+                <p>where <span class="Parameter">expression</span> is the expression to be evaluated. Try:</p>
+                <p class="InputCode">display "`=2+2'"</p>
+                <p>The result is <span class="MenuOutput">4</span>, but <span class="InputCode">display</span> didn't calculate it (the quotes prevent that). Instead, the equals sign before <span class="InputCode">2+2</span> told the macro processor to evaluate that expression and put the result in the code, so what Stata proper saw was <span class="InputCode">display "4"</span>. Another common use is <span class="InputCode">`=_N'</span>, which will be the number of observations in the current data set (and can be used in places where <span class="InputCode">_N</span> by itself can't).</p>
+<p> Macro expressions--and macros in general--can contain other macros. Try:</p>
+<p class="InputCode">display "`=`x'-1'"</p>
+<p>This tells the macro processor to subtract one from the value of the macro x and then place the result in the code. This can be extremely useful: for example, if you had a macro <span class="InputCode">`year'</span> containing the current year, <span class="InputCode">`=`year'-1'</span> would be the year before the current year.</p>
+<h3><a name="UndefinedMacros" id="UndefinedMacros"></a>Undefined Macros</h3>
+                <p>Unfortunately, using a macro you haven't defined doesn't generate an error message. Stata's macro processor just replaces it with nothing:</p>
+                <p class="InputCode">display `y'</p>
+                <p>Gives the same result as:</p>
+                <p class="InputCode">display </p>
+                <p>This can cause headaches: if you mistype a macro's name you'll probably get a generic syntax error with no indication that a macro is the cause of the problem. Even worse, in some circumstances the command will still work but give incorrect results. Be very careful to type the names of macros properly.</p>
+                <h3><a name="SomeUsesforMacrosOutsideofLoops" id="SomeUsesforMacrosOutsideofLoops"></a>Some Uses for Macros Outside of Loops</h3>
+                <p>The main reason for learning about macros is so you can use them in loops. But there are times when using them all by themselves can make complex code easier to read.</p>
+                <p>Suppose you need to run a large number of regressions of various types, but they all include a fixed set of control variables. Consider putting the list of control variables in a macro:</p>
+                <p class="InputCode">local controlVars age sex occupation location maritalStatus hasChildren</p>
+                <p>This will make the regression commands shorter:</p>
+                <p class="InputCode">reg income education `controlVars'<br>
+                  logit 
+                employed education `controlVars'</p>
+                <p>Now suppose you frequently work with  subsamples of your data set. You can define macros for them as well:</p>
+                <p class="InputCode">local blackWoman race==1 &amp; female<br>
+                local hispMan race==2 &amp; !female<br>
+                reg income education `controlVars' if `blackWoman'<br>
+				logit employed education `controlVars' if `hispMan'</p>
+                <p>The point here is not to save keystrokes, but to make the code more clear. Using macros hides the details of what the control variables are or how a black woman can be identified in this data set and helps you focus on what you're trying to do. Not having to type out those details every time also removes an opportunity for error. You can  make changes more quickly too: if you need to add a control variable you only have to add it to the definition of the <span class="InputCode">controlVars</span> macro rather than adding it to each regression command.</p>
+                <p> Saving keystrokes is a nice side effect, but resist the temptation to make your code less clear in the name of making it shorter. Taking a few minutes to type out clear code is far more efficient than spending hours debugging code that's short but hard to understand.</p>
+                <h2><a name="ForLoops" id="ForLoops"></a>For Loops</h2>
+                <p>A <span class="InputCode">foreach</span> loop takes a list and then executes a command or set of commands for each element of the list. The element currently being worked on is stored in a macro so you can refer to it in the commands. The list to be looped over can be a generic list  containing  text, or there are several kinds of  structured lists (we'll only discuss <em>varlists</em>).</p>
+                <p>The syntax for a <span class="InputCode">foreach</span> loop with a generic list is:</p>
+                <p class="InputCode">foreach <span class="Parameter">macro</span> in <span class="Parameter">list</span> {<br>
+                  <span class="indent3"><span class="Parameter">command(s)</span></span><br>
+                  }</p>
+                <p>As a very simple example:</p>
+                <p class="InputCode">foreach color in red blue green {<br>
+                <span class="indent3">display "`color'"</span><br>}</p>
+                <p>Here, <span class="InputCode">color</span> is the name of the macro that will contain the list elements. <span class="InputCode">red blue green</span> is the list itself. Stata breaks the list into elements wherever it sees spaces, so this list contains three elements: <span class="InputCode">red</span>, <span class="InputCode">blue,</span> and <span class="InputCode">green</span>. The left curly bracket (<span class="InputCode">{</span>) marks the beginning of the loop and must be at the end of the <span class="InputCode">foreach</span> command. The right curly bracket (<span class="InputCode">}</span>) marks the end of the loop and must go on its own line. If you type this in interactive Stata the Results window adds line numbers for the commands inside the loop, but you do not need to type them. Note how nothing is actually executed until you type the right curly bracket, and then Stata runs the whole thing. When it does you'll get the following output:</p>
+                <p class="MenuOutput">red<br>
+                  blue<br>
+                green</p>
+                <p></p>
+                <p>Stata begins by analyzing your list and identifying the elements it contains. It then puts the first element (<span class="InputCode">red</span>) in the loop's macro (<span class="InputCode">color</span>) and executes the command in the loop. Given the tables of <span class="InputCode">color</span>, the command becomes <span class="InputCode">display "red"</span> and <span class="MenuOutput">red</span> is printed on the screen. Stata then puts the second element in the macro and runs the command again, printing <span class="MenuOutput">blue</span> on the screen. It then repeats the process for <span class="MenuOutput">green</span>, and when that's done Stata realizes the list is out of elements and the <span class="InputCode">foreach</span> loop is  complete.</p>
+                <p>Throughout this article you'll see that commands which are inside a loop are indented. This makes the loop's structure visually obvious and we highly recommend you do the same when writing do files. All you need to do is press <span class="InputCode">Tab</span> before you begin the first line of the loop. Stata's do file editor and any other text editor suitable for programming will indent subsequent lines automatically. (There's no need to worry about indenting when working interactively, but in real work it's very rare to use loops interactively.)</p>
+                <p>You can use a generic list to loop over many different kinds of things: variables, values, files, subsamples, subscripts, anything you can describe using text. If an element needs to contain spaces, put it in quotes.</p>
+                <h3><a name="LoopingoverVariables" id="LoopingoverVariables"></a>Looping over Variables</h3>
+                <p>The most common thing to loop over is variables. For example, suppose you wanted to regress several different dependant variables on the same independent variables. The following code does so, using the automobile example data set that comes with Stata:</p>
+                <p class="InputCode">sysuse auto<br>
+                foreach yvar in mpg price displacement {<br>
+                <span class="indent3">reg `yvar' foreign weight</span><br>
+                }
+                </p>
+                <h3><a name="LoopingoverPartsofVariableNames" id="LoopingoverPartsofVariableNames"></a>Looping over Parts of Variable Names</h3>
+                <p>Consider the following data set:</p>
+                <p class="InputCode">use http://www.ssc.wisc.edu/sscc/pubs/files/stata_prog/months.dta</p>
+                <p>It contains a fictitious (and not terribly plausible) data set of people and their incomes over twelve months. This is panel data in the wide form, so there are twelve income variables: <span class="InputCode">incJan</span>, <span class="InputCode">incFeb</span>, <span class="InputCode">incMar</span>, etc. Suppose you want to create a corresponding set of indicator variables for whether the person had any income in that month. Creating one of them is straightforward:</p>
+                <p class="InputCode">gen hadIncJan=(incJan&gt;0) if incJan&lt;.</p>
+                <p>but creating all twelve in the same way would be tedious.</p>
+                <p> (If you checked, you'd find that this data set does not have any missing values so excluding them with <span class="InputCode">if incJan&lt;.</span> is not strictly necessary. Consider it a reminder to always think about missing values when creating such indicator variables.)</p>
+                <p>You can create all twelve indicator variables quickly and easily with a <span class="InputCode">foreach</span> loop:</p>
+                <p class="InputCode">foreach month in Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec {<br>
+                  <span class="indent3">gen hadInc`month'=(inc`month'&gt;0) if inc`month'&lt;.</span><br>
+}</p>
+                <p>This sets up a generic list containing the months, and then uses those months as parts of variable names.</p>
+                <p>Note the process we used to create this loop: first we figured out the command we'd use for a single element of the list and then changed it to use macros. This is a good habit whenever you need to write non-trivial code involving macros.</p>
+                <h3><a name="LoopingoverVarlists" id="LoopingoverVarlists"></a>Looping over Varlists</h3>
+                <p>While generic lists can contain variable names, you have to type out all the names individually. If you tell Stata that the list you want to loop over is an official Stata <em>varlist</em> you can use standard <em>varlist</em> shortcuts, like <span class="InputCode">x*</span> for all variables that begin with <span class="InputCode">x</span> and <span class="InputCode">x-z</span> for all the variables from <span class="InputCode">x</span> to <span class="InputCode">z</span>. To review <em>varlist</em> syntax, see the appropriate section in  <a href="https://www.ssc.wisc.edu/sscc/pubs/sfr-syntax.htm#Varlists">Stata for Researchers</a>.</p>
+                <p>The syntax for a <span class="InputCode">foreach</span> loop over a <em>varlist</em> is as follows:</p>
+                <p class="InputCode">foreach <span class="Parameter">macro</span> of varlist <span class="Parameter">vars</span> {</p>
+                <p>Note that while the <span class="InputCode">foreach</span> syntax for a generic list contains <span class="InputCode">in</span>, the syntax for a structured list has <span class="InputCode">of</span>. Stata uses the <span class="InputCode">in</span> or <span class="InputCode">of</span> to determine whether the next word is the first element of the list or a type of list.</p>
+                <p>Researchers occasionally receive data sets created in other programs where the variable names are  in upper case letters. Since Stata actually cares about case, upper case variable names can be tiresome to work with. Stata recently gave the <span class="InputCode">rename</span> command the ability to convert names to lower case:</p>
+                <p class="InputCode">rename *, lower</p>
+                <p>But this such a great example that let's do it with a <span class="InputCode">foreach</span> loop over a <em>varlist</em> anyway:</p>
+                <p class="InputCode">foreach oldname of varlist * {<br>
+                  <span class="indent3">local newname=lower("`oldname'")</span><br>
+                  <span class="indent3">rename `oldname' `newname'</span><br>
+                }</p>
+                <p>The asterisk (<span class="InputCode">*</span>) all by itself matches all variables, so  the list <span class="InputCode">foreach</span> is to loop over contains all the variables in the current data set. The <span class="InputCode">lower()</span> function takes a string, in this case the tables of the macro <span class="InputCode">oldname</span>, and converts it to lower case. Note the use of the equals sign in the <span class="InputCode">local</span> command that defines <span class="InputCode">newname</span>, so that <span class="InputCode">lower("`oldname'")</span> is evaluated and the result is stored.</p>
+                <h3><a name="LoopingoverNumbers" id="LoopingoverNumbers"></a>Looping over Numbers</h3>
+                <p>A <span class="InputCode">forvalues</span> loop (frequently abbreviated <span class="InputCode">forval</span>) loops over numbers. Rather than defining a list, you define a range of numbers.</p>
+                <p>By far the most common range consists of a starting number and an ending number, and Stata assumes it should count by ones between them. The syntax is simply:</p>
+                <p class="InputCode">forvalues <span class="Parameter">macro</span>=<span class="Parameter">start</span>/<span class="Parameter">end</span> {</p>
+                <p>For example:</p>
+                <p class="InputCode">forvalues i=1/5 {<br>
+                  <span class="indent3">display `i'</span><br>
+                  }
+                </p>
+                <p>gives the output:</p>
+                <p class="MenuOutput">1<br>
+                  2<br>
+                  3<br>
+                  4<br>
+                  5                </p>
+                <p>If you need to count in a different way, type <span class="InputCode">help forvalues</span> to see more options.</p>
+                <p>Consider the following data set:</p>
+                <p class="InputCode">use http://www.ssc.wisc.edu/sscc/pubs/files/stata_prog/years.dta</p>
+                <p>This data set is very similar to the data set of monthly incomes we examined earlier, but it contains yearly incomes from 1990 to 2010. Your task is again to create an indicator for whether a person had any income in a given year. Using <span class="InputCode">forvalues</span> this is very easy to do:</p>
+                <p class="InputCode">forvalues year=1990/2010 {<br>
+                  <span class="indent3">gen hadInc`year'=(inc`year'&gt;0) if inc`year'&lt;.</span><br>
+                }</p>
+                <p>This would be more difficult if the years did not include the century (i.e. <span class="InputCode">90</span> instead of <span class="InputCode">1990</span>) because Stata thinks <span class="InputCode">100</span> should come after <span class="InputCode">99</span> and not <span class="InputCode">00</span>. If your data include such years, consider adding the century before doing any serious work with it.</p>
+                <h3><a name="LoopingoverValues" id="LoopingoverValues"></a>Looping over Values and levelsof</h3>
+                <p>Sometimes you need to loop over the values a particular variable takes on. Consider the following data set:</p>
+                <p class="InputCode">use http://www.ssc.wisc.edu/sscc/pubs/files/stata_prog/vals.dta</p>
+                <p>This contains  data on the race, income, age and education category of  a set of fictional people. Suppose you want to regress <span class="InputCode">income</span> on <span class="InputCode">age</span> and <span class="InputCode">education</span>, but believe that the effects of age and education may be different for people of different races. One approach (probably not the best one) would be to run a separate regression for the people of each race. Normally you could do that with:</p>
+                <p class="InputCode">by race: regress income age i.education</p>
+                <p>(The construction <span class="InputCode">i.education</span> tells Stata that <span class="InputCode">education</span> is a factor or categorical variable and should be converted into a set of indicators. See the <a href="http://www.ssc.wisc.edu/sscc/pubs/sfr-syntax.htm#FactorVariables">section on factor variables in Stata for Researchers</a> if you'd like to review factor variable syntax.)</p>
+                <p>However, this is fictional survey data and you need to correct for the survey design in running regressions. If you're not familiar with Stata's survey commands, that means the following:</p>
+                <ol>
+                  <li>The survey design is described using the <span class="InputCode">svyset</span> (survey set) command. This data set has primary sampling units given by the variable <span class="InputCode">psu</span> and probability weights given by the variable <span class="InputCode">weight</span>. The corresponding command <span class="InputCode">svyset</span> command (which has already been run so you don't need to) is:<br>
+                  <span class="InputCode">svyset psu [pweight=weight]</span></li>
+                  <li>To have Stata correct for those weights in estimation commands, add the <span class="InputCode">svy:</span> prefix, for example:<br>
+<span class="InputCode">svy: regress income age i.education</span></li>
+                  <li>You can't use the standard <em>if</em> syntax with survey data or the weights may not be applied correctly. Instead, use the <span class="InputCode">subpop()</span> option of <span class="InputCode">svy:</span>, for example:<br>
+                  <span class="InputCode">svy, subpop(if race==1): regress income age i.education</span></li>
+                  <li><span class="InputCode">by:</span> can't be used with <span class="InputCode">svy:</span></li>
+                </ol>
+                <p>Point #4 means you can't run your regression for all races using <span class="InputCode">by:</span>, but you can do it with a loop. All <span class="InputCode">by:</span> does is identify the values of <span class="InputCode">race</span> and then loop over them, and at this point you know how to do that yourself (though <span class="InputCode">by:</span> is faster when you can use it). The <span class="InputCode">race</span> variable takes on the values one, two and three, so an appropriate loop is:</p>
+                <p class="InputCode">forvalues race=1/3 {<br>
+                  <span class="indent3">svy, subpop(if race==`race'): reg income age i.education</span><br>
+                  }</p>
+                <p>What if you had a fourth race, and its number were nine ("Other") rather than four? You could simply recode it and make it four. But if that's not a good idea for your project, you'll have to switch to the less structured <span class="InputCode">foreach</span> loop:</p>
+                <p class="InputCode">foreach race in 1 2 3 9 {<br>
+                  <span class="indent3">svy, subpop(if race==`race'): reg income age i.education</span><br>
+                  }</p>
+                <p>On the other hand, it's not unusual to have to loop over dozens or even hundreds of values, or not to know ahead of time what values a variable takes on. In that case you can let the <span class="InputCode">levelsof</span> command identify them for you and put them in a macro. The syntax is:</p>
+                <p class="InputCode">levelsof <span class="Parameter">variable</span>, local(<span class="Parameter">macro</span>)</p>
+                <p>For example,</p>
+                <p class="InputCode">levelsof race, local(races)</p>
+                <p>will list all the values of the variable <span class="InputCode">race</span> and  store them in a macro called <span class="InputCode">races</span>. You can then loop over all of them with:</p>
+                <p class="InputCode">foreach race in `races' {<br>
+                  <span class="indent3">svy, subpop(if race==`race'): reg income age i.education</span><br>
+                  }</p>
+                <p>However, this situation is common enough that Stata wrote special code for parsing macros into lists for looping. The syntax is:</p>
+                <p class="InputCode">foreach race of local races {<br>
+                  <span class="indent3">svy, subpop(if race==`race'): reg income age i.education</span><br>
+                  }</p>
+                <p>Note that <span class="InputCode">races</span> is not in the usual macro quotes: the whole point of this construction is to bypass the regular macro processor in favor of code that's faster in the context of loops. It makes a very small difference, but if you do enough looping it will add up.</p>
+                <p>One feature you'll miss from <span class="InputCode">by:</span> is the text in the output telling you which by group is currently being worked on, but you can add it yourself. The following version of the loop adds a <span class="InputCode">display</span> command that inserts two blank lines and then prints the current value of the <span class="InputCode">race</span> macro before running the regression:</p>
+                <p class="InputCode">foreach race of local races {<br>
+                  <span class="indent3">display _newline(2) "Race=`race'"</span><br>
+                  <span class="indent3">svy, subpop(if race==`race'): reg income age i.education</span><br>
+                  }</p>
+                <p>Using <span class="InputCode">display</span> to print out the value of a macro at a given point in your program is also a very useful tool for debugging.</p>
+                <p>Keep in mind that this was just an example. A better way to examine the effect of <span class="InputCode">race</span> would probably be to interact race with  the other variables. The <a href="http://www.ssc.wisc.edu/sscc/pubs/sfr-syntax.htm#FactorVariables">new syntax for factor variables and interactions</a> makes this very easy:</p>
+                <p class="InputCode">svy: regress income i.race##(c.age i.education)</p>
+                <p>This model contains all the previous models--if you're new to regressions that include interactions, figuring out why that is might be a good exercise.</p>
+                <h2><a name="NestedLoops" id="NestedLoops"></a>Nested Loops</h2>
+                <p>The commands contained in a loop can include other loops:</p>
+                <p class="InputCode">forval i=1/3 {<br>
+                  <span class="indent3">forval j=1/3 {</span><br>
+                  <span class="indent3"><span class="indent3">display "`i',`j'"</span></span><br>
+                  <span class="indent3">}</span><br>
+                }</p>
+                <p>This code creates the following output:</p>
+                <p><span class="MenuOutput">1,1<br>
+                1,2<br>
+                1,3<br>
+                2,1<br>
+                2,2<br>
+                2,3<br>
+                3,1<br>
+                3,2<br>
+                3,3</span><br>
+                </p>
+                <p>The inner loop (the one that uses <span class="InputCode">j</span>) is executed three times, once for each value of <span class="InputCode">i</span>. Thus the <span class="InputCode">display</span> command runs a total of nine times. Note how the <span class="InputCode">display</span> command is indented twice: once because it is part of the <span class="InputCode">i</span> loop and once because it is part of the <span class="InputCode">j</span> loop. When you start working with nested loops it's even more important that you can easily tell what each loop contains.</p>
+                <p>Consider one final data set:</p>
+                <p class="InputCode">use http://www.ssc.wisc.edu/sscc/pubs/files/stata_prog/monthyear.dta</p>
+                <p>This contains monthly income data, but for the period 1990-2010. The variable names are in the form <span class="InputCode">incJan1990</span>, <span class="InputCode">incFeb1990</span>, etc. To generate a set of corresponding indicators you need to loop over both the months and the years:</p>
+                <p class="InputCode">forval year=1990/2010 {<br>
+                  <span class="indent3">foreach month in Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec {</span><br>
+                  <span class="indent3"><span class="indent3">gen hadInc`month'`year'=(inc`month'`year'&gt;0) if inc`month'`year'&lt;.</span></span><br>
+                  <span class="indent3">}</span><br>
+}</p>
+                <p>This is certainly workable, but somewhat cumbersome. It would be especially awkward if you were interested in lags, leads, or changes over time: you'd need code to tell Stata that the month before January 1991 is December 1990. For most purposes it's easier if time periods are simply numbered sequentially. In this case January 1990 would be period 1, December 1990 would be period 12 and January 1991 period 13. Fortunately it's fairly easy to switch:</p>
+                <p class="InputCode">local period 1<br>
+                  forval year=1990/2010 {<br>
+                  <span class="indent3">foreach month in Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec {</span><br>
+                  <span class="indent3"><span class="indent3">rename inc`month'`year' inc`period'</span></span><br>
+                  <span class="indent3"><span class="indent3">rename hadInc`month'`year' hadInc`period'</span></span><br>
+                  <span class="indent3"><span class="indent3">local period=`period'+1</span></span><br>
+                  <span class="indent3">}</span><br>
+}</p>
+                <p>The macro <span class="InputCode">period</span> is used as a counter. It starts out set to <span class="InputCode">1</span>, and thus as the nested loops begin <span class="InputCode">incJan1990</span> is renamed <span class="InputCode">inc1</span> (and similarly <span class="InputCode">hadIncJan1990</span> to <span class="InputCode">hadInc1</span>). The command <span class="InputCode">local period=`period'+1</span> increases <span class="InputCode">period</span> by one: once the macro processor is done with it Stata proper sees <span class="InputCode">local period=1+1</span>. That completes the inner loop, so <span class="InputCode">month</span> is changed to <span class="InputCode">Feb</span>, and <span class="InputCode">incFeb1990</span> is renamed to <span class="InputCode">inc2</span>. The <span class="InputCode">period</span> macro is increased again (Stata proper now sees <span class="InputCode">local period=2+1</span>), <span class="InputCode">month</span> is set to <span class="InputCode">Mar</span>, <span class="InputCode">incMar1990</span> is renamed to <span class="InputCode">inc3</span>, and so forth until all 252 months are converted. (Note that 1990 to 2010 inclusive is 21 years.)</p>
+                <p>In making this conversion you lose the ability to look at a variable and know immediately what calendar month it describes. But it's much easier to loop over. The nested loops can be replaced with:</p>
+                <p class="InputCode">forvalues period=1/252 {</p>
+                <h2><a name="TheImportanceofNamingConventions" id="TheImportanceofNamingConventions"></a>The Importance of Naming Conventions</h2>
+                <p>The variable name <span class="InputCode">incJan1990</span> contains three components: the thing being observed (income) and  the month and year in which it is observed. The loops we wrote depend on the variable names describing all three in a consistent way: they would fail if the data set contained <span class="InputCode">incJan1990</span> along with <span class="InputCode">incomeJan1991</span>, <span class="InputCode">incjan1992</span>, <span class="InputCode">incJanuary1993</span> or <span class="InputCode">incJan94</span>. In the real world such things are not unusual. Data sets from surveys are a particular challenge because their variable names often come from the form of the questionnaire rather than the information they contain. Taking the time to rename your variables in a way that makes sense to you is a good idea at the beginning of any project, but if you'll be using loops it's vital that you create and apply a consistent naming convention for variables.</p>
+                <h2>Take Advantage of Stata's Automatic Loops</h2>
+<p>Now that you've learned how to use loops, it can be tempting to use them for everything. Keep in mind that most Stata commands are already loops (do something to observation one, then do it to observation two, etc.) and those loops are much faster than any <span class="InputCode">foreach</span> or <span class="InputCode">forvalues</span> loop. For example, the following uses <span class="InputCode">forvalues</span> to loop over all the observations in the data set and set the value of <span class="InputCode">y</span> for each observation to the value of <span class="InputCode">x</span> for that observation:</p>
+                <p class="InputCode">                gen y=.<br>
+                forvalues i=1/`=_N' {<br>
+                <span class="indent3">replace y=x[`i'] if _n==`i'</span><br>
+                }</p>
+                <p>but you'll get the exact same result far more quickly and easily with:</p>
+                <p class="InputCode">gen y=x</p>
+                <p>Occasionally someone finds a task that really does requires explicit looping over observations, but it's rare.</p>
+                <p>Clever programming can sometimes turn other loops into the standard loop over observations, making <span class="InputCode">foreach</span> or <span class="InputCode">forvalues</span> unnecessary. For example, reshaping wide form panel data into long form will eliminate the need for many loops.</p>
+                <p>Go back to the original 12 months of income data:</p>
+                <p class="InputCode">use http://www.ssc.wisc.edu/sscc/pubs/files/stata_prog/months.dta</p>
+                <p>Recall that we created <span class="InputCode">hadInc</span> indicator variables with the following loop:</p>
+                <p class="InputCode">foreach month in Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec {<br>
+                    <span class="indent3">gen hadInc`month'=(inc`month'&gt;0) if inc`month'&lt;.</span><br>
+}</p>
+                <p>However, you'll get the  same results with the following:</p>
+                <p class="InputCode">reshape long inc, i(id) j(month) string<br>
+                  gen hadInc=(inc&gt;0) if inc&lt;.<br>
+                reshape wide inc hadInc, i(id) j(month) string</p>
+                <p>(Take a moment to examine the data after each step.)</p>
+                <p>Reshaping a large data set is time consuming, so  don't switch between wide form and long form lightly. But if you can identify a block of things you need to do that would be easier to do in long form, it may be worth reshaping at the beginning and end of that block.                </p>
+                <!-- InstanceEndEditable -->
+                <p class="reviseDate">Last Revised: <!-- InstanceBeginEditable name="Date" -->2/27/2012<!-- InstanceEndEditable --></p>
+                </div>
+            </div>
+      </div>
+  </div>
+    <div class="Clear"></div><!-- #BeginLibraryItem "/Library/footer.lbi" --><meta http-equiv="Content-Type" table="text/html; charset=utf-8">
+	<div id="Footer">
+        <div id="UWLogo">
+            <div id="UWPic"><a href="http://www.wisc.edu/" title="University of Wisconsin - Madison"><img src="./Stata Programming Essentials_files/UWLogo.jpg" alt="University of Wisconsin - Madison" title="University of Wisconsin - Madison"></a></div>
+        </div>
+        <div id="BlueCurve">
+            <div id="FooterCopy">©2009-2015 UW Board of Regents, <a href="http://www.wisc.edu/">University of Wisconsin - Madison</a></div>
+            <div id="FooterNav">| <a href="https://www.ssc.wisc.edu/sscc/helpdesk.htm">Contact Us</a> | <a href="http://www.ssc.wisc.edu/sscc/wp/?feed=rss2"><img src="./Stata Programming Essentials_files/feed-icon-14x14.png" width="14" height="14" alt="RSS Feed Icon" class="RSSicon">RSS</a> |</div>
+        </div>
+    </div>
+<!-- #EndLibraryItem --></div>
+<div id="PrintLogo">
+<img src="./Stata Programming Essentials_files/SSCC_logoBW3.gif" width="350" height="85" alt="Social Science Computing Cooperative"></div>
+
+<!-- InstanceEnd -->
+</body></html>

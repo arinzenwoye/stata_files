@@ -1,0 +1,18 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\froman Times New Roman;}{\f1\fswiss Arial;}{\f2\fmodern Courier New;}}
+\trowd\intbl\trautofit1\trgaph144\sb79\sa79\trqc\clbrdrt\brdrs\cellx4200\clbrdrt\brdrs\cellx6888\fs24 \ql Variables\cell \qc Marginal Effects\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb79\sa0\trqc\clbrdrt\brdrs\cellx4200\clbrdrt\brdrs\cellx6888\fs24 \pard\intbl\ql r1vs8.ethnicity#r1vs0.ucs\cell \pard\intbl\tqdec\tx1153 {\fs24 0.039}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql \cell \pard\intbl\tqdec\tx1153 {\fs20 (0.119)}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa0\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql r2vs8.ethnicity#r1vs0.ucs\cell \pard\intbl\tqdec\tx1153 {\fs24 0.098}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql \cell \pard\intbl\tqdec\tx1153 {\fs20 (0.079)}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa0\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql r3vs8.ethnicity#r1vs0.ucs\cell \pard\intbl\tqdec\tx1153 {\fs24 0.016}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql \cell \pard\intbl\tqdec\tx1153 {\fs20 (0.075)}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa0\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql r4vs8.ethnicity#r1vs0.ucs\cell \pard\intbl\tqdec\tx1153 {\fs24 -0.166}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql \cell \pard\intbl\tqdec\tx1153 {\fs20 (0.171)}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa0\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql r5vs8.ethnicity#r1vs0.ucs\cell \pard\intbl\tqdec\tx1153 {\fs24 -0.174}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql \cell \pard\intbl\tqdec\tx1153 {\fs20 (0.130)}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa0\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql r7vs8.ethnicity#r1vs0.ucs\cell \pard\intbl\tqdec\tx1153 {\fs24 0.161}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\cellx4200\cellx6888\fs24 \pard\intbl\ql \cell \pard\intbl\tqdec\tx1153 {\fs20 (0.320)}\cell\row
+\trowd\intbl\trautofit1\trgaph144\sb0\sa79\trqc\clbrdrb\brdrs\cellx4200\clbrdrb\brdrs\cellx6888\fs24 \pard\intbl\ql {\i N}\cell \pard\intbl\tqdec\tx1153 2,852\cell\row
+\pard\qc\sb79\sa79\fs19 * {\i p}<0.05; ** {\i p}<0.01\par
+\pard\sb0\sa0\fs24\par
+}

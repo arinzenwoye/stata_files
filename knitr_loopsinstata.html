@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>The R perspective</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<p>If you&#39;re a Stata user (or SAS for that matter), you are most likely a big fan of macros. They&#39;re very helpful when you&#39;re repeating the same actions over and over again. In R, we don&#39;t have macros. Instead we have functions and loops, and even better than loops are the apply functions. I already had one post on the apply() function about a year ago, so as this is the one year anniversary of my blog (yay!), I revisit apply() and show even more examples of how incredibly versatile and useful this function is, once you get used to the syntax. I also show where loops can be useful. </p>
+
+<p>This blog post is inspired by <a href="http://www.ssc.wisc.edu/sscc/pubs/stata_prog1.htm">this great U-W Madison site</a> for computing that I found when I was searching for a way to do a loop in Stata.  They go through all of the ways you may want to loop using macros in Stata. So in this blog post, I show how to do all of these problems in R. </p>
+
+<h3>The R perspective</h3>
+
+<p>The first thing to do when you&#39;re trying to think about how to solve a problem in R that you&#39;ve done in Stata using macros, is to stop thinking &#39;macro&#39; and start thinking &#39;objects&#39;. The idea is that when you use R, you have a space in which to store many different objects - vectors, dataframes, matrices, lists, etc. I went over all of these in a <a href="http://rforpublichealth.blogspot.com/2012/11/data-types-part-1-ways-to-store.html">series of blog posts</a> called &ldquo;Data types&rdquo; in November of last year.</p>
+
+<p>You can use the power of objects to change the way you&#39;re thinking about your programming problem. Let&#39;s start with U-W&#39;s first example: running multiple regressions of various types using a fixed set of control variables. We&#39;ll run a linear regression and a logit. In Stata you do:</p>
+
+<pre><code>local controlVars age sex occupation location maritalStatus hasChildren
+reg income education `controlVars&#39;
+logit employed education `controlVars&#39;
+</code></pre>
+
+<p>In R, we can take those local controlVars and put them into a new object, for example a matrix. Then we use that same matrix in all of our regressions. Here is an example. We create some data:</p>
+
+<pre><code class="r">set.seed(10)
+x &lt;- rnorm(100, 5, 2)
+z &lt;- rnorm(100, 6, 5)
+w &lt;- rnorm(100, 3, 2)
+y &lt;- x * 2 + w * 0.5 + rnorm(100, 0, 1)
+ybin &lt;- as.numeric(y &lt; 10)
+
+mydata &lt;- as.data.frame(cbind(x, z, w, y, ybin))
+</code></pre>
+
+<p>And now if we have two models to run, a linear and a logit, we can create a matrix of explanatory variables that we put on the right hand side each time. You don&#39;t need the &ldquo;data=mydata&rdquo; part since ybin is also a vector in our workspace, but generally if you were to import this data as a dataframe, then you would need to include it or you would need to create a separate ybin vector object from the dataframe you imported.</p>
+
+<pre><code class="r">xvars &lt;- cbind(x, z, w)
+summary(lm(ybin ~ xvars, data = mydata))
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = ybin ~ xvars, data = mydata)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -0.6179 -0.2446  0.0175  0.2177  0.6699 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  1.44087    0.10888   13.23   &lt;2e-16 ***
+## xvarsx      -0.20002    0.01673  -11.95   &lt;2e-16 ***
+## xvarsz      -0.00179    0.00656   -0.27    0.785    
+## xvarsw      -0.03123    0.01631   -1.91    0.058 .  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.313 on 96 degrees of freedom
+## Multiple R-squared:  0.605,  Adjusted R-squared:  0.593 
+## F-statistic:   49 on 3 and 96 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<pre><code class="r">summary(glm(ybin ~ xvars, family = binomial(logit), data = mydata))
+</code></pre>
+
+<pre><code>## 
+## Call:
+## glm(formula = ybin ~ xvars, family = binomial(logit), data = mydata)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -2.3283  -0.0962  -0.0030   0.0720   2.1836  
+## 
+## Coefficients:
+##             Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)  20.0872     5.3972    3.72  0.00020 ***
+## xvarsx       -4.0466     1.0590   -3.82  0.00013 ***
+## xvarsz       -0.0136     0.1197   -0.11  0.90967    
+## xvarsw       -1.1068     0.4088   -2.71  0.00679 ** 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 133.750  on 99  degrees of freedom
+## Residual deviance:  29.772  on 96  degrees of freedom
+## AIC: 37.77
+## 
+## Number of Fisher Scoring iterations: 8
+</code></pre>
+
+<p>Next, we want to run the regression if the data meet some requirement. In Stata we would do:</p>
+
+<pre><code>local blackWoman race==1 &amp; female
+reg income education `controlVars&#39; if `blackWoman&#39;
+</code></pre>
+
+<p>Again in R, think objects. We can subset our original dataframe &ldquo;mydata&rdquo; to another matrix &ldquo;data.sub&rdquo;. I go over subsetting in a blogpost <a href="http://rforpublichealth.blogspot.com/2012/10/quick-and-easy-subsetting.html">here</a>. I take the subset of my data based on the conditions I want, and to stick with the above example, I do a xvars matrix as well so I can combine the two methods like so. Notice the degrees of freedom have been reduced since we&#39;re only using data in which x&gt;2 and z&lt;3:</p>
+
+<pre><code class="r">data.sub &lt;- as.data.frame(mydata[x &gt; 2 &amp; z &lt; 3, c(&quot;x&quot;, &quot;z&quot;, &quot;ybin&quot;)])
+xvars.sub &lt;- as.matrix(data.sub[, c(&quot;x&quot;, &quot;z&quot;)])
+summary(lm(ybin ~ xvars.sub, data = data.sub))
+</code></pre>
+
+<pre><code>## 
+## Call:
+## lm(formula = ybin ~ xvars.sub, data = data.sub)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -0.4706 -0.1793 -0.0171  0.1504  0.6144 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   1.4185     0.1611    8.81  1.5e-09 ***
+## xvars.subx   -0.2113     0.0287   -7.38  5.0e-08 ***
+## xvars.subz   -0.0434     0.0238   -1.83    0.079 .  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.274 on 28 degrees of freedom
+## Multiple R-squared:  0.672,  Adjusted R-squared:  0.649 
+## F-statistic: 28.7 on 2 and 28 DF,  p-value: 1.67e-07
+</code></pre>
+
+<p>Well now that we have the basics down, let&#39;s get to some of the more interesting problems of loops. </p>
+
+<h3>Looping over Variables</h3>
+
+<p>In Stata, if we want to run regressions for three different outcome variables, we can do it this way, via a <strong>foreach</strong> loop:</p>
+
+<pre><code>foreach yvar in mpg price displacement {
+reg `yvar&#39; foreign weight
+}
+</code></pre>
+
+<p>In R, we can use apply(). The syntax of apply() is three arguments: </p>
+
+<p>apply(dataset, margin, function)</p>
+
+<ul>
+<li>the first argument is the dataframe or matrix that you want to apply your function to, </li>
+<li>the second argument is the margin, meaning are you doing it over rows (margin=1) or over columns (margin=2) of the data, </li>
+<li>and the third argument is the function that you want to apply. </li>
+</ul>
+
+<p>In this case, we can use the apply() function as follows. I will take the two columns of mydata (y and ybin), and for each of those columns (since margin=2) I apply the function that I create in the third argument. The function I create is to take an argument (outcome) which refers to each of those two columns and to run a linear model on each of those columns with x and z as the explanatory variables: </p>
+
+<pre><code class="r">apply(mydata[,c(&quot;y&quot;,&quot;ybin&quot;)], 2, function(outcome){summary(lm(outcome~x+z))})
+</code></pre>
+
+<pre><code>## $y
+## 
+## Call:
+## lm(formula = outcome ~ x + z)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -3.863 -0.887 -0.035  0.899  3.570 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   1.7342     0.4299    4.03  0.00011 ***
+## x             2.0224     0.0764   26.46  &lt; 2e-16 ***
+## z            -0.0204     0.0297   -0.69  0.49450    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.43 on 97 degrees of freedom
+## Multiple R-squared:  0.879,  Adjusted R-squared:  0.877 
+## F-statistic:  352 on 2 and 97 DF,  p-value: &lt;2e-16
+## 
+## 
+## $ybin
+## 
+## Call:
+## lm(formula = outcome ~ x + z)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -0.6057 -0.2183  0.0068  0.1967  0.7292 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  1.335967   0.095381   14.01   &lt;2e-16 ***
+## x           -0.200010   0.016962  -11.79   &lt;2e-16 ***
+## z           -0.000098   0.006587   -0.01     0.99    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.317 on 97 degrees of freedom
+## Multiple R-squared:  0.59,   Adjusted R-squared:  0.581 
+## F-statistic: 69.7 on 2 and 97 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<p>And out come the two summaries of the models, the first with y and the second with ybin.</p>
+
+<h3>Looping over parts of variable names</h3>
+
+<p>In this Stata example, which I feel comes up often, we want to take each of our monthly income variables and create an indicator of whether there was positive income in that month. We want to create 12 new variables with the original name of the variable like &ldquo;Jan&rdquo;, now in an indicator form like &ldquo;hadIncJan&rdquo;. The Stata code is as follows:</p>
+
+<pre><code>foreach month in Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec {
+gen hadInc`month&#39;=(inc`month&#39;&gt;0) if inc`month&#39;&lt;.
+}
+</code></pre>
+
+<p>In R, this is one of those times that a for() loop actually works very nicely. I actually found this solution on <a href="http://stackoverflow.com/questions/14324562/creating-new-named-variable-in-dataframe-using-loop-and-naming-convention">Stackoverflow</a>, which if you&#39;re not familiar, can be a lifesaver for your programming struggles.</p>
+
+<p>I create some month data. In this example, we&#39;ll use the names() function in R, which is very useful. I had a <a href="http://rforpublichealth.blogspot.com/2013/03/extracting-information-from-objects.html">blog post about the names()</a> function if you want to read up on its other uses.</p>
+
+<p>We also use the paste0() function, which is a way to concatenate character strings and numbers, along with a new way to index, the &ldquo;[[&rdquo; operator. You can read about this operator in the help file. The idea is to refer a single element of the dataframe (a vector) by inserting the column name that is being referred to via an index from the loop. I think reading the code makes things more clear. We make our data:</p>
+
+<pre><code class="r">jan &lt;- rnorm(100, 3, 5)
+feb &lt;- rnorm(100, 4, 8)
+march &lt;- rnorm(100, 2, 5)
+
+months &lt;- as.data.frame(cbind(jan, feb, march))
+names(months)
+</code></pre>
+
+<pre><code>## [1] &quot;jan&quot;   &quot;feb&quot;   &quot;march&quot;
+</code></pre>
+
+<pre><code class="r">head(months)
+</code></pre>
+
+<pre><code>##       jan    feb  march
+## 1  2.6027 10.956 -2.510
+## 2  8.9088 -1.440  1.726
+## 3 13.9307  5.386 -4.784
+## 4  5.0309  2.724  3.586
+## 5 -0.6918 10.348  8.979
+## 6 -6.7824 17.555 -4.056
+</code></pre>
+
+<p>And now we run our loop:</p>
+
+<pre><code class="r">for (n in names(months)) {
+    months[[paste0(&quot;HadInc_&quot;, n)]] &lt;- as.numeric(months[[n]] &gt; 0)
+}
+head(months)
+</code></pre>
+
+<pre><code>##       jan    feb  march HadInc_jan HadInc_feb HadInc_march
+## 1  2.6027 10.956 -2.510          1          1            0
+## 2  8.9088 -1.440  1.726          1          0            1
+## 3 13.9307  5.386 -4.784          1          1            0
+## 4  5.0309  2.724  3.586          1          1            1
+## 5 -0.6918 10.348  8.979          0          1            1
+## 6 -6.7824 17.555 -4.056          0          1            0
+</code></pre>
+
+<p>The for() loop takes each column name in months, and creates a new variable by concatenating the string &ldquo;HadInc_&rdquo; with that column name, and assigns to it a binary indicator of whether the original variable had monthly income greater than 0. If this is confusing, I suggest breaking it down to parts. You can run it this way to see what is actually happening (output not shown here, but you can run it on your own to understand it)</p>
+
+<pre><code class="r">for (n in names(months)) {
+    print(n)
+    print(months[[n]])
+    print(paste0(&quot;HadInc_&quot;, n))
+}
+</code></pre>
+
+<h3>Looping over Varlists</h3>
+
+<p>In Stata in order to do something to all or a lot of variables (for example, to rename them to have all lower case or upper case letters), you use a <strong>foreach</strong> loop like this:</p>
+
+<pre><code>foreach oldname of varlist * {
+local newname=lower(&quot;`oldname&#39;&quot;)
+rename `oldname&#39; `newname&#39;
+}
+</code></pre>
+
+<p>In R, for this exact situation, you can use the toupper() function on the names of the data, or a subset of the data if you only wanted to do some of the column names.</p>
+
+<pre><code class="r">names(months) &lt;- toupper(names(months))
+head(months)
+</code></pre>
+
+<pre><code>##       JAN    FEB  MARCH HADINC_JAN HADINC_FEB HADINC_MARCH
+## 1  2.6027 10.956 -2.510          1          1            0
+## 2  8.9088 -1.440  1.726          1          0            1
+## 3 13.9307  5.386 -4.784          1          1            0
+## 4  5.0309  2.724  3.586          1          1            1
+## 5 -0.6918 10.348  8.979          0          1            1
+## 6 -6.7824 17.555 -4.056          0          1            0
+</code></pre>
+
+<p>For other situations, like replacing indicators of missing values to NA for a bunch of variables at a time, check out <a href="http://rforpublichealth.blogspot.com/2012/09/the-infamous-apply-function.html">my previous blog post</a> on using apply() in these situations.</p>
+
+<h3>Looping over numbers</h3>
+
+<p>We revisit the same problem we had with the monthly income, except now we want an indicator by year. We have variables of the yearly income. In Stata this would be the code, using now the <strong>forvalues</strong> loop with a macro:</p>
+
+<pre><code>forvalues year=1990/2010 {
+gen hadInc`year&#39;=(inc`year&#39;&gt;0) if inc`year&#39;&lt;.
+}
+</code></pre>
+
+<p>In R we can use a for() loop along with the &ldquo;[[&rdquo; operator that we used before, but this time we make use of the seq(along=x) syntax that will let us go along a sequence of numbers. Our dataframe called &ldquo;Income&rdquo; includes columns for each year of income.  We make a new vector called &ldquo;years&rdquo; that just contains numbers from 1990 to 1992. Then for each value along that vector, we make a new column in our Income dataframe with a name that concatenates &ldquo;hadInc_&rdquo; with the number in the sequence, and this variable is just a binary indicator of whether that year&#39;s income was positive.</p>
+
+<pre><code class="r">Inc1990 &lt;- rnorm(100, 5, 6)
+Inc1991 &lt;- rnorm(100, 3, 8)
+Inc1992 &lt;- rnorm(100, 4, 4)
+
+Income &lt;- as.data.frame(cbind(Inc1990, Inc1991, Inc1992))
+years &lt;- c(1990:1992)
+head(Income)
+</code></pre>
+
+<pre><code>##   Inc1990 Inc1991 Inc1992
+## 1  3.6391 -14.001   6.169
+## 2  0.8242   7.169   8.095
+## 3  8.0399   2.629   7.251
+## 4  8.6974  -6.196   9.204
+## 5 -5.0013   8.035   6.272
+## 6  2.9825  -2.812   3.520
+</code></pre>
+
+<pre><code class="r">for (i in seq(along = years)) {
+    Income[[paste0(&quot;hadInc_&quot;, years[i])]] &lt;- as.numeric(Income[[i]] &gt; 0)
+}
+head(Income)
+</code></pre>
+
+<pre><code>##   Inc1990 Inc1991 Inc1992 hadInc_1990 hadInc_1991 hadInc_1992
+## 1  3.6391 -14.001   6.169           1           0           1
+## 2  0.8242   7.169   8.095           1           1           1
+## 3  8.0399   2.629   7.251           1           1           1
+## 4  8.6974  -6.196   9.204           1           0           1
+## 5 -5.0013   8.035   6.272           0           1           1
+## 6  2.9825  -2.812   3.520           1           0           1
+</code></pre>
+
+<p>Again, run just parts of it to understand it if you&#39;re having trouble with the syntax. </p>
+
+<h3>Looping over Values and Levelsof</h3>
+
+<p>Finally, we may want to run the same functions over values or levels of a variable. Here&#39;s are two situations in Stata, the first can use the <strong>by</strong> statement, and the second uses <strong>forvalues</strong> for a survey function. </p>
+
+<pre><code>by race: regress income age i.education
+
+forvalues race=1/3 {
+svy, subpop(if race==`race&#39;): reg income age i.education
+}
+</code></pre>
+
+<p>In R, there is no &ldquo;by&rdquo; option for linear regression but we can use the lapply() function instead.  The function lapply() is the same idea as apply() except it can be used to apply some function over a list. We create some data similar to the Stata example: </p>
+
+<pre><code class="r">race &lt;- c(rep(1, 30), rep(2, 30), rep(3, 40))
+age &lt;- rnorm(100, 25, 3)
+y &lt;- age * 10 + ifelse(race == 1, 100, ifelse(race == 2, 2000, 0)) + rnorm(100, 
+    0, 1)
+
+racedata &lt;- as.data.frame(cbind(race, age, y))
+racedata$race &lt;- as.factor(racedata$race)
+</code></pre>
+
+<p>Now we use lapply() to run the summary of lm for a subset of the racedata where we subset by each value of the list. </p>
+
+<pre><code class="r">lapply(1:3, function(index) summary(lm(y~age, data=racedata[racedata$race==index,])))
+</code></pre>
+
+<pre><code>## [[1]]
+## 
+## Call:
+## lm(formula = y ~ age, data = racedata[racedata$race == index, 
+##     ])
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.0021 -0.8978 -0.0686  0.8602  2.0371 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 103.0121     2.2522    45.7   &lt;2e-16 ***
+## age           9.8836     0.0895   110.4   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.2 on 28 degrees of freedom
+## Multiple R-squared:  0.998,  Adjusted R-squared:  0.998 
+## F-statistic: 1.22e+04 on 1 and 28 DF,  p-value: &lt;2e-16
+## 
+## 
+## [[2]]
+## 
+## Call:
+## lm(formula = y ~ age, data = racedata[racedata$race == index, 
+##     ])
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.4785 -0.4682 -0.0427  0.6685  1.3434 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 2.00e+03   1.34e+00    1491   &lt;2e-16 ***
+## age         9.96e+00   5.31e-02     188   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.881 on 28 degrees of freedom
+## Multiple R-squared:  0.999,  Adjusted R-squared:  0.999 
+## F-statistic: 3.52e+04 on 1 and 28 DF,  p-value: &lt;2e-16
+## 
+## 
+## [[3]]
+## 
+## Call:
+## lm(formula = y ~ age, data = racedata[racedata$race == index, 
+##     ])
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -2.1961 -0.3204  0.0736  0.5295  2.1861 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  -2.0024     1.0816   -1.85    0.072 .  
+## age          10.0814     0.0442  228.17   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.998 on 38 degrees of freedom
+## Multiple R-squared:  0.999,  Adjusted R-squared:  0.999 
+## F-statistic: 5.21e+04 on 1 and 38 DF,  p-value: &lt;2e-16
+</code></pre>
+
+<p>To make this even better, we take the levels of race, which is a factor, and run the lapply() function of those instead of the number 1-3 so that if those levels change, we won&#39;t have to change our code. </p>
+
+<pre><code class="r">lapply(as.numeric(levels(race)), function(index) summary(lm(y~age, data=racedata[racedata$race==index,])))
+</code></pre>
+
+<p>This idea can also be applied to any function that you want to evaluate by different values. </p>
+
+<p>Of course there may be more efficient ways to do what I&#39;ve shown here. If you have comments on improvement over these solutions, let me know!</p>
+
+</body>
+
+</html>
+

@@ -1,0 +1,77 @@
+{\rtf1\fs24
+\trowd\trgaph75\trleft-75\intbl\trqc\clbrdrt\brdrs\cellx3024\clbrdrt\brdrs\cellx4464
+\ql \cell\qc (1)\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx3024\cellx4464
+\trowd\trgaph75\trleft-75\trqc\clbrdrb\brdrs\cellx3024\clbrdrb\brdrs\cellx4464
+\ql VARIABLES\cell\qc margins\cell\row
+\trowd\trgaph75\trleft-75\trqc\cellx3024\cellx4464
+\ql \cell\qc \cell\row
+\ql 2.sex\cell\qc 0.149\cell\row
+\ql \cell\qc (0.110)\cell\row
+\ql 1.major1\cell\qc 0.831**\cell\row
+\ql \cell\qc (0.413)\cell\row
+\ql 2.major1\cell\qc 0.0854\cell\row
+\ql \cell\qc (0.336)\cell\row
+\ql 3.major1\cell\qc 1.304***\cell\row
+\ql \cell\qc (0.283)\cell\row
+\ql 4.major1\cell\qc -0.277\cell\row
+\ql \cell\qc (0.301)\cell\row
+\ql 5.major1\cell\qc 1.151***\cell\row
+\ql \cell\qc (0.320)\cell\row
+\ql 6.major1\cell\qc 0.677**\cell\row
+\ql \cell\qc (0.275)\cell\row
+\ql 7.major1\cell\qc 0.0894\cell\row
+\ql \cell\qc (0.329)\cell\row
+\ql 8.major1\cell\qc 0.304\cell\row
+\ql \cell\qc (0.472)\cell\row
+\ql 9.major1\cell\qc 0.379\cell\row
+\ql \cell\qc (0.371)\cell\row
+\ql 11.major1\cell\qc 0.436\cell\row
+\ql \cell\qc (0.416)\cell\row
+\ql 12.major1\cell\qc -0.370\cell\row
+\ql \cell\qc (0.496)\cell\row
+\ql 13.major1\cell\qc 0.0408\cell\row
+\ql \cell\qc (0.350)\cell\row
+\ql 14.major1\cell\qc 0.377\cell\row
+\ql \cell\qc (0.439)\cell\row
+\ql 15.major1\cell\qc -0.138\cell\row
+\ql \cell\qc (0.337)\cell\row
+\ql 16.major1\cell\qc 0.669**\cell\row
+\ql \cell\qc (0.304)\cell\row
+\ql 17.major1\cell\qc -0.674\cell\row
+\ql \cell\qc (0.526)\cell\row
+\ql age1\cell\qc 0.0338**\cell\row
+\ql \cell\qc (0.0145)\cell\row
+\ql cgpa\cell\qc 0.455***\cell\row
+\ql \cell\qc (0.118)\cell\row
+\ql first_gen\cell\qc 0.149\cell\row
+\ql \cell\qc (0.111)\cell\row
+\ql 1.race\cell\qc -0.00102\cell\row
+\ql \cell\qc (0.119)\cell\row
+\ql 2.race\cell\qc -0.278\cell\row
+\ql \cell\qc (0.199)\cell\row
+\ql 3.race\cell\qc -0.148\cell\row
+\ql \cell\qc (0.166)\cell\row
+\ql 6.race\cell\qc 0.0728\cell\row
+\ql \cell\qc (0.251)\cell\row
+\ql internshipco_op\cell\qc 0.361**\cell\row
+\ql \cell\qc (0.143)\cell\row
+\ql total_internships\cell\qc 0.198***\cell\row
+\ql \cell\qc (0.0519)\cell\row
+\ql foreign\cell\qc -0.720*\cell\row
+\ql \cell\qc (0.377)\cell\row
+\ql jobsearch_skills_agg\cell\qc 0.0709***\cell\row
+\ql \cell\qc (0.0153)\cell\row
+\ql intensity\cell\qc -0.261***\cell\row
+\ql \cell\qc (0.0289)\cell\row
+\ql Constant cut1\cell\qc 2.672***\cell\row
+\ql \cell\qc (0.622)\cell\row
+\ql Constant cut2\cell\qc 3.256***\cell\row
+\ql \cell\qc (0.622)\cell\row
+\ql \cell\qc \cell\row
+\trowd\trgaph75\trleft-75\trqc\trbrdrb\brdrs\clbrdrb\brdrs\cellx3024\clbrdrb\brdrs\cellx4464
+\ql Observations\cell\qc 1,779\cell\row
+\pard\qc
+Robust standard errors in parentheses\par
+*** p<0.01, ** p<0.05, * p<0.1\par
+}

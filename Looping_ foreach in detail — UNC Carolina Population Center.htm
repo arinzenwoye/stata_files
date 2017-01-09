@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__cpc_unc_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta content="2009/12/09 - " name="DC.date.valid_range"><meta content="2015-02-19T16:08:51-04:00" name="DC.date.modified"><meta content="text/html" name="DC.format"><meta content="Page" name="DC.type"><meta content="2009-12-01T14:35:07-04:00" name="DC.date.created"><meta name="generator" content="Plone - http://plone.org"><meta name="viewport" content="width=device-width">
+        <!--<base href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail">--><base href="."><title>Looping: foreach in detail — UNC Carolina Population Center</title><link rel="stylesheet" type="text/css" media="screen" href="./Looping_ foreach in detail — UNC Carolina Population Center_files/resourceplone.app.jquerytools.dateinput-cachekey-254486125ea59e2a64064b4729b7fa2d.css"><link rel="canonical" href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail"><link rel="shortcut icon" type="image/x-icon" href="http://www.cpc.unc.edu/favicon.ico"><link rel="apple-touch-icon" href="http://www.cpc.unc.edu/touch_icon.png"><link rel="search" href="http://www.cpc.unc.edu/@@search" title="Search this site"><style type="text/css">@import url(http://www.cpc.unc.edu/portal_css/Sunburst%20Theme/resourcecarousel-cachekey-7ff74ce55ae5e46bf1ad785afcfb65dd.css);</style><script type="text/javascript" src="./Looping_ foreach in detail — UNC Carolina Population Center_files/resourceplone.app.jquery-cachekey-d4c86a27fc8e933ecb1f4f212a4d4246.js"></script><script type="text/javascript" src="./Looping_ foreach in detail — UNC Carolina Population Center_files/resourcecarousel-cachekey-a9396cf75a59ab9ad1ebe6902290be68.js"></script><script type="text/javascript">
+        jQuery(function($){
+            $.datepicker.setDefaults(
+                jQuery.extend($.datepicker.regional[''],
+                {dateFormat: 'mm/dd/yy'}));
+        });
+        </script>
+        <link rel="stylesheet" type="text/css" href="./Looping_ foreach in detail — UNC Carolina Population Center_files/wink.css">
+        <link rel="shortcut icon" type="image/x-icon" href="http://www.cpc.unc.edu/++theme++hou-wink/images/favicon.ico">
+        <!--[if lt IE 8]><link rel="stylesheet" href="/++theme++hou-wink/css/iefixes.css" media="all" type="text/css" /><![endif]-->
+        <style type="text/css" media="screen"></style>
+        <script type="text/javascript">jQuery(function(){$(".action-menu-content").hide();$(".action-menu-header").click(function(){$(".action-menu-header").toggleClass("hide-block");$(".action-menu-content").slideToggle(200,'linear')})})</script>
+        <!--[if IE]><script type="text/javascript">jQuery(function($){$("[placeholder]").focus(function(){var e=$(this);if(e.val()==e.attr("placeholder")){e.val("");e.removeClass("placeholder")}}).blur(function(){var e=$(this);if(e.val()==""||e.val()==e.attr("placeholder")){e.addClass("placeholder");e.val(e.attr("placeholder"))}}).blur().parents("form").submit(function(){$(this).find("[placeholder]").each(function(){var e=$(this);if(e.val()==e.attr("placeholder")){e.val("")}})})})</script><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="./Looping_ foreach in detail — UNC Carolina Population Center_files/ploneCustom-cachekey-e3d40d077a874152d50b4f2227ec2fbb.css"><style type="text/css">
+                 #portal-columns-ihner:after {
+                  display:block;
+                  }
+          </style><style type="text/css">
+                 #portal-columns {
+                  background:transparent;
+                  }
+          </style></head>
+    <body class="wink template-document_view portaltype-document site-cpc section-research subsection-tools subsection-tools-data_analysis subsection-tools-data_analysis-statatutorial userrole-anonymous" dir="ltr" data-gr-c-s-loaded="true"><div id="visual-portal-wrapper">
+          <div id="portal-top">
+	    	<div id="portal-header" class="container"><p class="hiddenStructure">
+  <a accesskey="2" href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail#content">Skip to content.</a> |
+
+  <a accesskey="6" href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail#portal-globalnav">Skip to navigation</a>
+</p>
+	    		<div id="portal-header-rt">
+		<div id="portal-searchbox">
+    <form id="livesearch0" action="http://www.cpc.unc.edu/@@search">
+
+        <div class="LSBox">
+        <a href="https://giving.unc.edu/gift/ncpc" class="give-now-header" target="_blank">Make a Gift</a>
+        <label class="hiddenStructure" for="searchGadget">Search Site</label>
+
+        <input name="SearchableText" type="text" size="18" title="Search Site" placeholder="Search Site" accesskey="4" class="searchField" id="searchGadget" autocomplete="off">
+
+        <input class="searchButton" type="submit" value="Search">
+
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/cpc/research/tools/data_analysis/statatutorial/misc">
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://www.cpc.unc.edu/@@search" accesskey="5">
+            Advanced Search…
+        </a>
+    </div>
+
+</div>
+	      <p class="hiddenStructure">Navigation</p><ul id="theme-globalnav"><li class="plain" id="portaltab-index_html-level1"><a href="http://www.cpc.unc.edu/" title=""><span>Home</span></a></li><li class="plain" id="portaltab-aboutcpc-level1"><a href="http://www.cpc.unc.edu/aboutcpc" class="hasChildrens" title=""><span>About</span></a><ul class="globalSectionsLevel1"><li class="plain" id="portaltab-message-from-the-director-level2"><a href="http://www.cpc.unc.edu/aboutcpc/message-from-the-director" title=""><span>Message from the Director</span></a></li><li class="plain" id="portaltab-services-level2"><a href="http://www.cpc.unc.edu/aboutcpc/services" title="The center devotes its resources to fostering communication, innovation, and high-quality research. Our service units provide professional services to CPC scholars, trainees, and research staff."><span>Services</span></a></li><li class="plain" id="portaltab-history-level2"><a href="http://www.cpc.unc.edu/aboutcpc/history" title=""><span>CPC History</span></a></li><li class="plain" id="portaltab-contactcpc-level2"><a href="http://www.cpc.unc.edu/aboutcpc/contactcpc" title=""><span>Contact CPC</span></a></li><li class="plain" id="portaltab-annual-review.pdf-level2"><a href="http://www.cpc.unc.edu/aboutcpc/annual-review.pdf/view" title="As the Center has evolved over the last 5 decades, so has the technology used to collect, analyze, store and disseminate our research data. In line with this evolution, our website is now the main source for information on our research, training, and organization. This enables us to provide more accessible and current information.  In addition to our website, an annual brochure highlights our work and contains important web page addresses. "><span>CPC Annual Review Brochure</span></a></li><li class="plain" id="portaltab-employment-level2"><a href="http://www.cpc.unc.edu/aboutcpc/employment" title=""><span>Employment Opportunities</span></a></li></ul></li><li class="plain" id="portaltab-people-level1"><a href="http://www.cpc.unc.edu/people" class="hasChildrens" title="Over 300 people are affiliated with the Carolina Population Center, including more than 50 faculty, postdoctoral scholars, predoctoral trainees, and professional staff. To find contact information for individuals at CPC, please search the online phone directory."><span>People</span></a><ul class="globalSectionsLevel1"><li class="plain" id="portaltab-fellows-level2"><a href="http://www.cpc.unc.edu/people/fellows" title="Listing of CPC Faculty Fellows
+"><span>Faculty Fellows</span></a></li><li class="plain" id="portaltab-postdocs-level2"><a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/resolveuid/ef37fb5c16fb39fcdb220c70d999e459" title="Listing of CPC Training Program postdoctoral scholars"><span>Postdoctoral Scholars</span></a></li><li class="plain" id="portaltab-predocs-level2"><a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/resolveuid/563a7bc60645ee6245ca0a4750d770dd" title="Listing of CPC Training Program predoctoral trainees"><span>Predoctoral Trainees</span></a></li><li class="plain" id="portaltab-deptmgrs.html-level2"><a href="http://www.cpc.unc.edu/people/deptmgrs.html" title="Key contacts for core CPC services"><span>Contacts for Training, Administrative, and Research Services</span></a></li><li class="plain" id="portaltab-cpc-directors-advisory-council-level2"><a href="http://www.cpc.unc.edu/people/cpc-directors-advisory-council" title=""><span>CPC Director’s Advisory Council</span></a></li><li class="plain" id="portaltab-directory-level2"><a href="http://www.cpc.unc.edu/people/directory" title="Contact information for CPC affiliates"><span>Phone Directory</span></a></li></ul></li><li class="selected" id="portaltab-research-level1"><a href="http://www.cpc.unc.edu/research" class="hasChildrens" title="The Carolina Population Center is known for its collaborative and multidisciplinary research, which spans the social science and health disciplines and extends beyond institutional and geographical boundaries. Details about components of the research activities at CPC are provided by the following links. "><span>Research</span></a><ul class="globalSectionsLevel1"><li class="plain" id="portaltab-primary-research-areas-level2"><a href="http://www.cpc.unc.edu/research/primary-research-areas" title=""><span>Primary Research Areas</span></a></li><li class="plain" id="portaltab-projects-level2"><a href="http://www.cpc.unc.edu/research/projects" title="Listing of current research activities at CPC"><span>Projects</span></a></li><li class="plain" id="portaltab-data-level2"><a href="http://data.cpc.unc.edu/" title=""><span>Data</span></a></li><li class="plain" id="portaltab-publications-level2"><a href="http://www.cpc.unc.edu/research/publications" title="The following listing includes publications by CPC fellows, predoctoral trainees, postdoctoral scholars, and professional staff during the period of 2004 - present."><span>Publications</span></a></li><li class="selected" id="portaltab-tools-level2"><a href="http://www.cpc.unc.edu/research/tools" title="CPC provides a number of research tools to the population research community"><span>Tools &amp; Resources</span></a></li></ul></li><li class="plain" id="portaltab-training-level1"><a href="http://www.cpc.unc.edu/training" class="hasChildrens" title=""><span>Training</span></a><ul class="globalSectionsLevel1"><li class="plain" id="portaltab-predoc-level2"><a href="http://www.cpc.unc.edu/training/predoc" title=""><span>Predoctoral Program</span></a></li><li class="plain" id="portaltab-postdoc_program-level2"><a href="http://www.cpc.unc.edu/training/postdoc_program" title=""><span>Postdoctoral Program</span></a></li><li class="plain" id="portaltab-interns-level2"><a href="http://www.cpc.unc.edu/training/interns" title=""><span>Undergraduate Internship Programs</span></a></li><li class="plain" id="portaltab-visitingscholarlist-level2"><a href="http://www.cpc.unc.edu/training/visitingscholarlist" title=""><span>Visiting Scholars</span></a></li><li class="plain" id="portaltab-seminars-level2"><a href="http://www.cpc.unc.edu/events/2016-17-interdisciplinary-research-seminars" title=""><span>Seminars</span></a></li><li class="plain" id="portaltab-resources-level2"><a href="http://www.cpc.unc.edu/training/resources" title=""><span>Resources</span></a></li></ul></li></ul>
+	      		</div>
+	    <div id="portal-logo-div">
+	      <a id="portal-logo" title="UNC Carolina Population Center" accesskey="1" href="http://www.cpc.unc.edu/">
+    <img src="./Looping_ foreach in detail — UNC Carolina Population Center_files/logo.png" alt="UNC Carolina Population Center" title="UNC Carolina Population Center" height="49" width="300"></a>
+	    </div>
+	      <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <span id="breadcrumbs-home">
+        <a href="http://www.cpc.unc.edu/">Home</a>
+        <span class="breadcrumbSeparator">
+            /
+            
+        </span>
+    </span>
+    <span id="breadcrumbs-1" dir="ltr">
+        
+            <a href="http://www.cpc.unc.edu/research">Research</a>
+            <span class="breadcrumbSeparator">
+                /
+                
+            </span>
+            
+         
+    </span>
+    <span id="breadcrumbs-2" dir="ltr">
+        
+            <a href="http://www.cpc.unc.edu/research/tools">Tools &amp; Resources</a>
+            <span class="breadcrumbSeparator">
+                /
+                
+            </span>
+            
+         
+    </span>
+    <span id="breadcrumbs-3" dir="ltr">
+        
+            <a href="http://www.cpc.unc.edu/research/tools/data_analysis">Data Analysis</a>
+            <span class="breadcrumbSeparator">
+                /
+                
+            </span>
+            
+         
+    </span>
+    <span id="breadcrumbs-4" dir="ltr">
+        
+            <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial">Stata Tutorial</a>
+            <span class="breadcrumbSeparator">
+                /
+                
+            </span>
+            
+         
+    </span>
+    <span id="breadcrumbs-5" dir="ltr">
+        
+            <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc">Miscellaneous Tips and Tricks </a>
+            <span class="breadcrumbSeparator">
+                /
+                
+            </span>
+            
+         
+    </span>
+    <span id="breadcrumbs-6" dir="ltr">
+        
+            
+            
+            <span id="breadcrumbs-current">Looping: foreach in detail</span>
+         
+    </span>
+
+</div>
+	    </div>
+          </div>
+	  
+	  <div id="portal-columns" class="row"><div id="portlets-in-header-wrapper" class="container"><div id="portlets-in-header" class="row">
+         
+         
+    </div></div>
+	    <div id="portal-columns-ihner" class="container">
+	      <div id="portal-column-content" class="cell width-3:4 position-1:4">
+
+            <div id="viewlet-above-content">
+
+
+<div id="portlets-above" class="row">
+    
+    
+</div>
+
+
+</div>
+
+            
+                
+
+                    
+
+                    
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+
+                    
+                        <div id="content">
+
+                            
+
+                            
+
+                             <div id="viewlet-above-content-title"></div>
+                             
+                                 
+                                 
+            
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Looping: foreach in detail
+                </h1>
+            
+            
+        
+                             
+                             <div id="viewlet-below-content-title">
+
+<div id="portlets-below" class="row">
+
+     
+     
+</div>
+
+
+</div>
+
+                             
+                                 
+                                 
+            
+                
+            
+            
+        
+                             
+
+                             <div id="viewlet-above-content-body">
+
+</div>
+                             <div id="content-core">
+                                 
+    
+        
+        <div class="" id="parent-fieldname-text-0adb5647e0b5bc0218a50c3d83ca983e">
+            <p>&nbsp;</p>
+<h3>More examples of <strong>foreach</strong> and <strong>forvalues</strong> commands.</h3>
+<p>Stata processes all observations of the data set for each element in the list of the <strong>foreach</strong> and <strong>forvalues</strong> commands.</p>
+<p>This page shows 4 different types of lists that can be used in the <strong>foreach</strong> command: <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail#varlist" class="internal-link" title="Looping: foreach in detail">varlist</a>, <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail#newlist" class="internal-link" title="Looping: foreach in detail">newlist</a>, <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail#numlist" class="internal-link" title="Looping: foreach in detail">numlist</a>, and <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail#anylist" class="internal-link" title="Looping: foreach in detail">anylist</a> and how to use the <strong>forvalues</strong> command.</p>
+<p>Both <strong>foreach</strong> and <strong>forvalues</strong> commands use "local macro" variables in processing whatever list they loop through. A local macro variable is not a variable in the data set but rather a variable available to Stata for programming purposes. &nbsp;To learn more about local macro variables use Stata's help by searching for "macro". &nbsp;Here's a quick example:</p>
+<pre>. local X= "MyVarName"  // create local macro variable X and set it equal to the text MyVarName.
+. display "My variable name is: `X'"
+
+ "My variable name is: MyVarName"</pre>
+<p>Notice that the local macro variable X is enclosed in a left and right single quote. &nbsp;The left quote is under the tilde (~) key on the left side of your keyboard and the right quote is under the double quote (") key on the right side of your keyboard. &nbsp;Enclosing a letter or variable name in left and right quotes tells Stata to evaluate it as a local macro variable.</p>
+<p>NOTE: the following is a <strong>do-file</strong>. The <strong>foreach</strong> and <strong>forvalues</strong> commands are better suited to a <strong>do-file</strong> than to interactive use of Stata. Highlight and copy all text between the horizontal bars and paste into the Stata interactive do-file window so that you can run this do-file.</p>
+<hr>
+<pre>clear 
+
+use "q:\utilities\statatut\examfac2.dta" 
+
+summarize 
+ 
+
+list q102_*  in 1/10 
+
+/************************* from log *******************************************
+            q102_1         q102_2         q102_3         q102_4         q102_5 
+  1.     PH NurseB          Other        ClinOff             99             99 
+&gt;  
+  2.       ClinOff             99             99             99             99 
+&gt;  
+  3.      NurseOff      PH NurseB      PH NurseB       MCH Aide       MCH Aide 
+&gt;  
+  4.       ClinOff        ClinOff  Nurse/Midwife       MCH Aide             99 
+&gt;  
+  5.      MCH Aide    NurseAssist        ClinOff             99             99 
+&gt;  
+  6. Nurse/Midwife        ClinOff  Nurse/Midwife             99             99 
+&gt;  
+  7.   NurseAssist    NurseAssist             99             99             99 
+&gt;  
+  8.       ClinOff    NurseAssist    NurseAssist             99             99 
+&gt;  
+  9.       ClinOff    NurseAssist    NurseAssist             99             99 
+&gt;  
+ 10. Nurse/Midwife             99             99             99             99 
+&gt;  
+********************************************************************************/
+
+/** 
+Notice that q102_* vars appear to be character data not numeric.
+       The value label "title" is associated to these variables formats 
+       the numeric data to look like character data.  Click here to see webpages about 
+       <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/documenting/varlabel" class="internal-link" title="Variable labels">variable labels</a> and <a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/documenting/vallabel" class="internal-link" title="Value labels">value labels</a>    **/
+
+
+<a name="varlist" id="varlist"></a> 
+/** use <strong>varlist</strong> for a list of variables that already exist in a data set */
+
+/** Say you want to disassociate the value label <strong>title</strong> from the q102_* variables.
+    You could type: label value q102_1  
+                    label value q102_2  
+                    label value q102_3  
+                    label value q102_4  
+                    label value q102_5  
+
+    Or you could use a <strong>varlist</strong> in a <strong>foreach</strong> command to disassociate 
+    the value label <strong>title</strong> with the q102_* vars.  **/
+
+
+foreach X of varlist q102_1 q102_2 q102_3 q102_4 q102_5{ 
+ label value `X'   /* Notice that the capital letter X is is enclosed in left and right quotes.
+                    * This tells Stata to evaluate the local macro X. */
+ display "label value `X' "  // Displays in the results window/log file what commands Stata processed.
+                             // This is completely unnecessary but helpful in explaining the looping.
+}  
+
+
+list q102_*  in 1/10 
+
+
+/****************************************
+ In both cases the value label <strong>title</strong> will still be available for use
+ with other variables or even to be re-used again on the q102_1-q102_5 variables. 
+ If the value label <strong>title</strong> is not associated to any variable when the data set
+ is saved then it will be dropped.
+*****************************************/ 
+
+
+
+
+
+/* Now re-assign the <strong>title</strong> value label to each q102_* variable. 
+   This time use a local macro variable in the <strong>foreach</strong> command.  **/
+
+local titles "q102_1 q102_2 q102_3 q102_4 q102_5"    
+                 
+foreach X of varlist `titles' { 
+ label val `X' title   
+}
+ 
+/** NOTE: The apostrophe on the left is a left apostrophe.
+          It is on your keyboard next to the "1" key.  
+          When a local macro variable is enclosed in a left
+          and right apostrophe, it is evaluated as the 
+          contents of that local macro variable.  **/
+
+list `titles'  in 1/10 
+
+/** NOTE: A local macro variable can be used many times throughout a program and
+          thus can save a lot of typing.  It can also help keep a <strong>foeach</strong> command
+          from looking very messy, like if you wanted to pass through a <strong>foreach</strong> 
+          command 10 or more variables that could not be represented in shorthand 
+          (like q103_1-q103_10 can be).
+          
+
+    NOTE: <strong>`titles'</strong> represents the text "q102_1 q102_2 q102_3 q102_4 q102_5".         
+          Local macro variable names can be up to 7 (not 8) characters long in Stata 6.  
+          Stata 7 allows them to be up to 31 characters long.
+
+********************************************/
+                  
+
+
+
+<a name="newlist" id="newlist"></a> 
+/* Use <strong>newlist</strong> for variables that are created/generated by the <strong>foreach</strong> command. */
+
+/* Create string variables title1c, title2c, title3c, title4c and title5c that can hold up to 13 characters. */
+
+foreach X of newlist title1-title5{ 
+ gen str13 `X'c= "" 
+}
+
+/** NOTE: A foreach command like:
+            foreach X of newlist title* { 
+              gen str13 `X'c= "" 
+            }
+          would not work because Stata wouldn't know how many title variables to create.  **/
+
+
+
+<a name="numlist" id="numlist"></a>
+/** Use <strong>numlist</strong> to insert numbers in place of the local macro var X into a <strong>foreach</strong> command. **/
+
+/** Use <strong>numlist</strong> to rename q102_* vars in a <strong>foreach</strong> command  **/
+
+foreach X of numlist 1/5 {
+  rename q102_`X' title`X'  
+                /** The local macro variable X is replaced with
+                    the numbers 1, 2, 3, 4, 5  ***/
+}
+
+
+list title1-title5 in 1/10 
+
+/**  NOTE: The above foreach command could have been written with a forvalues command:
+ *   forval X= 1/5 { 
+ *    rename q102_`X' title`X' 
+ *   }
+ *   The capital letter X and could be any letter, upper or lower case. 
+ *   A good rule of thumb is have all variable names in lowercase.
+ **/
+
+
+<a name="anylist" id="anylist"></a> 
+/** The <strong>anylist</strong> is a list of words.  Shorthand notation like title* or
+title1-title5 does not work.  **/
+
+foreach X in 1 2 3 4 5 6 7 8 9 10 { 
+  replace title1c="not missing" if title1==`X'
+}
+
+/* The anylist is the most universal type of foreach command since it is not 
+   restricted to pre-existing variables, new variables, or just numbers.  */
+
+
+
+/* More than 1 list of variables can processed at a time. */
+
+/* Replace all values of 99 with missing in title1-title5 and q103_*  */
+
+summarize title5-q103_1 
+
+foreach X of varlist title1-title5 q103_* { 
+  replace `X'= .  if `X' == 99 
+}
+
+summarize title5-q103_1 
+
+
+
+
+/** Two or more lists or types of lists can be processed at the same time. **/
+
+/** Create new variables from existing variables in a <strong>foreach</strong> command. **/
+
+ /* First create 2 variable list and store them in local macro variables using the
+  * the unab Stata command: */
+unab varlist1 : title1-title5
+unab varlist2 : q103_1-q103_5  
+
+ /* Use the display command to see that local macro varlist1 contains the string:
+  *  q103_1 q103_2 q103_3 q103_4 q103_5 */
+di "`varlist1'"
+
+foreach X of newlist mch_h1-mch_h5 {
+ local n= `n' + 1   /* keep count of how many times the loop is processed */
+ /* Use the extended macro function ": word # of" to set the local macro variable Y to the n'th variable name */
+ local Y : word `n' of `varlist1'
+ local Z : word `n' of `varlist2'
+ gen `X'= `Z'  if `Y' == 8
+ label var `X' "MCH Aid's hours" 
+}
+
+
+/** NOTE: All lists have to have the same number of elements. **/
+
+/* Since all the variables involved have numbers involved in their name, using the forval command would be simpler: 
+  forvalues X= 1/5 {  
+   gen mch_h`X'= q103_1`X'  if title`X' == 8
+   label var mch_h1`X' "MCH Aid's hours" 
+  }
+*****************************************************************/
+
+list mch_h1-mch_h5 in 23/31 
+
+
+/** NOTE: Stata reads the shorthand varlist of mch_h1-mch_h5 to be all
+          variables positionally in the data set between mch_h1 and mch_h5 (not 
+          necessarily mch_h1 mch_h2 mch_h3 mch_h4 mch_h5).  When using Stata
+          interactively, the variable list window in the lower left-hand side
+          shows the list of variables in the data set in the order of their position. 
+          The<strong> describe</strong> command also shows variable order. **/</pre>
+<p>&nbsp;</p>
+<p>&nbsp;Note: Dan Blanchette contributed this web page, however please direct questions to Phil Bardsley as noted below.</p>
+<p>&nbsp;</p>
+<hr>
+<p><a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/misc/loops_detail" class="internal-link" title="Looping: foreach in detail">Review again?</a></p>
+<p>&nbsp;</p>
+<p><a href="http://www.cpc.unc.edu/research/tools/data_analysis/statatutorial/index.html#misc" class="internal-link" title="Introduction">Another topic?</a></p>
+<hr>
+            
+        </div>
+    
+    
+
+                             </div>
+                             <div id="viewlet-below-content-body">
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+</div>
+
+                            
+                        </div>
+                    
+
+                    
+                
+            
+
+            <div id="viewlet-below-content">
+
+
+
+
+
+
+<div id="portlets-below" class="row">
+     
+     
+</div>
+
+
+</div>
+        </div>
+	      <div id="portal-column-one" class="cell width-1:4 position-0">
+            
+                
+<div class="portletWrapper" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6370630a6e617669676174696f6e" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f6370630a6e617669676174696f6e">
+<dl class="portlet portletNavigationTree">
+
+    <dt class="portletHeader hiddenStructure">
+        <span class="portletTopLeft"></span>
+        <a href="http://www.cpc.unc.edu/sitemap" class="tile">Navigation</a>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem lastItem">
+        <ul class="navTree navTreeLevel0">
+            <li class="navTreeItem navTreeTopNode section-research">
+                <div>
+                   <a href="http://www.cpc.unc.edu/research" class="contenttype-folder" title="The Carolina Population Center is known for its collaborative and multidisciplinary research, which spans the social science and health disciplines and extends beyond institutional and geographical boundaries. Details about components of the research activities at CPC are provided by the following links. ">
+                   
+                   
+                   Research
+                   </a>
+                </div>
+            </li>
+            
+
+
+
+<li class="navTreeItem visualNoMarker section-primary-research-areas">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/primary-research-areas" class="state-published contenttype-document" title="">
+            
+            <span>Primary Research Areas</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-projects">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/projects" class="state-published navTreeFolderish contenttype-folder" title="Listing of current research activities at CPC">
+            
+            <span>Projects</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker section-data">
+
+    
+
+
+        <a href="http://data.cpc.unc.edu/" class="state-published contenttype-link" title="">
+            
+            <span>Data</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-publications">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/publications" class="state-published navTreeFolderish contenttype-ris-bibliography" title="The following listing includes publications by CPC fellows, predoctoral trainees, postdoctoral scholars, and professional staff during the period of 2004 - present.">
+            
+            <span>Publications</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeItemInPath navTreeFolderish section-tools">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools" class="state-published navTreeItemInPath navTreeFolderish contenttype-folder" title="CPC provides a number of research tools to the population research community">
+            
+            <span>Tools &amp; Resources</span>
+        </a>
+
+        
+            <ul class="navTree navTreeLevel1">
+                
+
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-abm">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/abm" class="state-published navTreeFolderish contenttype-folder" title="The two sites below contain tools, source code and documentation related to agent-based model (ABM) development for social science purposes.">
+            
+            <span>Agent Based Modeling Tools</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-biomed">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/biomed" class="state-published navTreeFolderish contenttype-folder" title="The extensive expansion of the field of biochemical and molecular assessment of health allows population researchers to use new indicators that can measure exposure to an adverse external agent, subclinical health effects or disease status, or innate susceptibility to health effects">
+            
+            <span>Biomedical Specimens and Population Research</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeItemInPath navTreeFolderish section-data_analysis">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/data_analysis" class="state-published navTreeItemInPath navTreeFolderish contenttype-folder" title="Tutorials and tips relating to data analysis issues">
+            
+            <span>Data Analysis</span>
+        </a>
+
+        
+            <ul class="navTree navTreeLevel2">
+                
+
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-sastopics">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/data_analysis/sastopics" class="state-published navTreeFolderish contenttype-folder" title="">
+            
+            <span>Topics in SAS Programming</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-proc_codebook">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/data_analysis/proc_codebook" class="state-published navTreeFolderish contenttype-folder" title="A macro for producing codebooks for SAS files">
+            
+            <span>SAS Codebook</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-sas_to_stata">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/data_analysis/sas_to_stata" class="state-published navTreeFolderish contenttype-folder" title="">
+            
+            <span>A SAS User's Guide to Stata</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+
+
+            </ul>
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-datasecurity">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/datasecurity" class="state-published navTreeFolderish contenttype-folder" title="Best practices and guidelines for securely disseminating restricted use data can be found in our plans">
+            
+            <span>Data Security Plans</span>
+        </a>
+
+        
+
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-sdf">
+
+    
+
+
+        <a href="http://www.cpc.unc.edu/research/tools/sdf" class="state-published navTreeFolderish contenttype-folder" title="Provides a secure environment for researchers to access sensitive data. It frees users from the necessity of creating their own secure data research environment, while assuring data providers that all security conditions will be met">
+            
+            <span>Secure Data Facility </span>
+        </a>
+
+        
+
+    
+</li>
+
+
+
+
+            </ul>
+        
+
+    
+</li>
+
+
+
+
+        </ul>
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+</dl>
+
+</div>
+
+
+
+
+            
+        </div>
+	      
+	      <div class="visualClear"></div>
+	    </div>
+	  </div>
+		<div class="row" id="portal-footer-wrapper">
+	        <div class="cell width-full position-0">
+		        <div class="container">
+		            
+		            <div id="portal-footer">
+
+      <div class="panel panel-0 panel-horizontal"><div class="row">
+  
+    <div class="cell width-1:4 position-0">
+      <div class="content portlet-0"><div id="portletwrapper-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f737461746963" class="portletWrapper kssattr-portlethash-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f737461746963">
+<dl class="portlet portletStaticText portlet-static"><dt class="portletHeader titleless">
+        <span class="portletTopLeft"></span>
+        <span>
+           
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <h3 class="doormat-title" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc">HOME</a></h3>
+        <h3 class="doormat-title" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/people">PEOPLE</a></h3>
+
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/people/fellows">Faculty Fellows</a></h4>
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/people/deptmgrs.html">Management Team</a></h4>
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/people/directory">Phone Directory</a></h4>
+        <h3 class="doormat-title" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc">ABOUT</a></h3>
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/contactcpc">Contact Info / Directions</a></h4>
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/employment">Employment Opportunities</a><a></a></h4>
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/admin/consultinfo">Information for Lecturers &amp; Consultants</a></h4>
+                <!-- h4 class="doormat-content" style="text-align: start; "><a href="/cpc/aboutcpc/history">CPC History</a></h4 -->
+                <!-- h4 class="doormat-content" style="text-align: start; "><a href="/cpc/aboutcpc/annual-review.pdf/view">CPC Annual Review Brochure</a></h4 -->
+                <h4 class="doormat-content" style="text-align: start; "><a href="http://unc.edu/">UNC Home</a></h4>
+
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl></div>
+
+</div>
+    </div>
+  
+  
+    <div class="cell width-1:4 position-1:4">
+      <div class="content portlet-1"><div id="portletwrapper-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f7374617469632d31" class="portletWrapper kssattr-portlethash-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f7374617469632d31">
+<dl class="portlet portletStaticText portlet-static"><dt class="portletHeader titleless">
+        <span class="portletTopLeft"></span>
+        <span>
+           
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <h3 class="doormat-title" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/research">RESEARCH PROJECTS &amp; RESOURCES</a></h3>
+            <h4 class="doormat-content" style="text-align: start; ">Signature Projects:</h4>
+            <ul>
+                <li>
+                    <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/projects/addhealth">Add Health</a></h4>
+                </li>
+                <li>
+                    <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/projects/cebu">Cebu Longitudinal Health &amp; Nutrition Survey</a></h4>
+                </li>
+                <li>
+                    <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/projects/china">China Health &amp; Nutrition Survey</a></h4>
+                </li>
+                <li>
+                    <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/projects/measure">MEASURE Evaluation</a></h4>
+                </li>
+            </ul>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/research/projects">Research Projects: A-Z</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/research/publications">Publications</a></h4>
+            <!-- h4 class="doormat-content" style="text-align: start; ">Research Briefs</h4 -->
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl></div>
+
+</div>
+    </div>
+  
+  
+    <div class="cell width-1:4 position-1:2">
+      <div class="content portlet-2"><div id="portletwrapper-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f7374617469632d32" class="portletWrapper kssattr-portlethash-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f7374617469632d32">
+<dl class="portlet portletStaticText portlet-static"><dt class="portletHeader titleless">
+        <span class="portletTopLeft"></span>
+        <span>
+           
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <h3 class="doormat-title" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/training">TRAINING PROGRAMS</a></h3>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/training/predoc">Predoctoral Program</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/training/postdoc_program">Postdoctoral Program</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/training/interns">Undergraduate Internship Program</a></h4>
+            <!-- h4 class="doormat-content" style="text-align: start; "><a href="/cpc/training/visitingscholarlist">Visiting Scholars</a></h4 --><br>
+        <h3 class="doormat-title" style="text-align: start; ">PUBLIC SERVICES</h3>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://demography.cpc.unc.edu/">Carolina Demography</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/research/data">Data</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/research/library">Library Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/research/tools">Research Tools &amp; Resources</a></h4>
+            <!-- h4 class="doormat-content" style="text-align: start; "><a href="/cpc/events">Seminars &amp; Events</a></h4 -->
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl></div>
+
+</div>
+    </div>
+  
+  
+    <div class="cell width-1:4 position-3:4">
+      <div class="content portlet-3"><div id="portletwrapper-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f7374617469632d33" class="portletWrapper kssattr-portlethash-70616e656c730a636f6e746578740a2f6370632f66726f6e742d706167650a706f72746c65745f7374617469632d33">
+<dl class="portlet portletStaticText portlet-static"><dt class="portletHeader titleless">
+        <span class="portletTopLeft"></span>
+        <span>
+           
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <h3 class="doormat-title" style="text-align: start; ">INTERNAL SERVICES</h3>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/admin">Finance &amp; Administrative Services</a></h4>       
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/admin/proposals">Proposal Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/research/computer">IT Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/consultative">Methodological Consultative Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/research/library">Research Communications &amp; Library Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/research/programming">Research Programming Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/research/spatial">Spatial Analysis Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/cpc/aboutcpc/services/research/web">Web Services</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="http://www.cpc.unc.edu/intranet">Intranet</a></h4>
+            <h4 class="doormat-content" style="text-align: start; "><a href="https://adminliveunc.sharepoint.com/sites/cpc">SharePoint</a></h4>
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl></div>
+
+</div>
+    </div>
+  
+  
+</div>
+</div>
+
+
+
+</div>
+		            
+		         </div>
+	        </div>
+	    </div>
+		<div class="row" id="portal-colophon-wrapper">
+	        <div class="cell width-full position-0">
+		        <div class="container">
+		            <div id="portal-colophon"><p class="credits"><a href="http://themes.quintagroup.com/">Wink Plone Theme</a> by <a href="http://quintagroup.com/">Quintagroup</a> © 2013.</p>
+<div class="colophonWrapper">
+  <div id="bottom-cpc">
+    <h3 id="footer-aboutcpc"><span id="title-in-colophon">The Carolina Population Center</span><span id="content-in-colophon"> is a community of scholars and professionals collaborating on interdisciplinary research, methods, and training that advance understanding of population issues.<span></span></span></h3>  
+  </div>
+  <div id="bottom-logo">
+    <span><a href="http://www.cpc.unc.edu/"><img src="./Looping_ foreach in detail — UNC Carolina Population Center_files/UNC_CPC_footer.png" alt="CPC logo" width="150em" id="footer-logo" class="image-right" title="CPC logo"></a></span>
+  </div>
+</div>
+</div>
+
+		            <ul id="portal-siteactions">
+
+    <li id="siteaction-sitemap"><a href="http://www.cpc.unc.edu/sitemap" accesskey="3" title="Site Map">Site Map</a></li>
+    <li id="siteaction-accessibility"><a href="http://www.cpc.unc.edu/accessibility-info" accesskey="0" title="Accessibility">Accessibility</a></li>
+    <li id="siteaction-contact"><a href="http://www.cpc.unc.edu/contact-info" accesskey="9" title="Contact">Contact</a></li>
+</ul>
+					<div id="portal-personaltools-wrapper"> 
+		  <h5 class="hiddenStructure">Personal tools</h5> 
+		  <ul class="actionMenu deactivated" id="portal-personaltools">
+  <li id="anon-personalbar">
+    
+        <a href="http://www.cpc.unc.edu/login" id="personaltools-login">Log in</a>
+    
+  </li>
+</ul> 
+					</div>
+
+
+
+
+		        </div>
+	        </div>
+	    </div>
+          <div class="themeComment hiddenStructure visualNoPrint">This is themeComment for Wink theme</div>
+      </div>
+<div id="ajax-spinner" style="display: none;"><img src="./Looping_ foreach in detail — UNC Carolina Population Center_files/spinner.gif" alt=""></div></body></html>

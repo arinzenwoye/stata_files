@@ -1,0 +1,94 @@
+------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/arinzenwoye/Desktop/stata files/example.txt
+  log type:  text
+ opened on:  21 Mar 2016, 15:10:58
+
+. scalar a = 2*3 
+
+. scalar b = "2 times 3"
+
+. display b a
+2 times 36
+
+. local xlist "price weight"
+
+. regress mpg `xlist', noheader
+------------------------------------------------------------------------------
+         mpg |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       price |  -.0000935   .0001627    -0.57   0.567     -.000418    .0002309
+      weight |  -.0058175   .0006175    -9.42   0.000    -.0070489   -.0045862
+       _cons |   39.43966   1.621563    24.32   0.000     36.20635    42.67296
+------------------------------------------------------------------------------
+
+. *make artificial dataset of 100 observations on 4 uniform variables
+. clear 
+
+. set obs 100
+number of observations (_N) was 0, now 100
+
+. set seed 10101 
+
+. generate x1var = runiform()
+
+. generate x2var = runiform()
+
+. generate x3var = runiform()
+
+. generate x4var = runiform()
+
+. generate sum = x1var + x2var + x3var + x4var
+
+. summarize sum
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         sum |        100    1.935471    .5911068   .4193314   3.349523
+
+. quietly replace sum = 0
+
+. foreach var of varlist x1var x2var x3var x4var{
+  2.         quietly replace sum = sum + `var'
+  3. }
+
+. summarize sum 
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         sum |        100    1.935471    .5911068   .4193314   3.349523
+
+. quietly replace sum = 0 
+
+. forvalues i = 1/4{
+  2.         quietly replace sum = sum + x`i'var
+  3. }
+
+. summarize sum 
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         sum |        100    1.935471    .5911068   .4193314   3.349523
+
+. quietly replace sum = 0 
+
+. local i 1
+
+. while `i' <=4{
+  2.         quietly replace sum = sum + x`i'var
+  3.         local i = `i' + 1
+  4. }
+
+. summarize sum
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         sum |        100    1.935471    .5911068   .4193314   3.349523
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/arinzenwoye/Desktop/stata files/example.txt
+  log type:  text
+ closed on:  21 Mar 2016, 15:10:58
+------------------------------------------------------------------------------------

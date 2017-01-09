@@ -1,0 +1,74 @@
+	.
+	b/se
+status2	
+Female	0.000
+	(.)
+Male	0.149
+	(0.11)
+Agriculture	0.831*
+	(0.41)
+Biological and Biomedical Sciences	0.085
+	(0.34)
+Business, Management, Marketing, and Related Support Services	1.304***
+	(0.28)
+Communication, Journalism and Related Programs	-0.277
+	(0.30)
+Computer and Information Sciences and Support Services	1.151***
+	(0.32)
+Engineering	0.677*
+	(0.28)
+Health Professions and Related Programs	0.089
+	(0.33)
+History	0.304
+	(0.47)
+Languages, Literature and Linguistics	0.379
+	(0.37)
+Liberal Arts and Sciences, General Studies and Humanities	0.000
+	(.)
+Mathematics and Statistics	0.436
+	(0.42)
+Other	-0.370
+	(0.50)
+Parks, Recreation, Leisure and Fitness	0.041
+	(0.35)
+Physical Sciences	0.377
+	(0.44)
+Psychology	-0.138
+	(0.34)
+Social Sciences	0.669*
+	(0.30)
+Visual and Performing Arts	-0.674
+	(0.53)
+age1	0.034*
+	(0.01)
+cgpa	0.455***
+	(0.12)
+first_gen	0.149
+	(0.11)
+Asian only	-0.001
+	(0.12)
+Black, Non-Hispanic	-0.278
+	(0.20)
+Hispanic/Puerto-Rican	-0.148
+	(0.17)
+White, Non-Hispanic	0.000
+	(.)
+other	0.073
+	(0.25)
+internship/co_op	0.361*
+	(0.14)
+total_internships	0.198***
+	(0.05)
+foreign	-0.720
+	(0.38)
+jobsearch_skills_agg	0.071***
+	(0.02)
+intensity	-0.261***
+	(0.03)
+cut1	
+Constant	2.672***
+	(0.62)
+cut2	
+Constant	3.256***
+	(0.62)
+* p<0.05, ** p<0.01, *** p<0.001

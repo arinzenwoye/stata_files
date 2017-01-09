@@ -1,0 +1,110 @@
+Drone Name,No.of Rotors,Price($),Max Flight Time(min),Operating Range(m),Wingspan(mm),Weight(g),Body Material,Rotor Material,Payload Capacity(g),Max Speed (m/s),Max Flying Altitude (m),Ready to Fly,Bind and Fly,GPS Compatible,Altitude Hold,Position Hold,Flight Planning,Autonomous Flight,Follow me Capable,Automatic Landing,Return to Home,Collision Avoidance,Headless Mode,External Camera Compatible,Inbuilt Camera,Camera Resolution(MP),Video Resolution,Stabilization axis,VR Headset Compatible,Live View,Frequency (GHz),Live View Speed (Frames/sec),Operating Range (m),Frequency(GHz),Battery (mAh),Battery (mAh),Weight(g)
+Ehang 184,8,300000,23,,3401,200000,Carbon Fiber,Carbon Fiber,99790,28,3500,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,no,yes,No,Yes,,,,,NO,,,,,,,,
+XactSense Titan,8,120000,30,16095,1300,8165,Carbon Fiber,Carbon Fiber,22680,,55,Yes,No,Yes,No,Yes,Yes,Yes,No,no,Yes,No,No,Yes,,,,,NO,,,,16095,2.4,,,
+XactSense MAX 8,8,65000,25,,1219,2268,Carbon Fiber,Carbon Fiber,9072,,121,Yes,No,Yes,No,no,Yes,no,No,no,no,No,no,Yes,,,,,NO,,,,,2.4,,32000,
+AEE F100,4,58000,70,10000,2190,6000,Carbon Fiber,Carbon Fiber,2500,27.7,1500,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,,Yes,16,1080p,2,NO,Yes,,60,10000,2.4,,3500,
+AEE F50,4,37000,40,20000,,2000,Carbon Fiber,Carbon Fiber,,5,900,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,,Yes,16,1080p,,NO,Yes,,30,20000,,,3500,
+Sci.Aero cyberQuad,4,37000,25,500,850,1700,Plastic,Plastic,800,16.6,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,no,Yes,No,No,Yes,,,,,NO,,,,500,,,,
+Service-Drone MULTIROTOR G4 Eagle V2 Cargo,8,35360,30,2000,889,2500,Carbon Fiber,Carbon Fiber,2500,16.6,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,no,Yes,No,No,Yes,,,,,NO,,,,2000,2.4,,2200,
+Service-Drone MULTIROTOR G4 Eagle V2 + FREEFLY MoVI M5,8,33940,10,1000,880,4500,Carbon Fiber,Carbon Fiber,2000,16,,Yes,No,Yes,Yes,Yes,Yes,no,No,Yes,Yes,No,No,Yes,,,,,NO,,,,1000,2.4,,,
+Service-Drone MULTIROTOR G4 Eagle V2 ,8,28260,30,2000,880,2500,Carbon Fiber,Carbon Fiber,2500,16.6,,Yes,No,Yes,Yes,Yes,Yes,no,No,Yes,Yes,No,No,Yes,,,,2,NO,,5.8,,2000,2.4,,,
+Service-Drone MULTIROTOR G4 Surveying Robot,6,25420,20,,850,2700,Carbon Fiber,Carbon Fiber,2300,8.3,,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,,NO,,,,3000,2.4,,3200,
+Advanced Tactics Inc Transformer UGAV,6,25000,25,,1724,15900,Carbon Fiber,Carbon Fiber,10200,20,6100,Yes,No,no,No,no,no,Yes,No,no,Yes,No,No,Yes,,,,,NO,,,,,2.4,,,
+"Allied Drones HL48 ""Chaos""",8,20000,45,20000,1575,6800,Carbon Fiber,Carbon Fiber,6800,13.4,,Yes,No,Yes,No,Yes,Yes,no,No,Yes,Yes,No,No,Yes,,,,,NO,,,,20000,2.4,,22000,
+Service-Drone MULTIROTOR G4 Skycrane V2,8,18320,12,2000,1140,5500,Carbon Fiber,Carbon Fiber,6500,13.8,,Yes,No,Yes,Yes,no,Yes,no,No,Yes,Yes,No,No,Yes,,,,3,NO,,5.8,,2000,2.4,,8000,
+Aeronavics SkyJib-8 Ti-QR,8,17945,15,3000,1172,,Carbon Fiber,Carbon Fiber,5000,,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,3,NO,,,,3000,2.4,,11000,
+Flairics Journalist,4,17400,15,,845,2200,Plastic/CF,Carbon Fiber,1500,16.6,2000,Yes,No,Yes,Yes,Yes,Yes,no,yes,no,Yes,No,No,Yes,,,,,NO,,,,,2.4,,8000,
+Aeronavics SkyJib-X4 Ti-QR,8,15592,20,3000,912,,Carbon Fiber,Carbon Fiber,3500,22,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,3,NO,,5.8,,3000,2.4,,10000,
+Airborne Robotics AIR6,6,15500,18,1981,775,5000,Aluminum,Carbon Fiber,1000,13.8,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,,NO,,,,1981,2.4,3200,,
+TurboAce Infinity 9Pro Octocopter,8,15098,15,1981,1690,7031,Carbon Fiber,Carbon Fiber,9070,,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,no,Yes,No,No,Yes,,,,3,NO,,,,1931,2.4,,22000,
+Allied Drones HornetCam F8 Multirotor,8,14250,31,,1100,4200,Carbon Fiber,Carbon Fiber,,,,Yes,No,Yes,No,no,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,,NO,,,,,2.4,,,
+Aerial Technology International Thor X4,8,14150,15,,1480,15500,Al/CF,Carbon Fiber,4535,29.7,,Yes,Yes,no,No,no,no,no,No,no,no,No,No,Yes,,,,3,NO,,,,,2.4,,22000,
+SteadiDrone QU4D X,4,13999,20,,1240,3580,Carbon Fiber,Carbon Fiber,8000,,,Yes,No,Yes,No,Yes,Yes,no,No,Yes,Yes,No,No,Yes,,,,,NO,,,,,2.4,2200,10000,
+Draganfly Draganflyer X4-P,4,13000,25,200,1070,1670,Carbon Fiber,Carbon Fiber,800,3.8,2438,Yes,No,Yes,Yes,Yes,no,Yes,No,Yes,Yes,No,No,Yes,,,,2,NO,,,,200,2.4,,5400,
+Fotokite Pro,4,10000,60,20,638,600,Carbon Fiber,Plastic,,,,Yes,No,no,Yes,Yes,no,no,yes,no,no,No,No,Yes,,,1080p,2,NO,yes,,60,20,,,,
+Aerial Technology International AgBOT,4,9750,26,26700,1020,4700,Carbon Fiber,Carbon Fiber,,17,,Yes,No,Yes,No,no,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,,NO,,,,26700,,,13000,
+Draganfly Draganflyer X6,6,8995,15,200,990,1000,Carbon Fiber,Carbon Fiber,500,13.4,2438,Yes,No,Yes,Yes,Yes,no,Yes,No,Yes,Yes,No,No,Yes,,,,,NO,,,,200,2.4,2000,2700,
+Freefly Systems Alta Hexacopter,6,8495,15,2000,1145,13600,Carbon Fiber,Carbon Fiber,6800,26,2000,Yes,Yes,Yes,Yes,Yes,no,Yes,yes,Yes,Yes,No,no,Yes,,,,3,NO,,,,2000,2.4,,48000,2700
+Service-Drone MULTIROTOR G4 Blackbird V2,4,8380,20,1000,636,1150,Carbon Fiber,Carbon Fiber,500,13.8,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,yes,,,,2,NO,,,,1000,2.4,5200,,
+Homeland Surveillance RDASS Q1000,4,7927,20,1610,,,Plastic/CF,Carbon Fiber,1500,,3657,Yes,No,Yes,Yes,Yes,no,Yes,No,Yes,Yes,No,No,Yes,,,,,NO,,,,1610,2.4,1500,6000,
+SeaHex Hexacopter,6,7700,20,1000,1018,2630,Carbon Fiber,Carbon Fiber,,,,Yes,No,Yes,No,Yes,Yes,no,No,no,Yes,No,No,Yes,,,,,NO,,,,1000,2.4,,10000,
+Draganfly Guardian,4,7000,31,200,725,1050,Carbon Fiber,Carbon Fiber,420,13.8,2438,Yes,No,Yes,Yes,Yes,no,no,No,Yes,Yes,No,No,Yes,,,,,NO,,,,200,2.4,,2700,
+Aeronavics XM-6,6,6470,25,3000,770,3045,Carbon Fiber,Carbon Fiber,1000,,121,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,3,NO,,,,3000,2.4,,6000,
+FreeFly Systems Cinestar 8,8,6250,30,,1345,3050,Carbon Fiber,Carbon Fiber,5445,,,Yes,No,Yes,No,no,Yes,no,No,Yes,Yes,No,No,Yes,,,,3,NO,,,,,2.4,,10000,
+3D Robotics X8-M,8,5400,14,1000,618,3500,Aluminum,Plastic,200,11,120,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,Yes,,,,2,,,,,1000,2.4,,10000,803
+Yuneec H920 Tornado,6,4999,24,2000,920,5000,Carbon Fiber,Carbon Fiber,1600,21,4000,Yes,No,Yes,No,no,no,no,No,Yes,Yes,No,No,,Yes,2,1080p,3,NO,yes,5.8,,2000,2.4,8700,8800,
+DJI Inspire 1 Pro,4,4500,15,5000,559,2870,Carbon Fiber,Carbon Fiber,630,18,120,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,16,4K,3,yes,Yes,,,5000,5.8,6000,4500,570
+Walkera QR X900,6,4400,25,1000,900,7050,Carbon Fiber,Carbon Fiber,3000,,,Yes,No,Yes,Yes,Yes,Yes,no,No,no,Yes,No,No,Yes,,,,,,,,,1000,2.4,,16000,
+SteadiDrone Mavrik x4,4,4199,25,1500,814,2200,Aluminum,Carbon Fiber,1500,18,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,1,,,,,1500,2.4,,8000,750
+SteadiDrone Mavrik x4,4,4199,25,1500,814,2200,Aluminum,Carbon Fiber,1500,18,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,1,,,,,1500,2.4,,8000,750
+Skyhawk RC Octocopter Hawk F900 RTF,8,4000,27,1000,920,3345,Pl/CF,Pl/CF,1700,10.2,2550,Yes,No,Yes,Yes,Yes,no,no,No,no,Yes,No,No,Yes,,,,3,,,,,1000,2.4,,15000,
+Atlantahobby Vortex,6,3950,25,1000,635,1315,plastic,Plastic,,,,Yes,No,Yes,No,Yes,Yes,Yes,No,no,Yes,No,No,Yes,,,,3,,,,,1000,2.4,2000,16000,
+DJI Matrice 100,4,3300,40,5000,650,2355,plastic,Carbon Fiber,1000,22,,Yes,No,Yes,Yes,Yes,Yes,nn,yes,no,Yes,No,No,Yes,,,,,,,,,5000,5.8,6000,4500,600
+QuadH2o Quadcopter,4,3180,10,,603,640,Pl/CF,Plastic,960,,,Yes,No,Yes,Yes,Yes,no,n,No,no,Yes,No,No,Yes,,,,,,,5.8,,,2.4,,,
+DJI Spreading Wings S800 EVO,6,3000,20,,800,3700,Aluminum,Pl/CF,4300,,,No,Yes,Yes,Yes,Yes,no,no,No,Yes,Yes,No,No,Yes,,,,3,,,,,,2.4,,15000,1700
+DJI Inspire 1,4,2900,18,2000,559,2935,Carbon Fiber,Carbon Fiber,1700,22,4500,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,12,4K,3,NO,Yes,2.48,,2000,2.48,6000,4500,570
+Skyhawk RC Hexacopter Hawk F750,6,2700,27,1200,750,2570,Aluminum,Carbon Fiber,4280,10.2,500,Yes,No,Yes,Yes,Yes,Yes,no,No,Yes,Yes,No,No,Yes,,,,,,,,,1200,2.4,,20000,
+AeroVironment Qube UAS,4,2000,40,1000,,2500,Aluminum,Carbon Fiber,,,152,Yes,No,Yes,Yes,Yes,Yes,no,No,no,Yes,No,No,,,,,,no,yes,5.8,,1000,2.4,,,
+Microdrones MD4-1000,4,2000,88,500,1030,2650,Carbon Fiber,Carbon Fiber,1200,12,1000,Yes,No,Yes,No,Yes,Yes,no,No,no,Yes,No,no,Yes,,,,,,,,,500,2.4,,13000,
+Yuneec Q500 Typhoon,4,1950,25,800,565,1130,Plastic,Plastic,570,24.4,122,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,12,1080p,3,NO,Yes,5.8,,800,2.4,5200,5400,385
+Ideafly Storm-800,6,1800,30,1000,800,4800,Carbon Fiber,Carbon Fiber,2000,8,1000,No,Yes,Yes,Yes,Yes,no,no,No,no,Yes,No,No,yes,,,,,,,,,1000,2.4,,12000,1500
+Yuneec Typhoon H,6,1800,25,1000,410,1850,Carbon Fiber,Carbon Fiber,,10,122,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,no,Yes,yes,No,,Yes,12,4K,3,yes,Yes,5.8,30,1000,2.4,8700,5400,
+Fpvfactory Splash Drone AUTO Version,4,1600,19,1000,500,1150,plastic,Carbon Fiber,1000,6,,Yes,No,Yes,No,no,no,Yes,yes,Yes,Yes,No,No,Yes,,,,2,,,,,1000,2.4,,4500,
+AEE AP11,4,1500,25,50,,980,plastic,Plastic,,25,4000,Yes,No,Yes,Yes,Yes,no,no,No,no,Yes,No,No,Yes,,,,2,,,,,50,,,5300,
+DJI Phantom 4,4,1400,28,5000,,1380,Magnesium,Carbon Fiber,460,20,6000,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,yes,No,,Yes,12,4K,3,NO,yes,5.8,60,5000,2.4,6000,5350,462
+DJI Flame Wheel F550,6,1400,,,550,478,Carbon Fiber,Carbon Fiber,1922,,,No,Yes,Yes,Yes,Yes,no,no,No,no,Yes,No,No,Yes,,,,3,,,,,,2.4,,,
+DJI Phantom 3 Professional,4,1259,23,3000,590,1280,Plastic,Plastic,300,16,6000,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,12,4K,3,no,Yes,2.4,30,2000,2.4,6000,4480,365
+Ideafly Hero-550,4,1250,23,2000,500,2500,Pl/CF,Carbon Fiber,800,8,500,Yes,No,Yes,Yes,Yes,no,no,No,no,Yes,No,No,Yes,,,,3,,,,,2000,2.4,,10000,420
+Yuneec Q500+ Typhoon,4,1250,25,400,565,1100,Aluminum,Plastic,600,,400,Yes,No,Yes,Yes,Yes,Yes,no,yes,Yes,Yes,No,No,,Yes,16,1080p,3,NO,Yes,5.8,48,400,2.4,5200,5400,40
+TTRobotix Ghost+,4,1200,25,1000,450,2250,Plastic,Plastic,700,10.2,,Yes,No,Yes,Yes,Yes,Yes,no,yes,Yes,Yes,No,No,Yes,,,,3,,,,,1000,2.4,,6000,
+3D Robotics Y6 RTF,6,1190,15,,500,1905,Aluminum,Plastic,600,,,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,Yes,,,,2,,,,,,,,6000,
+Action Drone AD-TALON,4,1039,25,1000,436,868,Carbon Fiber,Plastic,,22.4,,Yes,No,Yes,Yes,Yes,no,no,No,no,Yes,No,No,Yes,,,,,,,,,1000,2.4,,5300,
+DJI Phantom 3 4K,4,1000,25,1000,590,1280,plastic,Plastic,,16,120,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,12,4K,3,yes,yes,5.8,30,1200,5.8,600,4480,365
+AEE AP10 Pro,4,1000,25,700,450,1500,Plastic,plastic,100,20,4000,Yes,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,,Yes,16,1080p,,No,No,5.8,50,700,2.4,,5300,
+Autel Robotics X-Star Premium,4,1000,25,2000,352,1420,,,180,16,,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,,Yes,12,4K,3,No,Yes,5.8,240,2000,5.8,6000,4900,
+Lily Camera,4,999,20,30,369,1300,AL/CF,Plastic,,11,15,Yes,No,Yes,No,Yes,no,Yes,yes,Yes,no,No,No,,Yes,12,1080p,,NO,No,,,30,2.4,,,
+ProDrone Byrd Standard,4,950,25,500,622,1890,,,,15,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,,Yes,16,1080p,3,yes,yes,,30,500,2.4,,7000,
+Aries BlackBird X10,4,900,25,500,450,1400,Plastic,Carbon Fiber,,20,500,Yes,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,,Yes,16,1080p,,No,Yes,,30,500,2.4,,5300,
+Blade 350 QX2 AP Combo,4,900,15,5000,580,1006,plastic,Plastic,250,,,Yes,No,Yes,Yes,Yes,no,no,No,no,Yes,No,No,Yes,,,,2,NO,Yes,5.8,30,5000,2.4,,3000,
+Tilt Drone Racer,4,830,8,,330,800,Carbon Fiber,Carbon Fiber,,30.5,,Yes,No,no,No,no,no,no,No,no,Yes,No,No,Yes,,,,,,,,,,2.4,,2500,
+DJI Phantom 3 Advanced,4,800,23,2000,590,1280,Carbon Fiber,Carbon Fiber,300,16,6000,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,,Yes,12,1080p,3,No,Yes,2.4,30,2000,2.483,6000,4480,365
+Blade Chroma,4,800,30,400,400,1300,plastic,Plastic,,17.9,,Yes,No,Yes,No,Yes,Yes,no,yes,Yes,Yes,No,No,,Yes,16,1080p,3,NO,Yes,5.8,48,400,2.4,,5400,
+Eachine Assassin 180 FPV,4,750,9,,180,288,plastic,Plastic,,,,Yes,Yes,Yes,Yes,Yes,no,no,No,no,no,no,no,,,,,,yes,Yes,5.8,,,2.4,,1000,24
+Walkera Scout X4,4,739,25,1500,233,1770,Carbon Fiber,Plastic,500,16.7,,No,Yes,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,yes,,,,3,,,,,1500,2.4,3000,5400,
+Flytrex Sky,4,650,30,11000,470,1250,plastic,plastic,2000,20,,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,,,,,,,,,11000,,,7000,
+3D Robotics IRIS+,4,600,22,1000,550,1282,plastic,Pl/CF,400,22.7,,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,Yes,,,,2,,,,,1000,2.4,,5100,320
+EHang Ghost Basic,4,600,23,1000,360,650,Carbon Fiber,Carbon Fiber,1000,10.7,1000,Yes,No,Yes,Yes,Yes,Yes,no,yes,Yes,Yes,No,No,Yes,,,,2,,,,,1000,2.4,,5400,
+Walkera Furious 320,4,576,10,1000,167,810,Carbon,Carbon Fiber,,33.3,,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,,Yes,12,1080p,,Yes,Yes,5.8,60,1000,2.4,,2600,
+Walkera Furious 320,4,576,10,1000,167,810,Carbon Fiber,Carbon Fiber,,33.3,,Yes,No,Yes,No,no,no,No,No,no,Yes,No,No,,Yes,12,1080p,,yes,yes,5.8,60,1000,2.4,,2600,
+DJI Phantom 3 Standard,4,500,25,1000,590,1216,Carbon Fiber,Carbon Fiber,,16,6000,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,12,2.7K,3,NO,Yes,2.4,30,1000,5.8,2600,4480,365
+Blade 350 QX3,4,500,15,1000,580,955,Carbon Fiber,Carbon Fiber,,20,,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,No,Yes,,,,3,,,5.8,60,1000,2.4,,3000,
+Parrot Bebop,4,500,22,2000,248,420,Plastic,plastic,20,13,150,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,,Yes,14,1080p,3,Yes,Yes,5.8,30,2000,2.4,1200,1200,
+Blade 350 QX3,4,500,15,1000,580,955,plastic,Plastic,,20,,Yes,Yes,Yes,Yes,Yes,Yes,no,no,Yes,Yes,No,No,Yes,,,,3,,,5.8,60,1000,2.4,,3000,
+Xiaomi Mi Drone 4k,4,457,27,2000,,,plastic,Plastic,,,,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,Yes,12,4K,3,NO,Yes,,,2000,,,5100,
+Storm Drone 4 V2 Mini,4,450,,,330,498,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,Yes,No,No,Yes,,,,2,,,,,,2.4,1500,1500,105
+Storm Racing Drone (RTF / Type-A v2),4,449,11,1500,336,482,Carbon Fiber,Plastic,,,,Yes,No,Yes,Yes,Yes,Yes,No,No,no,Yes,No,No,,Yes,,,,NO,Yes,5.8,,1500,2.4,,2200,
+DJI Phantom 2 Vision,4,339,25,500,350,1160,plastic,Pl/CF,800,15,200,Yes,No,Yes,Yes,Yes,Yes,Yes,yes,Yes,Yes,No,No,,,14,1080p,1,NO,Yes,,30,500,5.8,,5200,400
+XK Detect X380-A,4,311,27,1000,376,1055,Pl/CF,Pl/CF,,,,Yes,No,Yes,Yes,Yes,no,Yes,No,Yes,Yes,No,yes,,Yes,,1080p,1,NO,No,,,1000,2.4,,5400,
+UDI RC U829A,4,300,8,100,735,312,plastic,Carbon Fiber,,,,Yes,No,no,Yes,Yes,no,No,No,no,no,No,No,,Yes,,720p,,NO,No,,,100,2.4,,800,47
+Revell-Control Hexatron FPV (23952),6,282,7,50,550,410,plastic,plastic,,,,Yes,No,no,No,no,no,No,No,no,no,No,No,,Yes,,720p,,NO,Yes,,,50,2.4,,1500,
+RC Logger EYE One Xtreme,4,269,7,122,225,157,plastic,plastic,100,,,Yes,No,no,Yes,Yes,no,No,No,no,Yes,No,No,,yes,5,720p,,NO,Yes,5.8,30,122,2.4,,,
+Feilun FX127 Chaser,4,248,6,500,250,380,Pl/CF,Pl/CF,,19,,Yes,No,no,No,no,no,No,No,no,no,No,No,,Yes,,,,NO,Yes,5.8,,500,2.4,,1600,
+RC Leading RC109W,4,206,8,30,,,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,Yes,No,No,,yes,2,,,NO,No,,,30,2.4,,1300,
+Parrot AR Drone 2.0,4,200,12,,731,420,Carbon Fiber,Plastic,100,11.1,100,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,No,,Yes,,720p,,NO,Yes,,30,,2.4,,1000,
+Sky Viper V2900 Pro,4,200,10,,,250,plastic,Plastic,,,,Yes,No,Yes,No,no,Yes,Yes,No,no,Yes,No,No,,Yes,,1080p,,yes,Yes,,,,,,,
+Jin Xing Da 391V,4,180,7,50,,1610,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,Yes,No,No,,Yes,0.3,,,NO,NO,,,50,2.4,,800,
+JJRC JJ 669,4,177,8,150,,,plastic,Plastic,,,,Yes,No,no,No,no,no,No,No,no,Yes,No,No,Yes,,,,,,,,,150,2.4,,650,
+Blade Zeyrok,4,160,10,,,107,Pl/CF,Plastic,,,,Yes,Yes,no,No,no,no,No,No,no,no,No,No,,yes,1.3,720p,,NO,No,2.4,,,2.4,,750,
+North American X-factor,4,150,8,50,262,,plastic,plastic,,,,Yes,No,no,No,no,Yes,No,No,no,no,No,No,,Yes,0.3,,,no,no,,,50,2.4,,700,
+XinLin X181,4,140,7,100,,,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,Yes,No,No,,Yes,2,720p,,no,yes,5.8,,100,2.4,,1300,
+eTurbine TB250-1C,4,137,10,,,391,Aluminum,Plastic,,,,No,No,no,Yes,Yes,no,No,No,no,no,No,No,Yes,,,,,,,,,,2.4,,1500,
+Feilun FX120C2,6,136,10,150,,200,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,Yes,no,yes,yes,,Yes,2,720p,,no,yes,,,150,2.4,,850,
+Syma X8G,4,120,12,100,,1600,plastic,plastic,,,,Yes,No,no,No,no,no,No,No,no,no,No,No,,yes,5,1080p,,no,no,5.8,30,100,2.4,,2000,
+Huajun W609-8 Pathfinder,6,106,10,500,,515,Aluminum,Plastic,,4,,Yes,No,no,Yes,Yes,no,No,No,no,Yes,No,yes,,Yes,2,,,NO,Yes,5.8,,500,2.4,,1500,
+JJRC H3,4,83,6,300,334,,plastic,Plastic,,,,Yes,No,no,No,no,no,No,No,no,no,No,No,Yes,,,,,,,,,300,2.4,,380,
+Helic Max 1314 Sky Cruiser,4,61,6,150,,,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,no,No,No,,no,,,,,,,,150,2.4,,350,
+Lishitoys L6036,4,57,13,100,,115,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,no,No,No,,Yes,0.3,480p,,no,no,,,100,2.4,,500,
+JJRC H30C,4,37,7,30,,,plastic,Plastic,,,,Yes,No,no,No,no,no,No,No,no,Yes,No,yes,,Yes,2,720p,,no,yes,,,30,2.4,,150,
+NiHui U207 Intrude,4,30,5,10,,79,plastic,plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,no,No,No,no,no,,,,,,,,10,2.4,,150,
+Lian Sheng LS - 111 Mini,4,22,8,50,,385,plastic,Plastic,,,,Yes,No,no,Yes,Yes,no,No,No,no,no,No,No,,,,,,,,,,50,2.4,,100,
+Floureon H101,4,15,7,20,,320,plastic,plastic,,,,Yes,No,no,No,no,no,No,No,no,Yes,No,No,,,,,,,,,,20,2.4,,150,

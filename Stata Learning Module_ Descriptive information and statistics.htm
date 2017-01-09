@@ -1,0 +1,1203 @@
+
+<!-- saved from url=(0055)http://www.ats.ucla.edu/stat/stata/modules/descript.htm -->
+<html class="gr__ats_ucla_edu wf-newscycle-n4-inactive wf-centurygothic-n4-inactive wf-oswald-n4-inactive wf-inactive"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Stata Learning Module: Descriptive information and statistics </title>
+
+<link href="./Stata Learning Module_ Descriptive information and statistics_files/ats_style.css" type="text/css" rel="stylesheet">
+
+
+<style type="text/css">
+.auto-style1 {
+	font-weight: normal;
+}
+</style><link rel="stylesheet" href="./Stata Learning Module_ Descriptive information and statistics_files/css" media="all">
+
+
+<script async="" src="http://cse.google.com/adsense/search/async-ads.js"></script><script src="./Stata Learning Module_ Descriptive information and statistics_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Stata Learning Module_ Descriptive information and statistics_files/default+en.css" rel="stylesheet"><link type="text/css" href="./Stata Learning Module_ Descriptive information and statistics_files/default.css" rel="stylesheet"><script type="text/javascript" src="./Stata Learning Module_ Descriptive information and statistics_files/default+en.I.js"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #777777;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #000000;
+background-color: #000000;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #777777;
+background-color: #777777;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #333333;
+border-bottom-color: #333333;
+background-color: #333333;
+}
+.gsc-tabsArea {
+border-color: #333333;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #000000;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #444444;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #444444;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #444444;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #777777;
+}
+.gsc-cursor-page {
+color: #444444;
+}
+a.gsc-trailing-more-results:link {
+color: #444444;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #333333;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #777777;
+background-color: #FFFFFF;
+color: #444444;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #333333;
+background-color: #333333;
+color: #444444;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #CCCCCC;
+background-color: #E6E6E6;
+}
+.gsc-completion-title {
+color: #444444;
+}
+.gsc-completion-snippet {
+color: #333333;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #444444;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #00CC00;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #333333;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #00CC00;
+}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+
+<body data-gr-c-s-loaded="true">
+
+
+
+<!--
+ 
+Revision history:
+
+commit cfb1e41131f33be1fb0085fbfe2f34c5f116e4a6
+Author: crwells <crwells@ucla.edu>
+Date:   Mon Dec 8 12:20:27 2014 -0800
+
+    fixing typo per error report #997
+
+commit f6ac0dc3bff6c5b1e729b8e427706b26e29e03bd
+Author: Joni Ricks <jricks@oit.ucla.edu>
+Date:   Mon Dec 10 12:12:53 2012 -0800
+
+    stat/stata/modules/descript.htm fix p-tag
+
+commit ffd688ff3eab9095fffa276a8db721d15dae5a1b
+Author: Joni Ricks <jricks@oit.ucla.edu>
+Date:   Mon Dec 10 12:09:02 2012 -0800
+
+    stata/modules/descript.htm update
+
+
+-->
+
+
+
+<link href="./Stata Learning Module_ Descriptive information and statistics_files/body.css" rel="stylesheet" type="text/css">
+<link href="./Stata Learning Module_ Descriptive information and statistics_files/header.css" rel="stylesheet" type="text/css">
+<link href="./Stata Learning Module_ Descriptive information and statistics_files/breadcrumb.css" rel="stylesheet" type="text/css">
+<link href="./Stata Learning Module_ Descriptive information and statistics_files/footerTop.css" rel="stylesheet" type="text/css">
+<link href="./Stata Learning Module_ Descriptive information and statistics_files/footerBottom.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" async="" src="./Stata Learning Module_ Descriptive information and statistics_files/ga.js"></script><script type="text/javascript" async="" src="./Stata Learning Module_ Descriptive information and statistics_files/cse.js"></script><script src="./Stata Learning Module_ Descriptive information and statistics_files/webfont.js" type="text/javascript" async=""></script><script type="text/javascript" src="./Stata Learning Module_ Descriptive information and statistics_files/webfont(1).js"></script>
+
+
+
+
+<!-- tag opened in header.htm, closed in footer.htm -->  
+<div id="bodyWrap">
+<div id="header">
+  <div id="logo">
+    <h1 class="page_h1" title="Welcome to Institute for Digital Research and Education">Welcome to the Institute for Digital Research and Education</h1>
+    <a class="logoSprite" title="Institute for Digital Research and Education Home" href="https://idre.ucla.edu/">Institute for Digital Research and Education Home</a> </div>
+
+<div id="searchBox">
+    <div class="btnContainer">
+        <span class="btnLabel">Help the Stat Consulting Group by</span> <a href="https://giving.ucla.edu/Standard/NetDonate.aspx?SiteNum=371" class="idreBtn">giving a gift</a>
+    </div>
+    <!-- Google Provided Code Starts Here -->
+<script type="text/javascript">
+  (function() {
+    var cx = '017078209654322335373:o5ngkv1vghw';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<!-- Place this tag where you want the search box to render -->
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box " id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" style="width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; outline: none; background: url(&quot;http://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) left center no-repeat rgb(255, 255, 255);" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="./Stata Learning Module_ Descriptive information and statistics_files/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="./Stata Learning Module_ Descriptive information and statistics_files/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form></div></div>
+<!-- Google Provided Code Ends Here -->
+</div>
+
+</div>
+
+<script type="text/javascript" src="./Stata Learning Module_ Descriptive information and statistics_files/tree.js"></script>
+<script>
+function stuff(dir) {
+
+  var x = document.getElementById("bc" + dir);
+
+  if ( !x.stuffed){
+
+    var inner = "<ul>";
+
+    var listing = tree[dir];
+
+    for(var d in listing) {
+        var subdir = listing[d];
+        var base = subdir.replace("^.*\/", "");
+      inner = inner + "<li><a href='" + subdir +"'><span>" + base + "</span></a></li>";
+    }
+
+
+
+
+
+    inner = inner + "</ul>";
+
+    x.innerHTML = x.innerHTML + inner;
+    x.stuffed = true;
+  }
+
+
+}
+</script>
+
+<style>
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#cssmenu {
+/*  height: 49px;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  background: linear-gradient(top, #fefefe 0%, #eee9f0 100%);
+  border-bottom: 2px solid #db000b;
+  width: auto; */
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+/*  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #ececec 100%);
+  background: linear-gradient(top, #fefefe 0%, #ececec 100%);
+  color: #000; 
+  display: inline-block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 49px;*/
+  padding: 0 20px;
+  text-decoration: none;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: left;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li > a {
+  color: #000;
+  font-size: 12px;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #db000b;
+  margin-left: -10px;
+}
+#cssmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+}
+#cssmenu > ul > li.active:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #db000b;
+  margin-left: -10px;
+}
+#cssmenu > ul > li.active > a {
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+}
+#cssmenu > ul > li:hover > a {
+/*  background: #ececec;
+  background: -moz-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffeeff ef));
+  background: -webkit-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -o-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  background: linear-gradient(top, #ececec 0%, #ffeeff ef 100%);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);*/
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+#cssmenu .has-sub {
+  z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+/*  top: 100%;*/
+  left: 0;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+  background: #db000b;
+  border-bottom: 1px dotted #ff0f1b;
+  filter: none;
+  font-size: 11px;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+  color: #ffffff;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #a80008;
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #a80008;
+  border-bottom: 1px dotted #ff0f1b;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #8f0007;
+}
+
+
+</style>
+
+
+
+<div id="infobar">
+
+      <div id="breadcrumbBox"><div class="breadcrumb" id="cssmenu">
+<ul>      
+<li id="bc/stat" onmouseover="stuff(&#39;/stat&#39;)" class="has-sub"><a href="http://www.ats.ucla.edu/stat">stat</a> &gt; </li><li id="bc/stat/stata" onmouseover="stuff(&#39;/stat/stata&#39;)" class="has-sub"><a href="http://www.ats.ucla.edu/stat/stata">stata</a> &gt; </li><li id="bc/stat/stata/modules" onmouseover="stuff(&#39;/stat/stata/modules&#39;)" class="has-sub"><a href="http://www.ats.ucla.edu/stat/stata/modules">modules</a></li> &gt; descript.htm
+</ul>
+</div></div></div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12327299-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- MathJax Provided Code Starts Here -->
+<script type="text/javascript" src="./Stata Learning Module_ Descriptive information and statistics_files/MathJax.js">
+</script>
+<!-- MathJax Provided Code Ends Here -->
+
+<!-- tag opened in header.htm, closed in footer.htm -->  
+<div id="bodyContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Stata Learning Module<br>
+Descriptive information and statistics </h3>
+
+
+<p>This module shows common commands for showing descriptive information and descriptive statistics about data files.  
+</p>
+
+
+<h4>Getting an overview of your file</h4>
+
+
+<p>&nbsp;The <strong>sysuse</strong> 
+command loads a specified Stata-format dataset that was shipped with Stata. Here 
+we will use the <strong>auto </strong>data file.</p>
+<blockquote>
+	<pre><strong>sysuse</strong><b> </b>auto </pre>
+</blockquote>
+<p>The<strong> describe</strong> command shows you basic information about a Stata data file.  As you can see, it tells us the number of observations in the file, the number of variables, the names of the variables, and more.  
+</p>
+<blockquote>
+	<pre><strong>describe </strong></pre>
+	<pre> Contains data from auto.dta
+  obs:            74                          
+ vars:            12                          17 Feb 1999 10:49
+ size:         3,108 (99.6% of memory free)
+-------------------------------------------------------------------------------
+   1. make      str17  %17s                   
+   2. price     int    %9.0g                  
+   3. mpg       byte   %9.0g                  
+   4. rep78     byte   %9.0g                  
+   5. hdroom    float  %9.0g                  
+   6. trunk     byte   %9.0g                  
+   7. weight    int    %9.0g                  
+   8. length    int    %9.0g                  
+   9. turn      byte   %9.0g                  
+  10. displ     int    %9.0g                  
+  11. gratio    float  %9.0g                  
+  12. foreign   byte   %9.0g                  
+-------------------------------------------------------------------------------
+Sorted by:  </pre>
+</blockquote>
+<p>The <strong>codebook </strong>command is a great tool for getting a quick overview  of the variables in the data file.  It produces a kind of  electronic codebook from the data file.  Have a look at what it produces below.  
+</p>
+<blockquote>
+	<pre><strong>codebook </strong></pre>
+	<pre> make -------------------------------------------------------------- (unlabeled)
+                  type:  string (str17)
+
+         unique values:  74                   coded missing:  0 / 74
+
+              examples:  "Cad. Deville"
+                         "Dodge Magnum"
+                         "Merc. XR-7"
+                         "Pont. Catalina"
+
+               warning:  variable has embedded blanks
+
+price ------------------------------------------------------------- (unlabeled)
+                  type:  numeric (int)
+
+                 range:  [3291,15906]                 units:  1
+         unique values:  74                   coded missing:  0 / 74
+
+                  mean:   6165.26
+              std. dev:    2949.5
+
+           percentiles:        10%       25%       50%       75%       90%
+                              3895      4195    5006.5      6342     11385
+
+mpg --------------------------------------------------------------- (unlabeled)
+                  type:  numeric (byte)
+
+                 range:  [12,41]                      units:  1
+         unique values:  21                   coded missing:  0 / 74
+
+                  mean:   21.2973
+              std. dev:    5.7855
+
+           percentiles:        10%       25%       50%       75%       90%
+                               14        18        20        25        29
+
+rep78 ------------------------------------------------------------- (unlabeled)
+                  type:  numeric (byte)
+
+                 range:  [1,5]                        units:  1
+         unique values:  5                    coded missing:  5 / 74
+
+            tabulation:  Freq.  Value
+                             2  1
+                             8  2
+                            30  3
+                            18  4
+                            11  5
+
+hdroom ------------------------------------------------------------ (unlabeled)
+                  type:  numeric (float)
+
+                 range:  [1.5,5]                      units:  .1
+         unique values:  8                    coded missing:  0 / 74
+
+            tabulation:  Freq.  Value
+                             4  1.5
+                            13  2
+                            14  2.5
+                            13  3
+                            15  3.5
+                            10  4
+                             4  4.5
+                             1  5
+
+trunk ------------------------------------------------------------- (unlabeled)
+                  type:  numeric (byte)
+
+                 range:  [5,23]                       units:  1
+         unique values:  18                   coded missing:  0 / 74
+
+                  mean:   13.7568
+              std. dev:    4.2774
+
+           percentiles:        10%       25%       50%       75%       90%
+                                8        10        14        17        20
+
+weight ------------------------------------------------------------ (unlabeled)
+                  type:  numeric (int)
+
+                 range:  [1760,4840]                  units:  10
+         unique values:  64                   coded missing:  0 / 74
+
+                  mean:   3019.46
+              std. dev:   777.194
+
+           percentiles:        10%       25%       50%       75%       90%
+                              2020      2240      3190      3600      4060
+
+length ------------------------------------------------------------ (unlabeled)
+                  type:  numeric (int)
+
+                 range:  [142,233]                    units:  1
+         unique values:  47                   coded missing:  0 / 74
+
+                  mean:   187.932
+              std. dev:   22.2663
+
+           percentiles:        10%       25%       50%       75%       90%
+                               157       170     192.5       204       218
+
+turn -------------------------------------------------------------- (unlabeled)
+                  type:  numeric (byte)
+
+                 range:  [31,51]                      units:  1
+         unique values:  18                   coded missing:  0 / 74
+
+                  mean:   39.6486
+              std. dev:   4.39935
+
+           percentiles:        10%       25%       50%       75%       90%
+                               34        36        40        43        45
+
+displ ------------------------------------------------------------- (unlabeled)
+                  type:  numeric (int)
+
+                 range:  [79,425]                     units:  1
+         unique values:  31                   coded missing:  0 / 74
+
+                  mean:   197.297
+              std. dev:   91.8372
+
+           percentiles:        10%       25%       50%       75%       90%
+                               97       119       196       250       350
+
+gratio ------------------------------------------------------------ (unlabeled)
+                  type:  numeric (float)
+
+                 range:  [2.19,3.89]                  units:  .01
+         unique values:  36                   coded missing:  0 / 74
+
+                  mean:   3.01486
+              std. dev:   .456287
+
+           percentiles:        10%       25%       50%       75%       90%
+                              2.43      2.73     2.955      3.37      3.72
+
+foreign ----------------------------------------------------------- (unlabeled)
+                  type:  numeric (byte)
+
+                 range:  [0,1]                        units:  1
+         unique values:  2                    coded missing:  0 / 74
+
+            tabulation:  Freq.  Value
+                            52  0
+                            22  1 </pre>
+</blockquote>
+<p>Another useful command for getting a quick overview of a data file is the<strong> inspect</strong> command. Here is what the 
+<strong>inspect </strong>command produces for the auto data file.  
+</p>
+<blockquote>
+	<pre><strong>inspect </strong></pre>
+	<pre> make:                                          Number of Observations
+-------                                                            Non-
+                                               Total   Integers    Integers
+|                               Negative           -         -          -
+|                               Zero               -         -          -
+|                               Positive           -         -          -
+|                                              -----     -----      -----
+|                               Total              -         -          -
+|                               Missing           74
++----------------------                        -----
+-8.99e+307                           74 </pre>
+	<pre>    (0 unique value)
+
+price:                                         Number of Observations
+--------                                                           Non-
+                                               Total   Integers    Integers
+|  #                            Negative           -         -          -
+|  #                            Zero               -         -          -
+|  #                            Positive          74        74          -
+|  #                                           -----     -----      -----
+|  #                            Total             74        74          -
+|  #   #   .   .   .            Missing            -
++----------------------                        -----
+3291              15906                           74
+  (74 unique values)
+
+mpg:                                           Number of Observations
+------                                                             Non-
+                                               Total   Integers    Integers
+|      #                        Negative           -         -          -
+|      #                        Zero               -         -          -
+|      #                        Positive          74        74          -
+|  #   #                                       -----     -----      -----
+|  #   #   #                    Total             74        74          -
+|  #   #   #   #   .            Missing            -
++----------------------                        -----
+12                   41                           74
+  (21 unique values)
+
+rep78:                                         Number of Observations
+--------                                                           Non-
+                                               Total   Integers    Integers
+|          #                    Negative           -         -          -
+|          #                    Zero               -         -          -
+|          #                    Positive          69        69          -
+|          #   #                               -----     -----      -----
+|          #   #   #            Total             69        69          -
+|  .   #   #   #   #            Missing            5
++----------------------                        -----
+1                     5                           74
+   (5 unique values)
+
+hdroom:                                        Number of Observations
+---------                                                          Non-
+                                               Total   Integers    Integers
+|          #                    Negative           -         -          -
+|          #                    Zero               -         -          -
+|          #                    Positive          74        37         37
+|  #   #   #                                   -----     -----      -----
+|  #   #   #   #                Total             74        37         37
+|  #   #   #   #   #            Missing            -
++----------------------                        -----
+1.5                   5                           74
+   (8 unique values)
+
+trunk:                                         Number of Observations
+--------                                                           Non-
+                                               Total   Integers    Integers
+|              #                Negative           -         -          -
+|      #       #                Zero               -         -          -
+|      #       #                Positive          74        74          -
+|      #   #   #                               -----     -----      -----
+|  #   #   #   #   #            Total             74        74          -
+|  #   #   #   #   #            Missing            -
++----------------------                        -----
+5                    23                           74
+  (18 unique values)
+
+weight:                                        Number of Observations
+---------                                                          Non-
+                                               Total   Integers    Integers
+|  #       #                    Negative           -         -          -
+|  #       #                    Zero               -         -          -
+|  #   #   #   #                Positive          74        74          -
+|  #   #   #   #                               -----     -----      -----
+|  #   #   #   #                Total             74        74          -
+|  #   #   #   #   #            Missing            -
++----------------------                        -----
+1760               4840                           74
+  (64 unique values)
+
+length:                                        Number of Observations
+---------                                                          Non-
+                                               Total   Integers    Integers
+|              #                Negative           -         -          -
+|      #       #                Zero               -         -          -
+|      #       #                Positive          74        74          -
+|      #   #   #                               -----     -----      -----
+|  #   #   #   #   #            Total             74        74          -
+|  #   #   #   #   #            Missing            -
++----------------------                        -----
+142                 233                           74
+  (47 unique values)
+
+turn:                                          Number of Observations
+-------                                                            Non-
+                                               Total   Integers    Integers
+|      #                        Negative           -         -          -
+|      #       #                Zero               -         -          -
+|      #   #   #                Positive          74        74          -
+|      #   #   #                               -----     -----      -----
+|  #   #   #   #                Total             74        74          -
+|  #   #   #   #   .            Missing            -
++----------------------                        -----
+31                   51                           74
+  (18 unique values)
+
+displ:                                         Number of Observations
+--------                                                           Non-
+                                               Total   Integers    Integers
+|  #                            Negative           -         -          -
+|  #                            Zero               -         -          -
+|  #                            Positive          74        74          -
+|  #       #                                   -----     -----      -----
+|  #   #   #   #                Total             74        74          -
+|  #   #   #   #   .            Missing            -
++----------------------                        -----
+79                  425                           74
+  (31 unique values)
+
+gratio:                                        Number of Observations
+---------                                                          Non-
+                                               Total   Integers    Integers
+|          #                    Negative           -         -          -
+|          #                    Zero               -         -          -
+|          #                    Positive          74         -         74
+|  #   #   #       #                           -----     -----      -----
+|  #   #   #       #            Total             74         -         74
+|  #   #   #   #   #            Missing            -
++----------------------                        -----
+2.19               3.89                           74
+  (36 unique values)
+
+foreign:                                       Number of Observations
+----------                                                         Non-
+                                               Total   Integers    Integers
+|  #                            Negative           -         -          -
+|  #                            Zero              52        52          -
+|  #                            Positive          22        22          -
+|  #                                           -----     -----      -----
+|  #   #                        Total             74        74          -
+|  #   #                        Missing            -
++----------------------                        -----
+0                     1                           74
+   (2 unique values) </pre>
+</blockquote>
+<p>The<strong> list </strong>command is useful for viewing all or a range of observations.  Here we look at <b>make, price, mpg, rep78 
+  and</b> <b>foreign</b> for the first 10 observations.   </p>
+<blockquote>
+	<pre><strong class="auto-style1">list</strong><strong> make price mpg rep78 foreign in 1/10 </strong></pre>
+	<pre>                   make      price        mpg      rep78    foreign 
+  1.      Dodge Magnum       5886         16          2          0  
+  2.        Datsun 510       5079         24          4          1  
+  3.      Ford Mustang       4187         21          3          0  
+  4.  Linc. Versailles      13466         14          3          0  
+  5.     Plym. Sapporo       6486         26          .          0  
+  6.       Plym. Arrow       4647         28          3          0  
+  7.     Cad. Eldorado      14500         14          2          0  
+  8.        AMC Spirit       3799         22          .          0  
+  9.    Pont. Catalina       5798         18          4          0  
+ 10.        Chev. Nova       3955         19          3          0   </pre>
+</blockquote>
+
+
+<h4>Creating tables</h4>
+
+
+<p>The <strong>tabulate</strong> command is useful for obtaining frequency tables. Below, we make a table for 
+<b>rep78</b> and a table for <b>foreign</b>.  The command can also be shortened 
+to <strong>tab. </strong>  </p>
+<blockquote>
+	<pre><strong>tabulate rep78 </strong></pre>
+	<pre>      rep78 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |          2        2.90        2.90
+          2 |          8       11.59       14.49
+          3 |         30       43.48       57.97
+          4 |         18       26.09       84.06
+          5 |         11       15.94      100.00
+------------+-----------------------------------
+      Total |         69      100.00 </pre>
+
+
+<pre><strong>tabulate foreign </strong></pre>
+
+<pre>     foreign |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         52       70.27       70.27
+          1 |         22       29.73      100.00
+------------+-----------------------------------
+      Total |         74      100.00 </pre>
+
+
+</blockquote>
+
+<p>The<strong> tab1</strong> command can be used as a shortcut to request tables for a series of variables (instead of typing the<strong> tabulate
+</strong>command over and over again for each variable of interest).  </p>
+<blockquote>
+	<pre><strong>tab1 rep78 foreign  </strong></pre>
+	<pre> -&gt; tabulation of rep78  
+
+      rep78 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |          2        2.90        2.90
+          2 |          8       11.59       14.49
+          3 |         30       43.48       57.97
+          4 |         18       26.09       84.06
+          5 |         11       15.94      100.00
+------------+-----------------------------------
+      Total |         69      100.00
+
+-&gt; tabulation of foreign  
+
+    foreign |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          0 |         52       70.27       70.27
+          1 |         22       29.73      100.00
+------------+-----------------------------------
+      Total |         74      100.00 </pre>
+</blockquote>
+<p>We can use the<strong> plot</strong> option
+  to make a plot to visually show  the tabulated values.  </p>
+<blockquote>
+	<pre><strong>tabulate rep78, plot </strong></pre>
+	<pre> 
+      rep78 |      Freq.
+------------+------------+-----------------------------------------------------
+          1 |          2 |**
+          2 |          8 |********
+          3 |         30 |******************************
+          4 |         18 |******************
+          5 |         11 |***********
+------------+------------+-----------------------------------------------------
+      Total |         69  </pre>
+</blockquote>
+<p>We can also make crosstabs using<strong> tabulate</strong>.  Let's look at the repair history broken down by foreign and domestic cars.  
+</p>
+<blockquote>
+	<pre><b>tabulate rep78 foreign </b></pre>
+	<pre>           |        foreign
+     rep78 |         0          1 |     Total
+-----------+----------------------+----------
+         1 |         2          0 |         2 
+         2 |         8          0 |         8 
+         3 |        27          3 |        30 
+         4 |         9          9 |        18 
+         5 |         2          9 |        11 
+-----------+----------------------+----------
+     Total |        48         21 |        69  </pre>
+</blockquote>
+<p>With the <b>column</b> option, we can request column percentages. Notice that about 86% of the foreign cars received a rating of 4 or 5. Only about 23% of domestic cars were rated that highly.  
+</p>
+<blockquote>
+	<pre><b>tabulate rep78 foreign, column </b></pre>
+	<pre>           |        foreign
+     rep78 |         0          1 |     Total
+-----------+----------------------+----------
+         1 |         2          0 |         2 
+           |      4.17       0.00 |      2.90 
+-----------+----------------------+----------
+         2 |         8          0 |         8 
+           |     16.67       0.00 |     11.59 
+-----------+----------------------+----------
+         3 |        27          3 |        30 
+           |     56.25      14.29 |     43.48 
+-----------+----------------------+----------
+         4 |         9          9 |        18 
+           |     18.75      42.86 |     26.09 
+-----------+----------------------+----------
+         5 |         2          9 |        11 
+           |      4.17      42.86 |     15.94 
+-----------+----------------------+----------
+     Total |        48         21 |        69 
+           |    100.00     100.00 |    100.00 
+ </pre>
+</blockquote>
+<p>We can use the <b>nofreq</b> option to suppress the frequencies, and just focus on the percentages.  
+</p>
+<blockquote>
+	<pre><b>tabulate rep78 foreign, column nofreq </b></pre>
+	<pre>           |        foreign
+     rep78 |         0          1 |     Total
+-----------+----------------------+----------
+         1 |      4.17       0.00 |      2.90 
+         2 |     16.67       0.00 |     11.59 
+         3 |     56.25      14.29 |     43.48 
+         4 |     18.75      42.86 |     26.09 
+         5 |      4.17      42.86 |     15.94 
+-----------+----------------------+----------
+     Total |    100.00     100.00 |    100.00 
+ </pre>
+</blockquote>
+<p>Note that the order of the options does not matter.   Just remember that the options must come after the comma.  
+</p>
+<blockquote>
+	<pre><b>tabulate rep78 foreign, nofreq column  </b></pre>
+	<pre>           |        foreign
+     rep78 |         0          1 |     Total
+-----------+----------------------+----------
+         1 |      4.17       0.00 |      2.90 
+         2 |     16.67       0.00 |     11.59 
+         3 |     56.25      14.29 |     43.48 
+         4 |     18.75      42.86 |     26.09 
+         5 |      4.17      42.86 |     15.94 
+-----------+----------------------+----------
+     Total |    100.00     100.00 |    100.00 
+ </pre>
+</blockquote>
+
+
+<h4>Generating summary statistics with summarize</h4>
+
+
+<p>For summary statistics, we can use the<strong> summarize</strong> command. Let's generate some summary statistics on 
+<strong>mpg</strong>.  </p>
+<blockquote>
+	<pre><b>summarize mpg </b></pre>
+	<pre>Variable |     Obs        Mean   Std. Dev.       Min        Max
+---------+-----------------------------------------------------
+     mpg |      74     21.2973   5.785503         12         41   </pre>
+</blockquote>
+<p>We can use the <strong>detail </strong>option  of the <strong>summarize</strong> command to get more detailed summary statistics.  
+</p>
+<blockquote>
+	<pre><b>summarize mpg, detail </b></pre>
+	<pre>                              mpg
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%           12             12
+ 5%           14             12
+10%           14             14       Obs                  74
+25%           18             14       Sum of Wgt.          74
+
+50%           20                      Mean            21.2973
+                        Largest       Std. Dev.      5.785503
+75%           25             34
+90%           29             35       Variance       33.47205
+95%           34             35       Skewness       .9487176
+99%           41             41       Kurtosis       3.975005 </pre>
+</blockquote>
+<p>To get these values separately for foreign and domestic, we could use the 
+<strong>by foreign:</strong> prefix as shown below.   Note that we first had to sort the data before using 
+<strong>by foreign:</strong>.</p>
+<blockquote>
+	<pre><strong>sort foreign </strong></pre>
+	<pre><strong>by foreign: summarize mpg </strong></pre>
+	<pre> -&gt; foreign= 0  
+Variable |     Obs        Mean   Std. Dev.       Min        Max
+---------+-----------------------------------------------------
+     mpg |      52    19.82692   4.743297         12         34  
+
+-&gt; foreign= 1  
+Variable |     Obs        Mean   Std. Dev.       Min        Max
+---------+-----------------------------------------------------
+     mpg |      22    24.77273   6.611187         14         41  
+ </pre>
+</blockquote>
+<p>This is not the most efficient way to do this.  Another way, which does not require the data to be sorted, is by using the 
+<strong>summarize( )</strong> option as part of the 
+  <strong>tabulate</strong> command.  </p>
+<blockquote>
+	<pre><strong>tabulate foreign, summarize(mpg)</strong><b> </b></pre>
+	<pre>            |           Summary of mpg
+    foreign |        Mean   Std. Dev.       Freq.
+------------+------------------------------------
+          0 |   19.826923   4.7432972          52
+          1 |   24.772727   6.6111869          22
+------------+------------------------------------
+      Total |   21.297297   5.7855032          74 </pre>
+</blockquote>
+<p>Here is another example, showing the average price of cars for each level of repair history  
+</p>
+<blockquote>
+	<pre><strong>tabulate rep78, summarize(price) </strong></pre>
+	<pre>            |          Summary of price
+      rep78 |        Mean   Std. Dev.       Freq.
+------------+------------------------------------
+          1 |      4564.5   522.55191           2
+          2 |    5967.625   3579.3568           8
+          3 |   6429.2333   3525.1398          30
+          4 |      6071.5   1709.6083          18
+          5 |        5913   2615.7628          11
+------------+------------------------------------
+      Total |   6146.0435   2912.4403          69 </pre>
+</blockquote>
+
+
+<h4>Summary</h4>
+
+<p>Provide information about the current data file,  including the number of variables and observations and  a listing of the variables in a data file.</p>
+<pre>     <strong>  describe</strong> </pre>
+<p>Produce codebook like information for the current data file.</p>
+ <pre>   <strong>   codebook</strong> </pre>
+<p>Provide a quick overview of data file. </p>
+<pre>     <strong> inspect </strong></pre>
+<p>List out the variables<strong> make</strong> and <b>mpg</b>. </p>
+<pre><strong>     list make mpg</strong> </pre>
+<p>Make a table of <strong>mpg</strong>.</p>
+<pre>     <strong> tabulate mpg</strong> </pre>
+<p>Make a two way table of <strong>rep78</strong> by <strong>foreign</strong>.</p>
+<pre> <strong>     tabulate rep78 foreign </strong></pre>
+<p>Produce summary statistics of <strong>mpg</strong> and <strong>price</strong>.</p>
+<pre>     <strong> summarize mpg price </strong></pre>
+
+<p> Produce summary statistics for<strong> mpg </strong>separately for foreign and domestic cars. </p>
+<pre>  <strong>    sort foreign
+     by foreign: summarize(mpg) </strong></pre>
+<p>Produce summary statistics for <strong>mpg</strong> by <strong>foreign</strong>  (prior sorting not required).</p>
+<pre>      <strong>tabulate foreign, summarize(mpg) </strong> </pre>
+
+
+ 
+
+
+
+<div style="clear:both;">
+<p style="float:left;">
+<a href="http://www.ats.ucla.edu/stat/mult_pkg/faq/general/citingats.htm">How to cite this page</a></p>
+<p style="float:right;">
+<a href="http://www.ats.ucla.edu/stat/apps/codetrack/errdirect.php">
+Report an error on this page or leave a comment</a>
+</p>
+</div>
+
+<div style="clear:both">
+<p>The content of this web site should not be construed as an endorsement
+of any particular web site, book, or software product by the
+University of California.</p>
+</div>
+
+<!-- closes bodycontainer from header -->
+</div>
+
+<div id="footerTop">
+  <div id="pageFooterBoxTop">
+    <div id="footerProjectsDetail">
+      <h2 class="footerProjectsDetailTitle">IDRE Research Technology Group</h2>
+      <div class="projectDetailBox">
+        <div class="projectIcon"></div>
+        <div class="projectDetail">
+          <h2><a href="https://idre.ucla.edu/hpc">High Performance Computing</a></h2>
+        </div>
+      </div>
+      <div class="projectDetailBox">
+        <div class="projectIcon"></div>
+        <div class="projectDetail">
+          <h2><a href="https://idre.ucla.edu/programs/stats">Statistical Computing</a></h2>
+        </div>
+      </div>
+      <div class="projectDetailBox">
+        <div class="projectIcon"></div>
+        <div class="projectDetail">
+          <h2><a href="https://idre.ucla.edu/gis-visualization">GIS and Visualization</a></h2>
+        </div>
+      </div>
+    </div>
+    <div id="footerProjects">
+      <div class="projectMenu">
+<ul class="menu"><li class="leaf first menu-mlid-4445"><a href="https://idre.ucla.edu/hpc" title="High Performance Computing" id="custom_breadcrumbs_menu-4445">High Performance Computing</a></li>
+<li class="leaf menu-mlid-7191"><a href="https://idre.ucla.edu/gis" title="" id="custom_breadcrumbs_menu-7191">GIS</a></li>
+<li class="leaf menu-mlid-4447"><a href="https://idre.ucla.edu/stats" title="Statistical Computing" id="custom_breadcrumbs_menu-4447">Statistical Computing</a></li>
+<li class="leaf menu-mlid-4449"><a href="https://idre.ucla.edu/hoffman2" title="Hoffman2 Cluster" id="custom_breadcrumbs_menu-4449">Hoffman2 Cluster</a></li>
+<li class="leaf menu-mlid-4466"><a href="https://idre.ucla.edu/mapshare" title="" id="custom_breadcrumbs_menu-4466">Mapshare</a></li>
+<li class="leaf menu-mlid-7197"><a href="https://idre.ucla.edu/events/classes" title="" id="custom_breadcrumbs_menu-7197">Classes</a></li>
+<li class="leaf menu-mlid-7626"><a href="https://idre.ucla.edu/hoffman2/getting-started" title="" id="custom_breadcrumbs_menu-7626">Hoffman2 Account Application</a></li>
+<li class="leaf menu-mlid-4471"><a href="https://idre.ucla.edu/visualization" title="" id="custom_breadcrumbs_menu-4471">Visualization</a></li>
+<li class="leaf menu-mlid-7198"><a href="https://idre.ucla.edu/events/conferences" title="" id="custom_breadcrumbs_menu-7198">Conferences</a></li>
+<li class="leaf menu-mlid-7627"><a href="https://idre.ucla.edu/hoffman2/cluster-statistics" title="" id="custom_breadcrumbs_menu-7627">Hoffman2 Usage Statistics</a></li>
+<li class="leaf menu-mlid-4465"><a href="https://idre.ucla.edu/3d-modeling" title="" id="custom_breadcrumbs_menu-4465">3D Modeling</a></li>
+<li class="leaf menu-mlid-7192"><a href="https://idre.ucla.edu/reading-materials" title="" id="custom_breadcrumbs_menu-7192">Reading Materials</a></li>
+<li class="leaf menu-mlid-4472"><a href="http://portal.ucgrid.org/" title="" id="custom_breadcrumbs_menu-4472">UC Grid Portal</a></li>
+<li class="leaf menu-mlid-4467"><a href="https://idre.ucla.edu/technology-sandbox" title="" id="custom_breadcrumbs_menu-4467">Technology Sandbox</a></li>
+<li class="leaf menu-mlid-7713"><a href="http://lists.ucla.edu/cgi-bin/mailman/listinfo/idremailinglist" title="" id="custom_breadcrumbs_menu-7713">IDRE Listserv</a></li>
+<li class="leaf menu-mlid-4473"><a href="http://grid.ucla.edu/" title="" id="custom_breadcrumbs_menu-4473">UCLA Grid Portal</a></li>
+<li class="leaf menu-mlid-7671"><a href="https://idre.ucla.edu/gis-visualization/sandbox-access" title="" id="custom_breadcrumbs_menu-7671">Tech Sandbox Access</a></li>
+<li class="leaf menu-mlid-7773"><a href="https://idre.ucla.edu/resources" title="" id="custom_breadcrumbs_menu-7773">IDRE Resources</a></li>
+<li class="leaf menu-mlid-7630"><a href="https://idre.ucla.edu/hpc/shared-cluster-program" title="" id="custom_breadcrumbs_menu-7630">Shared Cluster &amp; Storage</a></li>
+<li class="leaf menu-mlid-7280"><a href="https://idre.ucla.edu/data-centers" title="Data Centers" id="custom_breadcrumbs_menu-7280">Data Centers</a></li>
+<li class="leaf menu-mlid-8026"><a href="http://dataarchives.ss.ucla.edu/" title="Social Sciences Data Archive" id="custom_breadcrumbs_menu-8026">Social Sciences Data Archive</a></li>
+<li class="leaf last menu-mlid-8013"><a href="https://idre.ucla.edu/about" title="" id="custom_breadcrumbs_menu-8013">About IDRE</a></li>
+</ul>
+      </div>
+    </div>
+  </div>
+</div><div id="footerBottom">
+  <div id="pageFooterBoxBtm">
+    <div id="footerLeft">
+      <div id="uclaSprite"> <a href="http://www.ucla.edu/" title="University of California, Los Angeles Home"></a> </div>
+      <div id="footerMenu">
+        <ul class="footerMenu_List" title="Site Links">
+          <li> <a href="https://idre.ucla.edu/about">About</a> </li>
+          <li> <a href="https://idre.ucla.edu/contact">Contact</a> </li>
+          <li> <a href="https://idre.ucla.edu/news">News</a> </li>
+          <li> <a href="https://idre.ucla.edu/events">Events</a> </li>
+          <li> <a href="https://idre.ucla.edu/experts">Our Experts</a> </li>
+        </ul>
+        <div id="footerCopyright">
+          <ul class="footerTOS_List">
+             <li>© 2016 UC Regents</li>
+          <li><a href="http://www.ucla.edu/terms-of-use/" target="_blank" title="UCLA Terms of Use">Terms of Use &amp; Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footerRight">
+      <div id="oitSprite"> <a id="oitLink" title="Office of Information Technology" href="http://oit.ucla.edu/"></a> </div>
+      <div id="footerTOS"> </div>
+    </div>
+  </div>
+</div>
+
+<!-- closes bodywrap from header -->
+</div>
+
+
+
+ 
+
+<p><!--webbot bot="PurpleText" PREVIEW="Don't change anything below this line." --> 
+
+</p><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 253px; display: none; top: 87px; position: absolute; left: 784px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>

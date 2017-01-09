@@ -1,0 +1,299 @@
+-----------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/arinzenwoye/Desktop/stata files/dataman.txt
+  log type:  text
+ opened on:  23 Mar 2016, 09:37:50
+
+. rename whichofthefollowingbestdescribes underutilization // rename variable 
+
+. label variable internship "did you have an internship or not" //relabel variable
+
+. list gpa ethnicity in 1/2, clean 
+
+         gpa            ethnicity  
+  1.   3.529                Asian  
+  2.       4   White Non-Hispanic  
+
+. tabulate gpa
+
+        GPA |      Freq.     Percent        Cum.
+------------+-----------------------------------
+      1.939 |          1        1.08        1.08
+      2.667 |          1        1.08        2.15
+        2.7 |          1        1.08        3.23
+      2.724 |          1        1.08        4.30
+      2.734 |          1        1.08        5.38
+      2.829 |          1        1.08        6.45
+      2.875 |          1        1.08        7.53
+      2.938 |          1        1.08        8.60
+       2.99 |          1        1.08        9.68
+          3 |          1        1.08       10.75
+      3.027 |          1        1.08       11.83
+      3.028 |          1        1.08       12.90
+      3.038 |          1        1.08       13.98
+      3.048 |          1        1.08       15.05
+      3.057 |          1        1.08       16.13
+      3.092 |          1        1.08       17.20
+      3.107 |          1        1.08       18.28
+      3.138 |          1        1.08       19.35
+      3.139 |          1        1.08       20.43
+       3.17 |          1        1.08       21.51
+      3.188 |          1        1.08       22.58
+      3.203 |          1        1.08       23.66
+      3.228 |          1        1.08       24.73
+      3.233 |          1        1.08       25.81
+      3.259 |          1        1.08       26.88
+      3.264 |          1        1.08       27.96
+      3.271 |          1        1.08       29.03
+       3.28 |          1        1.08       30.11
+      3.366 |          1        1.08       31.18
+       3.38 |          1        1.08       32.26
+        3.4 |          1        1.08       33.33
+      3.405 |          1        1.08       34.41
+       3.43 |          1        1.08       35.48
+      3.509 |          1        1.08       36.56
+      3.511 |          1        1.08       37.63
+       3.52 |          1        1.08       38.71
+      3.529 |          1        1.08       39.78
+      3.562 |          1        1.08       40.86
+      3.607 |          1        1.08       41.94
+      3.618 |          1        1.08       43.01
+      3.635 |          1        1.08       44.09
+      3.644 |          1        1.08       45.16
+      3.648 |          1        1.08       46.24
+      3.655 |          1        1.08       47.31
+      3.663 |          1        1.08       48.39
+      3.672 |          1        1.08       49.46
+      3.675 |          1        1.08       50.54
+       3.68 |          1        1.08       51.61
+      3.723 |          1        1.08       52.69
+      3.747 |          1        1.08       53.76
+      3.748 |          1        1.08       54.84
+       3.76 |          1        1.08       55.91
+       3.78 |          1        1.08       56.99
+      3.784 |          1        1.08       58.06
+      3.806 |          1        1.08       59.14
+       3.82 |          1        1.08       60.22
+      3.822 |          1        1.08       61.29
+       3.83 |          2        2.15       63.44
+       3.87 |          2        2.15       65.59
+       3.88 |          1        1.08       66.67
+       3.89 |          1        1.08       67.74
+      3.895 |          1        1.08       68.82
+      3.896 |          1        1.08       69.89
+        3.9 |          3        3.23       73.12
+       3.92 |          1        1.08       74.19
+      3.934 |          1        1.08       75.27
+      3.936 |          1        1.08       76.34
+       3.94 |          1        1.08       77.42
+       3.95 |          3        3.23       80.65
+      3.984 |          1        1.08       81.72
+          4 |         13       13.98       95.70
+         NA |          4        4.30      100.00
+------------+-----------------------------------
+      Total |         93      100.00
+
+. destring internship, replace force //change internship to numeric with missing data
+internship contains nonnumeric characters; internship replaced as byte
+(41 missing values generated)
+
+. destring gpa, replace force
+gpa contains nonnumeric characters; gpa replaced as double
+(4 missing values generated)
+
+. foreach var of varlist varsitysports communityservice residentiallearning ///
+> reserchproject clinicalrotation studentorganization studentteaching ///
+> studyabroad workabroad noparticipation casecompetition employedparttime ///
+> graduateasst{
+  2.         destring `var', replace force 
+  3. }
+varsitysports contains nonnumeric characters; varsitysports replaced as byte
+(40 missing values generated)
+communityservice contains nonnumeric characters; communityservice replaced as byte
+(38 missing values generated)
+residentiallearning contains nonnumeric characters; residentiallearning replaced as byte
+(37 missing values generated)
+reserchproject contains nonnumeric characters; reserchproject replaced as byte
+(35 missing values generated)
+clinicalrotation contains nonnumeric characters; clinicalrotation replaced as byte
+(40 missing values generated)
+studentorganization contains nonnumeric characters; studentorganization replaced as byte
+(39 missing values generated)
+studentteaching contains nonnumeric characters; studentteaching replaced as byte
+(39 missing values generated)
+studyabroad contains nonnumeric characters; studyabroad replaced as byte
+(32 missing values generated)
+workabroad contains nonnumeric characters; workabroad replaced as byte
+(35 missing values generated)
+noparticipation contains nonnumeric characters; noparticipation replaced as byte
+(43 missing values generated)
+casecompetition contains nonnumeric characters; casecompetition replaced as byte
+(40 missing values generated)
+employedparttime contains nonnumeric characters; employedparttime replaced as byte
+(36 missing values generated)
+graduateasst contains nonnumeric characters; graduateasst replaced as byte
+(35 missing values generated)
+
+. encode ethnicity, gen(eth)
+
+. encode underutilization, gen(underuti)
+
+. encode gender, gen(sex)
+
+. encode(status), gen(emp)
+
+. gen work = (emp==1) | (emp==2) //after encoding to numeric the 1 & 2 are the first and second insta
+> nce
+
+. gen maj = 0 
+
+. replace maj = 1 if majorcode1 >=200 & majorcode <400
+(19 real changes made)
+
+. replace maj = 2 if majorcode1 >=400 & majorcode <600
+(15 real changes made)
+
+. replace maj = 3 if majorcode1 >=600 & majorcode <800
+(17 real changes made)
+
+. replace maj = 4 if majorcode1 >=800
+(22 real changes made)
+
+. replace internship = 0 if missing(internship)
+(41 real changes made)
+
+. encode searchduration_interview, gen(dur_intvw)
+
+. encode searchduration_app, gen(dur_app)
+
+. replace eth = missing(eth) if (eth==5) | (eth==7) 
+(4 real changes made)
+
+. replace eth = missing(eth) if (eth==0)
+(0 real changes made)
+
+. local xlist "methods_2 methods_3 methods_4 methods_5 methods_6 methods_7"
+
+. probit work i.maj i.eth jobsearchskills internship, vce(robust)
+
+note: 4.eth != 0 predicts failure perfectly
+      4.eth dropped and 4 obs not used
+
+Iteration 0:   log pseudolikelihood =  -55.18611  
+Iteration 1:   log pseudolikelihood = -50.136094  
+Iteration 2:   log pseudolikelihood = -50.107114  
+Iteration 3:   log pseudolikelihood = -50.107113  
+
+Probit regression                               Number of obs     =         85
+                                                Wald chi2(11)     =       9.58
+                                                Prob > chi2       =     0.5681
+Log pseudolikelihood = -50.107113               Pseudo R2         =     0.0920
+
+----------------------------------------------------------------------------------------------------
+                                   |               Robust
+                              work |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-----------------------------------+----------------------------------------------------------------
+                               maj |
+                                1  |   .3039319   .4983226     0.61   0.542    -.6727625    1.280626
+                                2  |  -.3419412   .4739017    -0.72   0.471    -1.270772    .5868891
+                                3  |   .3461156   .4715605     0.73   0.463     -.578126    1.270357
+                                4  |   .2108945   .4309902     0.49   0.625    -.6338307     1.05562
+                                   |
+                               eth |
+                            Asian  |  -.0490664   .7591324    -0.06   0.948    -1.536939    1.438806
+               Black Non-Hispanic  |  -.3353296   .8970015    -0.37   0.709     -2.09342    1.422761
+        Hispanic Non-Puerto-Rican  |  -.3183081   .8261045    -0.39   0.700    -1.937443    1.300827
+More than one race, excluding H..  |          0  (empty)
+                     Puerto Rican  |  -1.234056   1.121764    -1.10   0.271    -3.432673    .9645614
+               White Non-Hispanic  |  -.4967269   .7279219    -0.68   0.495    -1.923428    .9299739
+                                   |
+                   jobsearchskills |   .0579088   .0717577     0.81   0.420    -.0827337    .1985514
+                        internship |   .7099965   .3087116     2.30   0.021      .104933     1.31506
+                             _cons |  -.1167878   .8567905    -0.14   0.892    -1.796066    1.562491
+----------------------------------------------------------------------------------------------------
+
+. *probit work `xlist' i.eth gpa jobsearchskills internship i.dur_intvw ///
+> *i.dur_app age extracurricular first_gen i.sex i.maj
+. margins, dydx(*) atmeans
+
+Conditional marginal effects                    Number of obs     =         85
+Model VCE    : Robust
+
+Expression   : Pr(work), predict()
+dy/dx w.r.t. : 1.maj 2.maj 3.maj 4.maj 1.eth 2.eth 3.eth 4.eth 6.eth 8.eth jobsearchskills
+               internship
+at           : 0.maj           =    .2235294 (mean)
+               1.maj           =          .2 (mean)
+               2.maj           =    .1647059 (mean)
+               3.maj           =    .1529412 (mean)
+               4.maj           =    .2588235 (mean)
+               0.eth           =    .0470588 (mean)
+               1.eth           =    .2352941 (mean)
+               2.eth           =    .0588235 (mean)
+               3.eth           =    .0823529 (mean)
+               6.eth           =    .0352941 (mean)
+               8.eth           =    .5411765 (mean)
+               jobsearchs~s    =    6.717647 (mean)
+               internship      =    .5647059 (mean)
+
+----------------------------------------------------------------------------------------------------
+                                   |            Delta-method
+                                   |      dy/dx   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-----------------------------------+----------------------------------------------------------------
+                               maj |
+                                1  |   .1089818   .1755978     0.62   0.535    -.2351836    .4531471
+                                2  |   -.134581   .1855086    -0.73   0.468    -.4981713    .2290092
+                                3  |   .1227953   .1641982     0.75   0.455    -.1990273     .444618
+                                4  |   .0772724   .1577623     0.49   0.624     -.231936    .3864808
+                                   |
+                               eth |
+                            Asian  |  -.0146571   .2239965    -0.07   0.948    -.4536822     .424368
+               Black Non-Hispanic  |  -.1102372   .2884032    -0.38   0.702     -.675497    .4550226
+        Hispanic Non-Puerto-Rican  |  -.1041237   .2587491    -0.40   0.687    -.6112626    .4030152
+More than one race, excluding H..  |          .  (not estimable)
+                     Puerto Rican  |  -.4570675   .3764285    -1.21   0.225    -1.194854    .2807188
+               White Non-Hispanic  |  -.1703287   .2193054    -0.78   0.437    -.6001593     .259502
+                                   |
+                   jobsearchskills |   .0211936   .0263116     0.81   0.421    -.0303761    .0727633
+                        internship |   .2598455   .1134484     2.29   0.022     .0374907    .4822002
+----------------------------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.
+
+. margins, dydx(*)
+
+Average marginal effects                        Number of obs     =         85
+Model VCE    : Robust
+
+Expression   : Pr(work), predict()
+dy/dx w.r.t. : 1.maj 2.maj 3.maj 4.maj 1.eth 2.eth 3.eth 4.eth 6.eth 8.eth jobsearchskills
+               internship
+
+----------------------------------------------------------------------------------------------------
+                                   |            Delta-method
+                                   |      dy/dx   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-----------------------------------+----------------------------------------------------------------
+                               maj |
+                                1  |   .1000212   .1613713     0.62   0.535    -.2162607     .416303
+                                2  |  -.1219517   .1671155    -0.73   0.466     -.449492    .2055887
+                                3  |   .1128868   .1511017     0.75   0.455     -.183267    .4090407
+                                4  |   .0706821   .1436402     0.49   0.623    -.2108476    .3522118
+                                   |
+                               eth |
+                            Asian  |  -.0141091   .2160141    -0.07   0.948     -.437489    .4092708
+               Black Non-Hispanic  |  -.1045666   .2742774    -0.38   0.703    -.6421404    .4330072
+        Hispanic Non-Puerto-Rican  |  -.0988433   .2474165    -0.40   0.690    -.5837706    .3860841
+More than one race, excluding H..  |          .  (not estimable)
+                     Puerto Rican  |  -.4258763   .3555132    -1.20   0.231    -1.122669    .2709167
+               White Non-Hispanic  |  -.1605186   .2100644    -0.76   0.445    -.5722373       .2512
+                                   |
+                   jobsearchskills |   .0193845   .0238794     0.81   0.417    -.0274182    .0661872
+                        internship |   .2376655    .094164     2.52   0.012     .0531074    .4222235
+----------------------------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.
+
+. log close
+      name:  <unnamed>
+       log:  /Users/arinzenwoye/Desktop/stata files/dataman.txt
+  log type:  text
+ closed on:  23 Mar 2016, 09:38:04
+-----------------------------------------------------------------------------------------------------

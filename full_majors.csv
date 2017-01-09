@@ -1,0 +1,861 @@
+"","RUID","salary_base","experiential1","popType","gender","ethnicity","post_grad_status","Student.Profile..GPA"
+"1",141006788,NA,"Yes","Humanities & Social Sciences","Male","Unknown","Seeking employment",3.46
+"2",154009138,NA,"No","Humanities & Social Sciences","Female","Unknown","Seeking employment",3.29
+"3",139004949,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.83
+"4",133003764,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.24
+"5",145006957,NA,"Yes","Humanities & Social Sciences","Male","No Response","Seeking employment",3.92
+"6",141003369,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.69
+"7",134001353,NA,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",3.49
+"8",139000199,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.83
+"9",6006869,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.8
+"10",144000542,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.39
+"11",78006120,NA,"No","Humanities & Social Sciences","Male","Puerto Rican","Seeking employment",3.1
+"12",149004661,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.61
+"13",149004062,NA,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",3.58
+"14",149006787,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.31
+"15",151008440,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.76
+"16",145009044,NA,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.96
+"17",135009238,NA,"Yes","Humanities & Social Sciences","Female","No Response","Seeking employment",4
+"18",123004668,NA,"Yes","Humanities & Social Sciences","Female","No Response","Seeking employment",3.96
+"19",119008546,NA,"Yes","Humanities & Social Sciences","Male","No Response","Seeking employment",3.72
+"20",127007968,NA,"Yes","Humanities & Social Sciences","Female","No Response","Seeking employment",3.96
+"21",124002373,NA,"Yes","Humanities & Social Sciences","Male","No Response","Seeking employment",4
+"22",77005249,NA,"Yes","Humanities & Social Sciences","Female","No Response","Seeking employment",NA
+"23",139001531,NA,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.39
+"24",138006394,NA,"Yes","Humanities & Social Sciences","Female","Unknown","Seeking employment",2.8
+"25",134002718,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.12
+"26",132005917,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.01
+"27",132005899,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.76
+"28",133007029,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.53
+"29",132005675,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.9
+"30",133009730,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.21
+"31",131000704,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.19
+"32",133004190,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.93
+"33",122006994,NA,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.23
+"34",148008269,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.32
+"35",148006634,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.91
+"36",137008401,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.83
+"37",136004677,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.48
+"38",132008140,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.92
+"39",131008511,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.8
+"40",131006658,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.4
+"41",128004427,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.21
+"42",155003625,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.83
+"43",138001529,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",2.69
+"44",154009434,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",4
+"45",154008241,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.18
+"46",154007869,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.25
+"47",153009855,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.94
+"48",153005362,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.32
+"49",150001866,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.45
+"50",150001493,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.22
+"51",150001036,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.3
+"52",149005170,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.88
+"53",148006623,NA,"No","Humanities & Social Sciences","Female","Puerto Rican","Seeking employment",2.78
+"54",155000519,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.19
+"55",143008784,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.9
+"56",143008043,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.09
+"57",143000401,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",2.58
+"58",140007357,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.96
+"59",140006368,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.85
+"60",140004672,NA,"No","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",3.87
+"61",140006687,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.64
+"62",140004226,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.3
+"63",140002724,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.85
+"64",139009321,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",2.84
+"65",139006642,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.09
+"66",139006544,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.57
+"67",139004614,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.75
+"68",139004305,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.09
+"69",139003959,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.39
+"70",139003815,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.37
+"71",139003597,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.41
+"72",139001954,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.64
+"73",139000383,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.13
+"74",138008550,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.89
+"75",138008294,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.76
+"76",138006735,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.06
+"77",138006266,NA,"No","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",2.89
+"78",138005873,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.8
+"79",138005098,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.32
+"80",138003401,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.68
+"81",138002043,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.71
+"82",137008504,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.72
+"83",154009027,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.74
+"84",138006929,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.59
+"85",137007564,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.81
+"86",134005641,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.52
+"87",134001129,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.44
+"88",140003619,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.06
+"89",133005030,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.2
+"90",132008051,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.43
+"91",132007731,NA,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.51
+"92",132002824,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.01
+"93",140001962,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.35
+"94",131007247,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.83
+"95",129005559,NA,"No","Humanities & Social Sciences","Female","Puerto Rican","Seeking employment",2.97
+"96",129001662,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.14
+"97",127009537,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.05
+"98",127004447,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.63
+"99",126000202,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.84
+"100",119004146,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",3.16
+"101",155008573,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.44
+"102",144008834,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2
+"103",38006235,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.9
+"104",138003362,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.6
+"105",138009626,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.89
+"106",133008828,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.84
+"107",142004196,NA,"Yes","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",2.36
+"108",140004108,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.51
+"109",134000271,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.74
+"110",127007775,NA,"No","Humanities & Social Sciences","Male","No Response","Seeking employment",3.93
+"111",154007916,NA,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.09
+"112",150003086,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.76
+"113",135003466,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.83
+"114",138006043,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.13
+"115",138005474,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.25
+"116",150000680,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.52
+"117",140003642,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.87
+"118",143001368,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.59
+"119",140008771,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.23
+"120",142004738,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.22
+"121",140008170,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.52
+"122",137001430,NA,"Yes","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",2.92
+"123",139001681,NA,"Yes","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",3.34
+"124",138003152,NA,"Yes","Humanities & Social Sciences","Male","Puerto Rican","Seeking employment",3.53
+"125",138005117,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.29
+"126",143009858,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.03
+"127",140000632,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.08
+"128",134000431,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.97
+"129",137009700,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.95
+"130",133000081,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.7
+"131",150002950,NA,"Yes","Humanities & Social Sciences","Female","Puerto Rican","Seeking employment",2.91
+"132",139007971,NA,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",3.24
+"133",131006974,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.47
+"134",136008038,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",2.16
+"135",139003040,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.3
+"136",139000010,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.53
+"137",140005165,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.87
+"138",147005529,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.67
+"139",140004151,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.74
+"140",140008389,NA,"Yes","Humanities & Social Sciences","Male","Puerto Rican","Seeking employment",2.8
+"141",154006758,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.52
+"142",138007264,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.94
+"143",128003551,NA,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.36
+"144",138008291,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.75
+"145",138006939,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.81
+"146",132003015,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.31
+"147",121007029,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.39
+"148",137009614,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.84
+"149",138009223,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.29
+"150",134002048,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.12
+"151",139003493,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.37
+"152",145000859,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.49
+"153",140009710,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.3
+"154",140000585,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.2
+"155",139005445,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.99
+"156",139000665,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.45
+"157",114009252,NA,"No","Humanities & Social Sciences","Male","No Response","Seeking employment",3.79
+"158",148009086,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.62
+"159",136000013,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.16
+"160",139000572,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.08
+"161",132005393,NA,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.49
+"162",140008951,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.28
+"163",140009599,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.78
+"164",150001649,NA,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.96
+"165",140003293,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.13
+"166",140005750,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.83
+"167",139006000,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.3
+"168",139009344,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.38
+"169",139007590,NA,"No","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",3.32
+"170",139009137,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.41
+"171",140000697,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.12
+"172",141000444,NA,"Yes","Humanities & Social Sciences","Female","Unknown","Seeking employment",3.4
+"173",133002676,NA,"No","Humanities & Social Sciences","Male","No Response","Seeking employment",3.6
+"174",148004173,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.65
+"175",133002022,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.51
+"176",132002340,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.72
+"177",139000465,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.9
+"178",143001590,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.62
+"179",138006614,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.64
+"180",139006543,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.65
+"181",138005558,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.44
+"182",139006559,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.68
+"183",138001718,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.7
+"184",139005858,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.61
+"185",144001303,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.84
+"186",140005514,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.69
+"187",137006376,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.8
+"188",127009484,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.17
+"189",148005452,24000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.53
+"190",126008812,30000,"No","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.86
+"191",154005606,49100,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"192",138006560,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.91
+"193",152003425,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.68
+"194",140004004,30000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.37
+"195",108003912,41000,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"196",137006564,45000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.93
+"197",156001814,96000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.65
+"198",118006367,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.5
+"199",156000964,66000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"200",137006716,54201,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"201",8003839,40000,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.01
+"202",154002993,38500,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.48
+"203",139004255,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.97
+"204",150001631,37000,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.67
+"205",138006496,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.53
+"206",138000689,35000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.3
+"207",128006403,2000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.76
+"208",126003974,45000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.89
+"209",136007719,40000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.84
+"210",154000422,31200,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.23
+"211",51001823,58000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.05
+"212",141001906,NA,"No","Humanities & Social Sciences","Male","Unknown","Seeking employment",3.32
+"213",19001442,94000,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.5
+"214",135006077,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"215",127003253,NA,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.65
+"216",92008552,113000,"Yes","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"217",149009354,45000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.38
+"218",98001668,86400,"No","Humanities & Social Sciences","Unknown","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"219",138007483,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.93
+"220",118003034,75000,"No","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"221",134003216,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",3.07
+"222",57001769,66405,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.8
+"223",122008815,52000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"224",138006791,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.53
+"225",42008064,48000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"226",143004124,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.29
+"227",88002812,44800,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"228",122002628,36000,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.97
+"229",143001104,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.82
+"230",154009291,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.26
+"231",135005032,22000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"232",125003200,NA,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.89
+"233",140003902,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.96
+"234",113002199,80000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.75
+"235",155003245,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.87
+"236",18009441,60000,"Yes","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"237",155009847,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.53
+"238",135002473,55000,"Yes","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"239",132009365,67500,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.83
+"240",147005176,42000,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.93
+"241",65003481,52000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"242",20000689,37500,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"243",72006089,100000,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"244",134004609,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.81
+"245",113006091,55000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"246",126001928,20000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.8
+"247",140003701,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.66
+"248",125006745,115000,"Yes","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"249",139003411,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.14
+"250",140005722,43000,"Yes","Humanities & Social Sciences","Female","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.1
+"251",139001570,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.75
+"252",139001896,36000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.85
+"253",137009646,50000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.13
+"254",153003206,NA,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",3.01
+"255",139001430,45000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.09
+"256",127000728,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.18
+"257",148002976,39000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.19
+"258",140009190,30000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.9
+"259",24006524,60000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.67
+"260",138007964,40000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.09
+"261",23007024,62000,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.31
+"262",134009525,40000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.39
+"263",137002306,55000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.98
+"264",150001044,35000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.74
+"265",137009286,NA,"No","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.53
+"266",140000313,NA,"Yes","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.26
+"267",137009679,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"268",148002751,40000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.4
+"269",139003482,65000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.68
+"270",142008772,35000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.38
+"271",121008658,60000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.35
+"272",148002675,60000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.45
+"273",140003771,55000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.71
+"274",140006864,50000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.12
+"275",156000144,44000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.66
+"276",134001586,45000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.84
+"277",139006323,45000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.23
+"278",149008042,41600,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.96
+"279",139001280,65000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.78
+"280",142009578,37000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.51
+"281",139009618,34800,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.82
+"282",140002988,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",NA
+"283",134006828,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.06
+"284",138000516,30000,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.25
+"285",139006990,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.44
+"286",148004096,30000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.32
+"287",138002475,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.99
+"288",138003465,30000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.2
+"289",134007675,25000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.35
+"290",139009102,20000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.06
+"291",138007468,20000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.49
+"292",140003427,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.24
+"293",142003602,2500,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.23
+"294",139007040,32000,"Yes","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"295",138006510,NA,"Yes","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",2.99
+"296",127007418,26000,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.25
+"297",137009839,NA,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.23
+"298",141007028,25000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.96
+"299",137006011,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.88
+"300",138004533,55000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.55
+"301",89006101,80000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.81
+"302",140001060,60000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"303",58002771,52000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.42
+"304",133007871,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.62
+"305",132001893,53000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.9
+"306",140006080,45000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.36
+"307",134001145,42000,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.12
+"308",148006008,NA,"No","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",3.28
+"309",138002244,40000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.86
+"310",137009715,39000,"Yes","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.07
+"311",134003655,40000,"Yes","Humanities & Social Sciences","Unknown","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.85
+"312",145007090,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.54
+"313",138005369,40000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.95
+"314",148006646,NA,"No","Humanities & Social Sciences","Female","Unknown","Seeking employment",3.59
+"315",121005787,40000,"Yes","Humanities & Social Sciences","Male","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.43
+"316",135006615,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.3
+"317",140003519,35000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.61
+"318",133009081,35000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.5
+"319",140004247,30000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.28
+"320",144002180,30000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.34
+"321",148002903,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.82
+"322",139007617,28800,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.09
+"323",133008644,20800,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.61
+"324",149009678,20000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.4
+"325",140007879,6000,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.67
+"326",134004069,30000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"327",138003978,3840,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.95
+"328",149007675,32000,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.11
+"329",139009853,24960,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.14
+"330",140008382,38000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.37
+"331",139005052,8100,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.08
+"332",138008262,22000,"No","Humanities & Social Sciences","Female","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.72
+"333",137003321,20000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.76
+"334",140002962,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.96
+"335",140004641,55000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.17
+"336",128009542,57000,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.91
+"337",125006587,52500,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.8
+"338",147009265,52000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.49
+"339",140000969,28000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.52
+"340",115007546,54800,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.03
+"341",141000547,47000,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.14
+"342",138007822,34000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.68
+"343",132008919,NA,"Yes","Humanities & Social Sciences","Female","No Response","Seeking employment",3.86
+"344",138002004,30000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"345",139006599,30000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.46
+"346",138006151,45000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.4
+"347",138008196,60000,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.72
+"348",138009829,42000,"Yes","Humanities & Social Sciences","Male","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.13
+"349",105001489,60000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.07
+"350",148004981,58000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.09
+"351",138007380,55000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.72
+"352",134002165,47000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.94
+"353",124009284,45000,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.9
+"354",106004540,45000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.01
+"355",140004589,42000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"356",140008521,40000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.94
+"357",139001462,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.17
+"358",138000517,30000,"No","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.11
+"359",132008643,30000,"No","Humanities & Social Sciences","Female","Native Hawaiian or Other Pacific Islander, Non Asian","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.12
+"360",120007292,28680,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.24
+"361",154002623,30000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"362",132007569,50000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.85
+"363",139009801,200001,"No","Humanities & Social Sciences","Female","Unknown","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.2
+"364",134001061,20000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.4
+"365",149003959,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.91
+"366",140000131,34400,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.07
+"367",148002934,75000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.34
+"368",138009110,34000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.57
+"369",139004603,65000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"370",138000935,45000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.89
+"371",132007758,40000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.84
+"372",150001799,NA,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.79
+"373",142002399,40000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.01
+"374",138006933,35000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.42
+"375",138003956,35000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.34
+"376",125001015,46000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.66
+"377",148006240,47000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.86
+"378",138004560,3000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.79
+"379",139002988,75000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.16
+"380",139002626,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.85
+"381",140007832,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.88
+"382",86009939,35000,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.41
+"383",138009924,16000,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.78
+"384",139003663,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.38
+"385",141000498,50000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.21
+"386",138009072,42000,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.64
+"387",133000252,26000,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.08
+"388",139002674,25000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.54
+"389",127006448,50000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.31
+"390",149000785,24000,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.79
+"391",140005457,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",3.49
+"392",139005415,20000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.44
+"393",134007276,17000,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.03
+"394",57005590,90000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.85
+"395",141007456,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.21
+"396",143003218,75000,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.68
+"397",134004541,80000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.68
+"398",148005638,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.97
+"399",129005318,21000,"No","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.73
+"400",136000774,35000,"Yes","Humanities & Social Sciences","Unknown","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.47
+"401",154009779,24000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.79
+"402",69004091,41000,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.26
+"403",125007304,42000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.56
+"404",129008496,35000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.58
+"405",139001921,47000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.11
+"406",133002518,45000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.19
+"407",139004858,50000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.44
+"408",154004189,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.16
+"409",132007614,36000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.66
+"410",54002321,75000,"No","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"411",119002684,45000,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"412",139003584,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.52
+"413",138008284,58000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.07
+"414",43006452,65000,"No","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.96
+"415",145002219,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.64
+"416",139006185,55000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.25
+"417",122009599,55000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.91
+"418",44003782,100000,"Yes","Humanities & Social Sciences","Male","Native Hawaiian or Other Pacific Islander, Non Asian","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.93
+"419",132008079,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.04
+"420",139003587,36000,"Yes","Humanities & Social Sciences","Female","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"421",46000610,35000,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.82
+"422",115002514,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",3.32
+"423",84007084,NA,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"424",139009304,NA,"Yes","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.27
+"425",140008848,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.36
+"426",138003700,NA,"No","Math & Sciences","Male","Unknown","Seeking employment",2.41
+"427",140009634,40000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.11
+"428",140000400,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.82
+"429",139000131,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.95
+"430",143009804,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.92
+"431",148004779,45000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.73
+"432",132005562,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.19
+"433",139001490,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.84
+"434",134000220,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.72
+"435",128001399,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.15
+"436",137001904,51000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"437",134003738,NA,"No","Math & Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",2.89
+"438",132007854,NA,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",2.67
+"439",134001451,NA,"No","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.02
+"440",87000975,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",3.12
+"441",132000666,NA,"No","Math & Sciences","Male","American Indian or Alaskan Native","Seeking employment",3.12
+"442",124008343,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.59
+"443",140005438,40000,"No","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.28
+"444",122008144,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.34
+"445",138002163,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.33
+"446",156006889,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.84
+"447",138006215,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"448",155009735,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.83
+"449",155005985,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.21
+"450",155000455,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.56
+"451",154006459,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.43
+"452",154006205,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.74
+"453",153009680,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.62
+"454",150000590,NA,"No","Math & Sciences","Male","Puerto Rican","Seeking employment",3.24
+"455",149006478,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",2.82
+"456",139006496,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.51
+"457",149006419,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.07
+"458",148006371,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.7
+"459",148005525,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.82
+"460",148004104,NA,"No","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",2.78
+"461",148002787,NA,"No","Math & Sciences","Male","Puerto Rican","Seeking employment",3.62
+"462",148002573,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3
+"463",147009817,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.04
+"464",146007835,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.11
+"465",146001826,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.84
+"466",144000561,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.98
+"467",144000155,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.09
+"468",143009845,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.33
+"469",145006140,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.91
+"470",143008405,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",3.21
+"471",129000768,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.37
+"472",143005940,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.46
+"473",142007112,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",2.05
+"474",142007013,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.92
+"475",142006562,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.73
+"476",115003058,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",4
+"477",142003822,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.58
+"478",149001546,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.65
+"479",141004197,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.6
+"480",138006116,NA,"Yes","Humanities & Social Sciences","Female","Unknown","Seeking employment",3.65
+"481",141003141,NA,"Yes","Math & Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",3.42
+"482",141000166,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.83
+"483",134005597,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.26
+"484",140009257,NA,"No","Math & Sciences","Male","Puerto Rican","Seeking employment",3.14
+"485",138009133,40000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.43
+"486",140006066,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.75
+"487",149009252,NA,"No","Math & Sciences","Male","Black Non-Hispanic","Seeking employment",3.06
+"488",140004557,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.57
+"489",140003856,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.96
+"490",138007542,40000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.13
+"491",140002822,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",3.14
+"492",140006059,NA,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",2.97
+"493",140002568,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.13
+"494",140001980,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",2.8
+"495",140004508,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.61
+"496",140001429,NA,"Yes","Math & Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",3.75
+"497",140001074,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.43
+"498",53003072,87000,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.8
+"499",129003653,45000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"500",138002463,40000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.24
+"501",140000996,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.52
+"502",132002300,75000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.23
+"503",140000758,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.84
+"504",140000553,NA,"Yes","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.94
+"505",139009666,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.44
+"506",131006638,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.62
+"507",139007716,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.56
+"508",139006917,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.16
+"509",139005876,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.34
+"510",140001238,50000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.1
+"511",148006864,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.83
+"512",139005846,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.53
+"513",139005362,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.45
+"514",144004050,31200,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.6
+"515",140000657,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.73
+"516",139004098,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.66
+"517",139003405,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.72
+"518",116006161,NA,"Yes","Humanities & Social Sciences","Male","No Response","Seeking employment",2.44
+"519",139003386,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.82
+"520",138002740,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"521",139003228,NA,"No","Math & Sciences","Male","Black Non-Hispanic","Seeking employment",2.91
+"522",133004816,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.7
+"523",139002973,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",NA
+"524",133009964,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.65
+"525",149008867,45000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.5
+"526",125008948,52000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.61
+"527",139002058,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.9
+"528",139000997,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",NA
+"529",138009910,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.68
+"530",138008942,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.57
+"531",138001987,42000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.97
+"532",138008025,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.15
+"533",133000291,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.89
+"534",138007683,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.11
+"535",139006811,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.84
+"536",138007313,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.75
+"537",138006662,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.42
+"538",138005309,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.82
+"539",137001067,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",3.23
+"540",138002351,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.98
+"541",122000333,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.92
+"542",137009698,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.11
+"543",149001532,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.02
+"544",137008654,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.48
+"545",137000358,NA,"Yes","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.09
+"546",136009079,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.49
+"547",136003806,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.12
+"548",135009875,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.59
+"549",138002925,12000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.67
+"550",134009089,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.96
+"551",138009931,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.9
+"552",139004441,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.86
+"553",134006986,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.18
+"554",134005369,NA,"No","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",2.86
+"555",134004936,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.59
+"556",140008763,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.07
+"557",134004495,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.81
+"558",134004116,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.27
+"559",134001188,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.36
+"560",140005202,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.2
+"561",134000994,NA,"No","Math & Sciences","Female","Puerto Rican","Seeking employment",2.75
+"562",134000839,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.71
+"563",134000628,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.11
+"564",86000324,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.42
+"565",134000310,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",2.88
+"566",139002336,NA,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.44
+"567",134000114,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",0
+"568",134002756,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.92
+"569",121000329,39000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.38
+"570",133007808,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",3.07
+"571",133005340,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.42
+"572",133003186,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.53
+"573",134001810,NA,"Yes","Humanities & Social Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",2.73
+"574",133001862,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",NA
+"575",133001172,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",2.73
+"576",131006656,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.38
+"577",123003711,45000,"Yes","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.64
+"578",134004933,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.96
+"579",130006721,NA,"No","Math & Sciences","Female","Puerto Rican","Seeking employment",2.53
+"580",130004742,NA,"No","Math & Sciences","Male","Black Non-Hispanic","Seeking employment",2.76
+"581",129006382,NA,"No","Math & Sciences","Female","Unknown","Seeking employment",2.8
+"582",121002766,45000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"583",128005456,NA,"Yes","Math & Sciences","Male","Black Non-Hispanic","Seeking employment",3.1
+"584",134002376,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.13
+"585",132006744,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.62
+"586",127006518,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.2
+"587",120002598,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.32
+"588",134002017,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.89
+"589",148006869,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.92
+"590",150001276,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.83
+"591",62009318,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.65
+"592",51001724,NA,"No","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",2.46
+"593",32006662,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.01
+"594",139004007,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.39
+"595",140006642,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.55
+"596",134003493,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.66
+"597",122008494,NA,"Yes","Humanities & Social Sciences","Male","No Response","Seeking employment",3.78
+"598",139000075,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.45
+"599",139001586,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.87
+"600",133001065,NA,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.25
+"601",138003105,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.53
+"602",133008862,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",2.91
+"603",148007487,NA,"Yes","Math & Sciences","Male","Black Non-Hispanic","Seeking employment",3.11
+"604",137009504,50000,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.91
+"605",134003324,NA,"Yes","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",2.67
+"606",122003248,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.22
+"607",139003976,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",2.93
+"608",114006399,36000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.15
+"609",140004504,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.29
+"610",128003569,40000,"Yes","Humanities & Social Sciences","Male","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.68
+"611",139006825,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.99
+"612",145001529,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.27
+"613",137000948,NA,"Yes","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",3.03
+"614",140006609,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.56
+"615",139008599,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.62
+"616",132002680,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.52
+"617",141002804,NA,"No","Humanities & Social Sciences","Male","No Response","Seeking employment",3.76
+"618",143004559,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",3.1
+"619",133007971,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.74
+"620",148007003,16000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.89
+"621",132008495,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.58
+"622",140006459,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.4
+"623",138007172,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.4
+"624",139009335,35000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.21
+"625",139005352,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.27
+"626",133008345,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.76
+"627",155000892,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.54
+"628",128008137,NA,"Yes","Humanities & Social Sciences","Female","Unknown","Seeking employment",2.77
+"629",140001456,24960,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.73
+"630",138002175,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.53
+"631",138000533,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.9
+"632",138009984,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.5
+"633",138004287,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.18
+"634",140002444,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3
+"635",148002863,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.29
+"636",138001756,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.69
+"637",138005462,NA,"Yes","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",3.43
+"638",139003764,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.08
+"639",122004645,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",3.44
+"640",139008776,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.39
+"641",140007599,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.8
+"642",134002036,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.44
+"643",140005253,NA,"Yes","Math & Sciences","Female","More than one race, excluding Hispanic or Latino","Seeking employment",3.31
+"644",140009371,NA,"Yes","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.24
+"645",149000016,NA,"Yes","Math & Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",3.38
+"646",138000615,50000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.54
+"647",139009516,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",3.18
+"648",142001098,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.8
+"649",132009939,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",NA
+"650",120007888,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.31
+"651",149005420,25000,"Yes","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.18
+"652",138009946,NA,"Yes","Math & Sciences","Female","Black Non-Hispanic","Seeking employment",3.09
+"653",139004056,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.39
+"654",143002112,108000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.33
+"655",44004494,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",2.68
+"656",148006691,36000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.14
+"657",138008024,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.36
+"658",138009911,70000,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.93
+"659",143009701,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.07
+"660",133009529,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.11
+"661",134004444,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.59
+"662",138007108,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.02
+"663",132001956,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.33
+"664",139006794,45000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.86
+"665",133007546,NA,"Yes","Humanities & Social Sciences","Unknown","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.92
+"666",138007773,45000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.89
+"667",116007309,NA,"No","Math & Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.11
+"668",128005292,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.44
+"669",139004487,45000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.36
+"670",138007260,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.9
+"671",138005296,NA,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.6
+"672",138001522,60000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.86
+"673",140007565,52000,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.68
+"674",140002811,15000,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"675",137009639,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.68
+"676",133001924,NA,"No","Humanities & Social Sciences","Female","Hispanic Non-Puerto-Rican","Seeking employment",2.96
+"677",133005637,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.8
+"678",132004753,35000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.73
+"679",134006178,115000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.02
+"680",138001636,75000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.18
+"681",136005138,NA,"No","Humanities & Social Sciences","Female","Puerto Rican","Seeking employment",3.15
+"682",139000056,NA,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.88
+"683",141000378,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.27
+"684",134002193,68000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.42
+"685",140005162,65000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.65
+"686",144003648,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.08
+"687",141002554,63000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.33
+"688",117001870,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.34
+"689",139009490,34600,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"690",151002325,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.43
+"691",127004317,40000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.27
+"692",131002068,42000,"No","Humanities & Social Sciences","Male","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.46
+"693",132004055,34321,"No","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.85
+"694",126001727,33000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.26
+"695",138000408,30000,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.09
+"696",140000574,32000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.69
+"697",134008706,28000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.73
+"698",140001549,46000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.37
+"699",140003114,31000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.49
+"700",133001153,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.33
+"701",149003243,30000,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.47
+"702",140005015,NA,"Yes","Humanities & Social Sciences","Female","Unknown","Seeking employment",3.61
+"703",114009527,30000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.57
+"704",132007016,30000,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.44
+"705",139009328,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.49
+"706",138007317,40000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"707",139000634,26000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.23
+"708",138009354,25000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.64
+"709",133002258,NA,"No","Math & Sciences","Male","Black Non-Hispanic","Seeking employment",2.46
+"710",138008785,23000,"Yes","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.62
+"711",144004014,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",2.9
+"712",138006577,65000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.29
+"713",124005461,19000,"No","Math & Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.61
+"714",131008608,NA,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Seeking employment",2.17
+"715",129005159,15000,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.2
+"716",148003884,35000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.51
+"717",115003181,NA,"No","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",2.06
+"718",132002711,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.36
+"719",118002202,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.69
+"720",155004932,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.7
+"721",148006364,NA,"No","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.97
+"722",143008157,60000,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.8
+"723",139008732,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.08
+"724",139004544,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.38
+"725",135003505,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.41
+"726",142001067,NA,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.5
+"727",154006159,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.7
+"728",139000683,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",2.46
+"729",138003154,75000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.8
+"730",140005283,70000,"No","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.71
+"731",144009310,60000,"No","Math & Sciences","Male","More than one race, excluding Hispanic or Latino","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.66
+"732",139003250,50000,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.35
+"733",139001790,48000,"Yes","Math & Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.12
+"734",148006728,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.21
+"735",149008654,40000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.59
+"736",155009806,36000,"No","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.2
+"737",126004103,70000,"Yes","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.48
+"738",138003625,29500,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.99
+"739",129001393,50094,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3
+"740",138006739,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.28
+"741",140000803,12960,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.6
+"742",138003775,36672,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.32
+"743",140001685,6000,"Yes","Math & Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.64
+"744",123007656,45000,"Yes","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"745",138006093,30000,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.47
+"746",131006730,34000,"No","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.87
+"747",153006697,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.57
+"748",140006197,NA,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Seeking employment",3.07
+"749",134002613,20000,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.29
+"750",139002970,55000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.46
+"751",139006936,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.6
+"752",132004591,45000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.13
+"753",138003352,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.44
+"754",140009264,58000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.57
+"755",133002450,20000,"No","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.61
+"756",140001591,54000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.3
+"757",139006405,62000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.27
+"758",138004559,58000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.16
+"759",138008936,61500,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.63
+"760",149003788,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.94
+"761",139004412,72000,"Yes","Math & Sciences","Male","Native Hawaiian or Other Pacific Islander, Non Asian","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.24
+"762",148009332,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.27
+"763",139003445,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.94
+"764",137009457,63000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.5
+"765",122005652,50000,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.05
+"766",118003163,25000,"No","Humanities & Social Sciences","Male","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.81
+"767",138003698,100000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.26
+"768",138007673,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.7
+"769",140007315,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.4
+"770",154002076,75000,"No","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.85
+"771",140005497,48000,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.47
+"772",136000019,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.77
+"773",138009307,72000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.35
+"774",141002373,NA,"No","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",2.78
+"775",138008825,70500,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.81
+"776",138008000,65000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.81
+"777",132009558,62000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.87
+"778",152001765,NA,"No","Humanities & Social Sciences","Male","No Response","Seeking employment",3.83
+"779",142006243,60000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.37
+"780",140002694,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.8
+"781",127003199,50800,"Yes","Math & Sciences","Female","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.59
+"782",138007416,50000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.61
+"783",134005103,NA,"No","Humanities & Social Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.94
+"784",138009306,35000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.81
+"785",140001399,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.3
+"786",142008378,35000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.68
+"787",137005645,63000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.97
+"788",140009647,15470,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.24
+"789",138004397,67000,"No","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.27
+"790",138002405,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",2.88
+"791",135000491,NA,"No","Math & Sciences","Male","White Non-Hispanic","Seeking employment",2.9
+"792",138008197,44000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.7
+"793",149005939,52500,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.09
+"794",138000445,60000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.49
+"795",138008283,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",2.37
+"796",139009176,30888,"No","Humanities & Social Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.39
+"797",138000943,59000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.06
+"798",138004050,NA,"Yes","Math & Sciences","Male","More than one race, excluding Hispanic or Latino","Seeking employment",3.92
+"799",140000593,55000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.55
+"800",139005961,NA,"No","Math & Sciences","Female","White Non-Hispanic","Seeking employment",2.99
+"801",138007487,NA,"Yes","Math & Sciences","Female","White Non-Hispanic","Seeking employment",3.48
+"802",138005092,44000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",4
+"803",138006749,NA,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.37
+"804",138000106,68000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.75
+"805",139004968,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.04
+"806",139004315,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.23
+"807",155001492,NA,"No","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.77
+"808",149009247,33280,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.23
+"809",139006555,108000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.82
+"810",131007702,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",4
+"811",134002670,NA,"No","Humanities & Social Sciences","Male","Black Non-Hispanic","Seeking employment",2.34
+"812",139007211,95000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.27
+"813",141001947,NA,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.18
+"814",121003017,35000,"Yes","Humanities & Social Sciences","Female","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.06
+"815",140002887,82000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.62
+"816",131009093,NA,"No","Humanities & Social Sciences","Female","Black Non-Hispanic","Seeking employment",NA
+"817",125002429,75000,"No","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.64
+"818",138002545,75000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.24
+"819",134002282,55000,"Yes","Humanities & Social Sciences","Female","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.44
+"820",132009946,75000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.39
+"821",139000643,75000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.89
+"822",139007166,75000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.74
+"823",139003567,65000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.01
+"824",139004959,75000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.6
+"825",114007274,NA,"Yes","Humanities & Social Sciences","Female","No Response","Seeking employment",3.8
+"826",148001818,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",NA
+"827",138002666,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Seeking employment",3.9
+"828",138003254,62000,"Yes","Math & Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.54
+"829",139003653,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.47
+"830",140005204,55000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.4
+"831",128008523,50000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.47
+"832",41009411,67000,"Yes","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",NA
+"833",132005092,50000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.44
+"834",138008949,NA,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.42
+"835",138002034,43000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.53
+"836",137007467,110000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.82
+"837",139004314,NA,"No","Humanities & Social Sciences","Male","White Non-Hispanic","Seeking employment",3.07
+"838",127008096,85000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.46
+"839",138006602,NA,"Yes","Humanities & Social Sciences","Female","Asian or Pacific Islander","Seeking employment",3.36
+"840",140001299,NA,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Seeking employment",3.76
+"841",139001240,100000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.89
+"842",151002157,100000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.9
+"843",147008819,NA,"No","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.98
+"844",126004987,24000,"No","Math & Sciences","Male","Hispanic Non-Puerto-Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.01
+"845",132002345,NA,"No","Humanities & Social Sciences","Female","Puerto Rican","Seeking employment",2.95
+"846",139007131,30000,"Yes","Math & Sciences","Female","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.88
+"847",140004058,NA,"Yes","Humanities & Social Sciences","Female","White Non-Hispanic","Seeking employment",3.68
+"848",132008921,NA,"No","Humanities & Social Sciences","Female","No Response","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.79
+"849",139000656,65000,"Yes","Humanities & Social Sciences","Male","Unknown","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.47
+"850",140007464,62000,"Yes","Math & Sciences","Male","Black Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.12
+"851",138007098,70000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",2.75
+"852",138003878,105000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.62
+"853",141004888,65000,"Yes","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.55
+"854",144003986,44000,"Yes","Humanities & Social Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.67
+"855",138001107,70000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.66
+"856",148007255,NA,"No","Humanities & Social Sciences","Male","No Response","Seeking employment",4
+"857",143005574,72000,"Yes","Math & Sciences","Female","Puerto Rican","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.5
+"858",140004333,90000,"Yes","Math & Sciences","Male","Asian or Pacific Islander","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.41
+"859",139003858,40000,"No","Math & Sciences","Male","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.13
+"860",134002515,65000,"Yes","Math & Sciences","Female","White Non-Hispanic","Employed full-time, full-time entrepreneur, full-time post-graduation internship, full-time fellowship, etc. (on average 30 hours or more per week)",3.02

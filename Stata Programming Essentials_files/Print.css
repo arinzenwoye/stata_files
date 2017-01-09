@@ -1,0 +1,230 @@
+@import url(Reset.css);
+
+/*modified 11/2/11 rhorrisb*/
+kbd {
+	white-space:nowrap;
+	color:#000;
+	background:#eee;
+	border-style:solid;
+	border-color:#ccc #aaa #888 #bbb;
+	padding:2px 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-moz-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+	-webkit-box-shadow:0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+	box-shadow:0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
+	background-color:#FAFAFA;
+	border-color:#CCCCCC #CCCCCC #FFFFFF;
+	border-style:solid solid none;
+	border-width:1px 1px medium;
+	color:#444444;
+	font-family:'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	white-space:nowrap;
+	display:inline-block;
+	margin-bottom:5px;
+}
+.Clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+#OuterWrapper
+{ 
+	position:absolute;
+	width: 7in;
+	top:85px;
+}
+
+#Header
+{
+	display:none;
+}
+
+
+#RightHeaderContent
+{
+	display:none;
+}
+
+#PrintLogo
+{
+	position:absolute;
+	left:161px;
+	top:0px;
+}
+
+#MainWrapper
+{
+    float: left;
+}
+#LeftCol
+{
+    display: none;
+}
+#RightWrapper
+{
+    padding: 0px;
+}
+#Footer{
+    margin-top: 20px;
+}
+#UWLogo, #FooterNav
+{
+   display: none;
+}
+#FooterCopy
+{
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000;
+}
+#FooterCopy a{ color: #000;}
+
+/*text*/
+p { 
+	margin: 8px 0px 12px 40px;
+	font-size: 9pt;
+	/*text-align: justify;*/
+	color: #000000;
+	line-height: 18px;
+	}
+
+pre { 
+	margin: 8px 0px 12px 40px;
+	font-size: 9pt;
+	/*text-align: justify;*/
+	color: #000000;
+	line-height: 18px;
+	font-family: "Courier New", Courier, monospace;
+	}
+
+h1 { 
+	font-family: Georgia, Times, serif;
+	font-weight:bold;
+	font-size: 16pt;
+	text-align: center;
+	letter-spacing: .6px; 
+	/*margin: 20px 100px 20px 100px; */
+	margin-top: 20px;
+	margin-bottom:16px;
+	margin-left:auto;
+	margin-right:auto;
+	color: #CF6833;
+	}
+	
+h2 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size: 12pt;
+	letter-spacing: .3px; 
+	margin: 24px 0px 8px 0px; 
+	color: #29537F;
+	}
+	
+h3 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size: 11pt;
+	letter-spacing: .2px; 
+	margin: 16px 0px 8px 40px; 
+	color: #CF6833;
+	}
+	
+h4 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight:600;
+	font-size: 9pt;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0px; 
+	margin: 8px 0px 8px 40px; 
+	color: #29537F;
+	}
+	
+h5 { 
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9pt;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0px; 
+	margin: 8px 0px 8px 40px; 
+	color: #29537F;
+	}
+	
+li {
+	margin: 2px 0px 5px 40px;
+	font-size: 9pt;
+	/*text-align: justify;*/
+	color: #000000;
+	/*line-height: 20px;*/
+	}
+	
+a
+{
+	color: #004276;
+	text-decoration: none;
+	font-weight:500;
+}
+
+a:hover
+{
+    color: #D38056;
+}
+
+a:visited
+{
+	color: #7777AA;
+}
+a:visited:hover
+{
+    color: #D38056;
+}
+
+table, th, td
+{
+	border: 1px solid #999;
+}
+
+table
+{
+	/*text-align:center;*/
+	/*border-collapse:separate;*/
+	margin-left:auto;
+	margin-right:auto;
+}
+
+p.InputCode
+{
+	background:white;
+	white-space:normal;
+}
+
+td
+{
+	padding:5px;
+	font-size: 9pt;
+	/*text-align: justify;*/
+	color: #000000;
+	line-height: 18px;
+}
+
+th
+{
+	text-align:center;
+	font-weight:bold;
+	padding:5px;
+	font-size: 9pt;
+	/*text-align: justify;*/
+	color: #000000;
+	line-height: 18px;	
+}
+
+li p
+{
+	margin: 10px 0px 15px 0px;
+}
